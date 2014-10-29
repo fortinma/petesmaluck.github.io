@@ -1,0 +1,4041 @@
+[  {
+    "Position":"DST",
+    "Name":"49ers ",
+    "Proj":17.5,
+    "Salary":3200,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":6.714,
+    "ProjPointsPerDollar":54.69,
+    "Value":95.7
+  },
+  {
+    "Position":"DST",
+    "Name":"Seahawks ",
+    "Proj":16.5,
+    "Salary":3300,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":5.429,
+    "ProjPointsPerDollar":50,
+    "Value":82.5
+  },
+  {
+    "Position":"DST",
+    "Name":"Bengals ",
+    "Proj":14.5,
+    "Salary":3300,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":5.429,
+    "ProjPointsPerDollar":43.94,
+    "Value":63.71
+  },
+  {
+    "Position":"DST",
+    "Name":"Chiefs ",
+    "Proj":14,
+    "Salary":3300,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":8,
+    "ProjPointsPerDollar":42.42,
+    "Value":59.39
+  },
+  {
+    "Position":"DST",
+    "Name":"Browns ",
+    "Proj":11.5,
+    "Salary":2900,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":7.571,
+    "ProjPointsPerDollar":39.66,
+    "Value":45.6
+  },
+  {
+    "Position":"RB",
+    "Name":"Shane Vereen",
+    "Proj":16.996,
+    "Salary":4600,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":11.613,
+    "ProjPointsPerDollar":36.95,
+    "Value":62.8
+  },
+  {
+    "Position":"WR",
+    "Name":"Julian Edelman",
+    "Proj":15.1,
+    "Salary":4100,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":12.875,
+    "ProjPointsPerDollar":36.83,
+    "Value":55.61
+  },
+  {
+    "Position":"DST",
+    "Name":"Vikings ",
+    "Proj":11,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":8.625,
+    "ProjPointsPerDollar":36.67,
+    "Value":40.33
+  },
+  {
+    "Position":"WR",
+    "Name":"Vincent Jackson",
+    "Proj":16.1,
+    "Salary":4500,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":10.957,
+    "ProjPointsPerDollar":35.78,
+    "Value":57.6
+  },
+  {
+    "Position":"DST",
+    "Name":"Eagles ",
+    "Proj":12,
+    "Salary":3400,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":13.714,
+    "ProjPointsPerDollar":35.29,
+    "Value":42.35
+  },
+  {
+    "Position":"WR",
+    "Name":"Miles Austin",
+    "Proj":12,
+    "Salary":3400,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":9.071,
+    "ProjPointsPerDollar":35.29,
+    "Value":42.35
+  },
+  {
+    "Position":"WR",
+    "Name":"Allen Robinson",
+    "Proj":16.8,
+    "Salary":4900,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":12.038,
+    "ProjPointsPerDollar":34.29,
+    "Value":57.6
+  },
+  {
+    "Position":"RB",
+    "Name":"Frank Gore",
+    "Proj":13.01,
+    "Salary":3800,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":10.157,
+    "ProjPointsPerDollar":34.24,
+    "Value":44.54
+  },
+  {
+    "Position":"DST",
+    "Name":"Texans ",
+    "Proj":10.5,
+    "Salary":3100,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":9.875,
+    "ProjPointsPerDollar":33.87,
+    "Value":35.56
+  },
+  {
+    "Position":"WR",
+    "Name":"Andre Johnson",
+    "Proj":18.5,
+    "Salary":5500,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":13.138,
+    "ProjPointsPerDollar":33.64,
+    "Value":62.23
+  },
+  {
+    "Position":"WR",
+    "Name":"James Jones",
+    "Proj":15,
+    "Salary":4500,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":14.071,
+    "ProjPointsPerDollar":33.33,
+    "Value":50
+  },
+  {
+    "Position":"WR",
+    "Name":"Jarvis Landry",
+    "Proj":11.3,
+    "Salary":3400,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":7.843,
+    "ProjPointsPerDollar":33.24,
+    "Value":37.56
+  },
+  {
+    "Position":"TE",
+    "Name":"Jared Cook",
+    "Proj":9.91,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":8.586,
+    "ProjPointsPerDollar":33.03,
+    "Value":32.74
+  },
+  {
+    "Position":"RB",
+    "Name":"Chris Ivory",
+    "Proj":9.83,
+    "Salary":4500,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":13.225,
+    "ProjPointsPerDollar":32.84,
+    "Value":50.67
+  },
+  {
+    "Position":"TE",
+    "Name":"Jason Witten",
+    "Proj":10.2,
+    "Salary":3200,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":9.2,
+    "ProjPointsPerDollar":31.88,
+    "Value":32.51
+  },
+  {
+    "Position":"WR",
+    "Name":"Andrew Hawkins",
+    "Proj":15.6,
+    "Salary":4900,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":13.257,
+    "ProjPointsPerDollar":31.84,
+    "Value":49.67
+  },
+  {
+    "Position":"WR",
+    "Name":"Torrey Smith",
+    "Proj":12.9,
+    "Salary":4100,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":9.1,
+    "ProjPointsPerDollar":31.46,
+    "Value":40.59
+  },
+  {
+    "Position":"TE",
+    "Name":"Travis Kelce",
+    "Proj":12.86,
+    "Salary":4100,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":11.6,
+    "ProjPointsPerDollar":31.37,
+    "Value":40.34
+  },
+  {
+    "Position":"DST",
+    "Name":"Redskins ",
+    "Proj":9,
+    "Salary":2900,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":4.5,
+    "ProjPointsPerDollar":31.03,
+    "Value":27.93
+  },
+  {
+    "Position":"QB",
+    "Name":"Ben Roethlisberger",
+    "Proj":22.934,
+    "Salary":7500,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":20.45,
+    "ProjPointsPerDollar":30.58,
+    "Value":70.13
+  },
+  {
+    "Position":"QB",
+    "Name":"Ryan Tannehill",
+    "Proj":19.204,
+    "Salary":6300,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":17.509,
+    "ProjPointsPerDollar":30.48,
+    "Value":58.54
+  },
+  {
+    "Position":"RB",
+    "Name":"Alfred Morris",
+    "Proj":11.75,
+    "Salary":3900,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":10.8,
+    "ProjPointsPerDollar":30.13,
+    "Value":35.4
+  },
+  {
+    "Position":"QB",
+    "Name":"Brian Hoyer",
+    "Proj":15.936,
+    "Salary":5300,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":13.909,
+    "ProjPointsPerDollar":30.07,
+    "Value":47.92
+  },
+  {
+    "Position":"QB",
+    "Name":"Tom Brady",
+    "Proj":25.204,
+    "Salary":8400,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":19.57,
+    "ProjPointsPerDollar":30,
+    "Value":75.62
+  },
+  {
+    "Position":"RB",
+    "Name":"Jamaal Charles",
+    "Proj":21.258,
+    "Salary":7100,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":16.2,
+    "ProjPointsPerDollar":29.94,
+    "Value":63.65
+  },
+  {
+    "Position":"WR",
+    "Name":"Mike Wallace",
+    "Proj":15.5,
+    "Salary":5200,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":14.914,
+    "ProjPointsPerDollar":29.81,
+    "Value":46.2
+  },
+  {
+    "Position":"WR",
+    "Name":"Michael Crabtree",
+    "Proj":13.4,
+    "Salary":4500,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":11.8,
+    "ProjPointsPerDollar":29.78,
+    "Value":39.9
+  },
+  {
+    "Position":"QB",
+    "Name":"Colin Kaepernick",
+    "Proj":20.74,
+    "Salary":7000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":19.394,
+    "ProjPointsPerDollar":29.63,
+    "Value":61.45
+  },
+  {
+    "Position":"TE",
+    "Name":"Antonio Gates",
+    "Proj":15.62,
+    "Salary":5300,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":15.963,
+    "ProjPointsPerDollar":29.47,
+    "Value":46.03
+  },
+  {
+    "Position":"TE",
+    "Name":"Zach Ertz",
+    "Proj":11.18,
+    "Salary":3800,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":10.057,
+    "ProjPointsPerDollar":29.42,
+    "Value":32.89
+  },
+  {
+    "Position":"TE",
+    "Name":"Larry Donnell",
+    "Proj":13.52,
+    "Salary":4600,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":12.457,
+    "ProjPointsPerDollar":29.39,
+    "Value":39.74
+  },
+  {
+    "Position":"TE",
+    "Name":"Julius Thomas",
+    "Proj":16.4,
+    "Salary":5600,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":17.1,
+    "ProjPointsPerDollar":29.29,
+    "Value":48.03
+  },
+  {
+    "Position":"WR",
+    "Name":"DeAndre Hopkins",
+    "Proj":15.7,
+    "Salary":5400,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":14.488,
+    "ProjPointsPerDollar":29.07,
+    "Value":45.65
+  },
+  {
+    "Position":"RB",
+    "Name":"Andre Williams",
+    "Proj":10.14,
+    "Salary":3500,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":6.643,
+    "ProjPointsPerDollar":28.97,
+    "Value":29.38
+  },
+  {
+    "Position":"RB",
+    "Name":"Ben Tate",
+    "Proj":12.45,
+    "Salary":4300,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":10.98,
+    "ProjPointsPerDollar":28.95,
+    "Value":36.05
+  },
+  {
+    "Position":"QB",
+    "Name":"Andy Dalton",
+    "Proj":18.178,
+    "Salary":6300,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":17.163,
+    "ProjPointsPerDollar":28.85,
+    "Value":52.45
+  },
+  {
+    "Position":"QB",
+    "Name":"Alex Smith",
+    "Proj":16.43,
+    "Salary":5700,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":15.149,
+    "ProjPointsPerDollar":28.82,
+    "Value":47.36
+  },
+  {
+    "Position":"WR",
+    "Name":"Doug Baldwin",
+    "Proj":14.7,
+    "Salary":5100,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":10.729,
+    "ProjPointsPerDollar":28.82,
+    "Value":42.37
+  },
+  {
+    "Position":"QB",
+    "Name":"Russell Wilson",
+    "Proj":22.426,
+    "Salary":7800,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":23.786,
+    "ProjPointsPerDollar":28.75,
+    "Value":64.48
+  },
+  {
+    "Position":"TE",
+    "Name":"Dwayne Allen",
+    "Proj":11.76,
+    "Salary":4100,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":11.325,
+    "ProjPointsPerDollar":28.68,
+    "Value":33.73
+  },
+  {
+    "Position":"WR",
+    "Name":"A.J. Green",
+    "Proj":18,
+    "Salary":6300,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":16.475,
+    "ProjPointsPerDollar":28.57,
+    "Value":51.43
+  },
+  {
+    "Position":"RB",
+    "Name":"Jerick McKinnon",
+    "Proj":13.43,
+    "Salary":4700,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":8.925,
+    "ProjPointsPerDollar":28.57,
+    "Value":38.38
+  },
+  {
+    "Position":"DST",
+    "Name":"Buccaneers ",
+    "Proj":8,
+    "Salary":2800,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":5.429,
+    "ProjPointsPerDollar":28.57,
+    "Value":22.86
+  },
+  {
+    "Position":"WR",
+    "Name":"Steve Smith Sr.",
+    "Proj":16,
+    "Salary":5600,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":17.938,
+    "ProjPointsPerDollar":28.43,
+    "Value":58.2
+  },
+  {
+    "Position":"QB",
+    "Name":"Blake Bortles",
+    "Proj":15.272,
+    "Salary":5400,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":14.743,
+    "ProjPointsPerDollar":28.28,
+    "Value":43.19
+  },
+  {
+    "Position":"DST",
+    "Name":"Colts ",
+    "Proj":9,
+    "Salary":3200,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":8.375,
+    "ProjPointsPerDollar":28.13,
+    "Value":25.31
+  },
+  {
+    "Position":"WR",
+    "Name":"Michael Floyd",
+    "Proj":10.6,
+    "Salary":3800,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":10.357,
+    "ProjPointsPerDollar":27.89,
+    "Value":29.57
+  },
+  {
+    "Position":"WR",
+    "Name":"Taylor Gabriel",
+    "Proj":8.6,
+    "Salary":3100,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":6.9,
+    "ProjPointsPerDollar":27.74,
+    "Value":23.86
+  },
+  {
+    "Position":"WR",
+    "Name":"Keenan Allen",
+    "Proj":15.2,
+    "Salary":5500,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":11.838,
+    "ProjPointsPerDollar":27.64,
+    "Value":42.01
+  },
+  {
+    "Position":"WR",
+    "Name":"Dez Bryant",
+    "Proj":22.5,
+    "Salary":8200,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":18.25,
+    "ProjPointsPerDollar":27.44,
+    "Value":61.74
+  },
+  {
+    "Position":"TE",
+    "Name":"Rob Gronkowski",
+    "Proj":20.85,
+    "Salary":7600,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":17.975,
+    "ProjPointsPerDollar":27.43,
+    "Value":57.2
+  },
+  {
+    "Position":"TE",
+    "Name":"Jordan Reed",
+    "Proj":12.03,
+    "Salary":4400,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":10,
+    "ProjPointsPerDollar":27.34,
+    "Value":32.89
+  },
+  {
+    "Position":"QB",
+    "Name":"Peyton Manning",
+    "Proj":26.778,
+    "Salary":9800,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":25.794,
+    "ProjPointsPerDollar":27.32,
+    "Value":73.17
+  },
+  {
+    "Position":"QB",
+    "Name":"Teddy Bridgewater",
+    "Proj":14.18,
+    "Salary":5200,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":12.724,
+    "ProjPointsPerDollar":27.27,
+    "Value":38.67
+  },
+  {
+    "Position":"RB",
+    "Name":"Carlos Hyde",
+    "Proj":8.18,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":5.043,
+    "ProjPointsPerDollar":27.27,
+    "Value":22.3
+  },
+  {
+    "Position":"WR",
+    "Name":"Eric Decker",
+    "Proj":12.8,
+    "Salary":4700,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":12.186,
+    "ProjPointsPerDollar":27.23,
+    "Value":34.86
+  },
+  {
+    "Position":"QB",
+    "Name":"Ryan Fitzpatrick",
+    "Proj":15.498,
+    "Salary":5700,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":14.21,
+    "ProjPointsPerDollar":27.19,
+    "Value":42.14
+  },
+  {
+    "Position":"WR",
+    "Name":"Reggie Wayne",
+    "Proj":12.4,
+    "Salary":4600,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":12.914,
+    "ProjPointsPerDollar":26.96,
+    "Value":33.43
+  },
+  {
+    "Position":"QB",
+    "Name":"Andrew Luck",
+    "Proj":26.73,
+    "Salary":10000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":28.955,
+    "ProjPointsPerDollar":26.73,
+    "Value":71.45
+  },
+  {
+    "Position":"WR",
+    "Name":"Cordarrelle Patterson",
+    "Proj":12.8,
+    "Salary":4800,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":10.113,
+    "ProjPointsPerDollar":26.67,
+    "Value":34.13
+  },
+  {
+    "Position":"WR",
+    "Name":"Dwayne Bowe",
+    "Proj":12,
+    "Salary":4500,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":9.883,
+    "ProjPointsPerDollar":26.67,
+    "Value":32
+  },
+  {
+    "Position":"RB",
+    "Name":"LeSean McCoy",
+    "Proj":13.85,
+    "Salary":5200,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":12.329,
+    "ProjPointsPerDollar":26.63,
+    "Value":36.89
+  },
+  {
+    "Position":"RB",
+    "Name":"Marshawn Lynch",
+    "Proj":16.24,
+    "Salary":6100,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":16.986,
+    "ProjPointsPerDollar":26.62,
+    "Value":43.24
+  },
+  {
+    "Position":"WR",
+    "Name":"Anquan Boldin",
+    "Proj":13.3,
+    "Salary":5000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":12.814,
+    "ProjPointsPerDollar":26.6,
+    "Value":35.38
+  },
+  {
+    "Position":"RB",
+    "Name":"Le'Veon Bell",
+    "Proj":18.57,
+    "Salary":7000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":21.075,
+    "ProjPointsPerDollar":26.53,
+    "Value":49.26
+  },
+  {
+    "Position":"WR",
+    "Name":"Odell Beckham Jr.",
+    "Proj":13.1,
+    "Salary":5000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":13.3,
+    "ProjPointsPerDollar":26.2,
+    "Value":34.32
+  },
+  {
+    "Position":"QB",
+    "Name":"Tony Romo",
+    "Proj":19.526,
+    "Salary":7500,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":17.478,
+    "ProjPointsPerDollar":26.03,
+    "Value":50.84
+  },
+  {
+    "Position":"QB",
+    "Name":"Joe Flacco",
+    "Proj":15.784,
+    "Salary":6100,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":17.933,
+    "ProjPointsPerDollar":25.88,
+    "Value":40.84
+  },
+  {
+    "Position":"TE",
+    "Name":"Luke Willson",
+    "Proj":7.76,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":3.217,
+    "ProjPointsPerDollar":25.87,
+    "Value":20.07
+  },
+  {
+    "Position":"DST",
+    "Name":"Dolphins ",
+    "Proj":8,
+    "Salary":3100,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":11.429,
+    "ProjPointsPerDollar":25.81,
+    "Value":20.65
+  },
+  {
+    "Position":"QB",
+    "Name":"Colt McCoy",
+    "Proj":15.712,
+    "Salary":6100,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":13.99,
+    "ProjPointsPerDollar":25.76,
+    "Value":40.47
+  },
+  {
+    "Position":"WR",
+    "Name":"Malcom Floyd",
+    "Proj":12.1,
+    "Salary":4700,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":11.5,
+    "ProjPointsPerDollar":25.74,
+    "Value":31.15
+  },
+  {
+    "Position":"WR",
+    "Name":"Demaryius Thomas",
+    "Proj":23,
+    "Salary":9000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":24.814,
+    "ProjPointsPerDollar":25.56,
+    "Value":58.78
+  },
+  {
+    "Position":"RB",
+    "Name":"Lamar Miller",
+    "Proj":14.21,
+    "Salary":5600,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":15.786,
+    "ProjPointsPerDollar":25.38,
+    "Value":36.06
+  },
+  {
+    "Position":"WR",
+    "Name":"Junior Hemingway",
+    "Proj":7.6,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":2.414,
+    "ProjPointsPerDollar":25.33,
+    "Value":19.25
+  },
+  {
+    "Position":"RB",
+    "Name":"Ahmad Bradshaw",
+    "Proj":14.628,
+    "Salary":5800,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":17.563,
+    "ProjPointsPerDollar":25.22,
+    "Value":36.89
+  },
+  {
+    "Position":"DST",
+    "Name":"Steelers ",
+    "Proj":7.5,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":7.125,
+    "ProjPointsPerDollar":25,
+    "Value":18.75
+  },
+  {
+    "Position":"DST",
+    "Name":"Jets ",
+    "Proj":7,
+    "Salary":2800,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":3.125,
+    "ProjPointsPerDollar":25,
+    "Value":17.5
+  },
+  {
+    "Position":"WR",
+    "Name":"Terrance Williams",
+    "Proj":12.2,
+    "Salary":4900,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":12.713,
+    "ProjPointsPerDollar":24.9,
+    "Value":30.38
+  },
+  {
+    "Position":"WR",
+    "Name":"Jeremy Maclin",
+    "Proj":18.9,
+    "Salary":7600,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":20.6,
+    "ProjPointsPerDollar":24.87,
+    "Value":47
+  },
+  {
+    "Position":"QB",
+    "Name":"Austin Davis",
+    "Proj":13.66,
+    "Salary":5500,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":15.557,
+    "ProjPointsPerDollar":24.84,
+    "Value":33.93
+  },
+  {
+    "Position":"WR",
+    "Name":"Rueben Randle",
+    "Proj":13.3,
+    "Salary":5400,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":11.157,
+    "ProjPointsPerDollar":24.63,
+    "Value":32.76
+  },
+  {
+    "Position":"QB",
+    "Name":"Carson Palmer",
+    "Proj":16.736,
+    "Salary":6800,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":21.01,
+    "ProjPointsPerDollar":24.61,
+    "Value":41.19
+  },
+  {
+    "Position":"TE",
+    "Name":"Vernon Davis",
+    "Proj":9.06,
+    "Salary":3700,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":8.04,
+    "ProjPointsPerDollar":24.49,
+    "Value":22.18
+  },
+  {
+    "Position":"QB",
+    "Name":"Mike Glennon",
+    "Proj":13.936,
+    "Salary":5700,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":16.696,
+    "ProjPointsPerDollar":24.45,
+    "Value":34.07
+  },
+  {
+    "Position":"RB",
+    "Name":"Branden Oliver",
+    "Proj":13.924,
+    "Salary":5700,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":16.067,
+    "ProjPointsPerDollar":24.43,
+    "Value":34.01
+  },
+  {
+    "Position":"QB",
+    "Name":"Michael Vick",
+    "Proj":16.08,
+    "Salary":6600,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":2.367,
+    "ProjPointsPerDollar":24.36,
+    "Value":39.18
+  },
+  {
+    "Position":"RB",
+    "Name":"DeMarco Murray",
+    "Proj":21.85,
+    "Salary":9000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":27.038,
+    "ProjPointsPerDollar":24.28,
+    "Value":53.05
+  },
+  {
+    "Position":"WR",
+    "Name":"T.Y. Hilton",
+    "Proj":19.6,
+    "Salary":8100,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":20.513,
+    "ProjPointsPerDollar":24.2,
+    "Value":47.43
+  },
+  {
+    "Position":"RB",
+    "Name":"Andre Ellington",
+    "Proj":14.27,
+    "Salary":5900,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":17.257,
+    "ProjPointsPerDollar":24.19,
+    "Value":34.51
+  },
+  {
+    "Position":"QB",
+    "Name":"Nick Foles",
+    "Proj":18.62,
+    "Salary":7700,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":19.466,
+    "ProjPointsPerDollar":24.18,
+    "Value":45.03
+  },
+  {
+    "Position":"WR",
+    "Name":"Tavon Austin",
+    "Proj":7.2,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":5.3,
+    "ProjPointsPerDollar":24,
+    "Value":17.28
+  },
+  {
+    "Position":"QB",
+    "Name":"Philip Rivers",
+    "Proj":19.858,
+    "Salary":8300,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":22.053,
+    "ProjPointsPerDollar":23.93,
+    "Value":47.51
+  },
+  {
+    "Position":"WR",
+    "Name":"Brandon LaFell",
+    "Proj":14.3,
+    "Salary":6000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":13.263,
+    "ProjPointsPerDollar":23.83,
+    "Value":34.08
+  },
+  {
+    "Position":"RB",
+    "Name":"Lorenzo Taliaferro",
+    "Proj":7.81,
+    "Salary":3300,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":7.075,
+    "ProjPointsPerDollar":23.67,
+    "Value":18.48
+  },
+  {
+    "Position":"WR",
+    "Name":"Riley Cooper",
+    "Proj":9.7,
+    "Salary":4100,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":9.214,
+    "ProjPointsPerDollar":23.66,
+    "Value":22.95
+  },
+  {
+    "Position":"WR",
+    "Name":"Antonio Brown",
+    "Proj":21.4,
+    "Salary":9100,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":25.663,
+    "ProjPointsPerDollar":23.52,
+    "Value":50.33
+  },
+  {
+    "Position":"RB",
+    "Name":"Giovani Bernard",
+    "Proj":15.49,
+    "Salary":6600,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":16.786,
+    "ProjPointsPerDollar":23.47,
+    "Value":36.35
+  },
+  {
+    "Position":"RB",
+    "Name":"Ronnie Hillman",
+    "Proj":13.13,
+    "Salary":5600,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":14.4,
+    "ProjPointsPerDollar":23.45,
+    "Value":30.79
+  },
+  {
+    "Position":"TE",
+    "Name":"Heath Miller",
+    "Proj":10.07,
+    "Salary":4300,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":10.838,
+    "ProjPointsPerDollar":23.42,
+    "Value":23.58
+  },
+  {
+    "Position":"QB",
+    "Name":"Eli Manning",
+    "Proj":17.074,
+    "Salary":7300,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":17.789,
+    "ProjPointsPerDollar":23.39,
+    "Value":39.93
+  },
+  {
+    "Position":"RB",
+    "Name":"Denard Robinson",
+    "Proj":11.21,
+    "Salary":4800,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":7.7,
+    "ProjPointsPerDollar":23.35,
+    "Value":26.18
+  },
+  {
+    "Position":"WR",
+    "Name":"Percy Harvin",
+    "Proj":9.8,
+    "Salary":4200,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":9.583,
+    "ProjPointsPerDollar":23.33,
+    "Value":22.87
+  },
+  {
+    "Position":"DST",
+    "Name":"Cardinals ",
+    "Proj":7,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":7.714,
+    "ProjPointsPerDollar":23.33,
+    "Value":16.33
+  },
+  {
+    "Position":"WR",
+    "Name":"Jordan Matthews",
+    "Proj":9.3,
+    "Salary":4000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":9.757,
+    "ProjPointsPerDollar":23.25,
+    "Value":21.62
+  },
+  {
+    "Position":"TE",
+    "Name":"Charles Clay",
+    "Proj":6.9,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":6.929,
+    "ProjPointsPerDollar":23,
+    "Value":15.87
+  },
+  {
+    "Position":"WR",
+    "Name":"Mohamed Sanu",
+    "Proj":14.7,
+    "Salary":6400,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":17.731,
+    "ProjPointsPerDollar":22.97,
+    "Value":33.76
+  },
+  {
+    "Position":"WR",
+    "Name":"Pierre Garcon",
+    "Proj":14,
+    "Salary":6100,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":13.038,
+    "ProjPointsPerDollar":22.95,
+    "Value":32.13
+  },
+  {
+    "Position":"WR",
+    "Name":"Jarius Wright",
+    "Proj":7.1,
+    "Salary":3100,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":7.15,
+    "ProjPointsPerDollar":22.9,
+    "Value":16.26
+  },
+  {
+    "Position":"WR",
+    "Name":"Jermaine Kearse",
+    "Proj":7.1,
+    "Salary":3100,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":6.569,
+    "ProjPointsPerDollar":22.9,
+    "Value":16.26
+  },
+  {
+    "Position":"TE",
+    "Name":"Jermaine Gresham",
+    "Proj":6.87,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":7.014,
+    "ProjPointsPerDollar":22.9,
+    "Value":15.73
+  },
+  {
+    "Position":"WR",
+    "Name":"Larry Fitzgerald",
+    "Proj":13,
+    "Salary":5700,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":12.614,
+    "ProjPointsPerDollar":22.81,
+    "Value":29.65
+  },
+  {
+    "Position":"WR",
+    "Name":"Greg Jennings",
+    "Proj":8.6,
+    "Salary":3800,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":9.913,
+    "ProjPointsPerDollar":22.63,
+    "Value":19.46
+  },
+  {
+    "Position":"DST",
+    "Name":"Cowboys ",
+    "Proj":6.5,
+    "Salary":2900,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":6.125,
+    "ProjPointsPerDollar":22.41,
+    "Value":14.57
+  },
+  {
+    "Position":"DST",
+    "Name":"Chargers ",
+    "Proj":6.5,
+    "Salary":2900,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":6,
+    "ProjPointsPerDollar":22.41,
+    "Value":14.57
+  },
+  {
+    "Position":"WR",
+    "Name":"John Brown",
+    "Proj":8.5,
+    "Salary":3800,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":11.471,
+    "ProjPointsPerDollar":22.37,
+    "Value":19.01
+  },
+  {
+    "Position":"WR",
+    "Name":"Brian Hartline",
+    "Proj":6.7,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":6.786,
+    "ProjPointsPerDollar":22.33,
+    "Value":14.96
+  },
+  {
+    "Position":"QB",
+    "Name":"Derek Carr",
+    "Proj":11.782,
+    "Salary":5300,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":14.34,
+    "ProjPointsPerDollar":22.23,
+    "Value":26.19
+  },
+  {
+    "Position":"RB",
+    "Name":"Arian Foster",
+    "Proj":21.96,
+    "Salary":9900,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":26.743,
+    "ProjPointsPerDollar":22.18,
+    "Value":48.71
+  },
+  {
+    "Position":"WR",
+    "Name":"DeSean Jackson",
+    "Proj":13.3,
+    "Salary":6000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":16,
+    "ProjPointsPerDollar":22.17,
+    "Value":29.48
+  },
+  {
+    "Position":"WR",
+    "Name":"Emmanuel Sanders",
+    "Proj":17.7,
+    "Salary":8000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":21.243,
+    "ProjPointsPerDollar":22.13,
+    "Value":39.16
+  },
+  {
+    "Position":"WR",
+    "Name":"Eddie Royal",
+    "Proj":8.3,
+    "Salary":3800,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":12.038,
+    "ProjPointsPerDollar":21.84,
+    "Value":18.13
+  },
+  {
+    "Position":"TE",
+    "Name":"Jace Amaro",
+    "Proj":8.93,
+    "Salary":4100,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":8.313,
+    "ProjPointsPerDollar":21.78,
+    "Value":19.45
+  },
+  {
+    "Position":"TE",
+    "Name":"Mychal Rivera",
+    "Proj":6.96,
+    "Salary":3200,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":5.343,
+    "ProjPointsPerDollar":21.75,
+    "Value":15.14
+  },
+  {
+    "Position":"WR",
+    "Name":"Andre Holmes",
+    "Proj":10.4,
+    "Salary":4800,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":12.457,
+    "ProjPointsPerDollar":21.67,
+    "Value":22.53
+  },
+  {
+    "Position":"DST",
+    "Name":"Ravens ",
+    "Proj":6.5,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":8,
+    "ProjPointsPerDollar":21.67,
+    "Value":14.08
+  },
+  {
+    "Position":"TE",
+    "Name":"John Carlson",
+    "Proj":6.45,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":4.643,
+    "ProjPointsPerDollar":21.5,
+    "Value":13.87
+  },
+  {
+    "Position":"RB",
+    "Name":"Jeremy Hill",
+    "Proj":8.59,
+    "Salary":4000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":9.086,
+    "ProjPointsPerDollar":21.48,
+    "Value":18.45
+  },
+  {
+    "Position":"WR",
+    "Name":"Markus Wheaton",
+    "Proj":8.2,
+    "Salary":3900,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":8.725,
+    "ProjPointsPerDollar":21.03,
+    "Value":17.24
+  },
+  {
+    "Position":"TE",
+    "Name":"Austin Seferian-Jenkins",
+    "Proj":7.11,
+    "Salary":3400,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":6.7,
+    "ProjPointsPerDollar":20.91,
+    "Value":14.87
+  },
+  {
+    "Position":"RB",
+    "Name":"Justin Forsett",
+    "Proj":11.03,
+    "Salary":5300,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":14.95,
+    "ProjPointsPerDollar":20.81,
+    "Value":22.95
+  },
+  {
+    "Position":"TE",
+    "Name":"Coby Fleener",
+    "Proj":6.44,
+    "Salary":3100,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":7.225,
+    "ProjPointsPerDollar":20.77,
+    "Value":13.38
+  },
+  {
+    "Position":"TE",
+    "Name":"Crockett Gillmore",
+    "Proj":6.23,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":1.275,
+    "ProjPointsPerDollar":20.77,
+    "Value":12.94
+  },
+  {
+    "Position":"RB",
+    "Name":"Juwan Thompson",
+    "Proj":6.56,
+    "Salary":3200,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":4.243,
+    "ProjPointsPerDollar":20.5,
+    "Value":13.45
+  },
+  {
+    "Position":"WR",
+    "Name":"Mike Evans",
+    "Proj":9.6,
+    "Salary":4700,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":11.767,
+    "ProjPointsPerDollar":20.43,
+    "Value":19.61
+  },
+  {
+    "Position":"WR",
+    "Name":"Kamar Aiken",
+    "Proj":6.1,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":3.538,
+    "ProjPointsPerDollar":20.33,
+    "Value":12.4
+  },
+  {
+    "Position":"WR",
+    "Name":"Andre Roberts",
+    "Proj":6.6,
+    "Salary":3300,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":7.613,
+    "ProjPointsPerDollar":20,
+    "Value":13.2
+  },
+  {
+    "Position":"TE",
+    "Name":"Clay Harbor",
+    "Proj":8.36,
+    "Salary":4200,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":10.48,
+    "ProjPointsPerDollar":19.9,
+    "Value":16.64
+  },
+  {
+    "Position":"TE",
+    "Name":"Lance Kendricks",
+    "Proj":5.94,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":7.543,
+    "ProjPointsPerDollar":19.8,
+    "Value":11.76
+  },
+  {
+    "Position":"RB",
+    "Name":"Tre Mason",
+    "Proj":6.3,
+    "Salary":3200,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":8.333,
+    "ProjPointsPerDollar":19.69,
+    "Value":12.4
+  },
+  {
+    "Position":"WR",
+    "Name":"Preston Parker",
+    "Proj":5.7,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":4.243,
+    "ProjPointsPerDollar":19,
+    "Value":10.83
+  },
+  {
+    "Position":"WR",
+    "Name":"Paul Richardson",
+    "Proj":5.6,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":2.167,
+    "ProjPointsPerDollar":18.67,
+    "Value":10.45
+  },
+  {
+    "Position":"WR",
+    "Name":"Allen Hurns",
+    "Proj":5.5,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":9.8,
+    "ProjPointsPerDollar":18.33,
+    "Value":10.08
+  },
+  {
+    "Position":"WR",
+    "Name":"Wes Welker",
+    "Proj":6.4,
+    "Salary":3600,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":8.62,
+    "ProjPointsPerDollar":17.78,
+    "Value":11.38
+  },
+  {
+    "Position":"DST",
+    "Name":"Giants ",
+    "Proj":4.5,
+    "Salary":2600,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":5.571,
+    "ProjPointsPerDollar":17.31,
+    "Value":7.79
+  },
+  {
+    "Position":"RB",
+    "Name":"Bobby Rainey",
+    "Proj":7.58,
+    "Salary":4400,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":11.529,
+    "ProjPointsPerDollar":17.23,
+    "Value":13.06
+  },
+  {
+    "Position":"RB",
+    "Name":"Jonas Gray",
+    "Proj":5.85,
+    "Salary":3400,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":4.9,
+    "ProjPointsPerDollar":17.21,
+    "Value":10.07
+  },
+  {
+    "Position":"WR",
+    "Name":"Marlon Brown",
+    "Proj":5.1,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":1.633,
+    "ProjPointsPerDollar":17,
+    "Value":8.67
+  },
+  {
+    "Position":"TE",
+    "Name":"Chase Ford",
+    "Proj":6.4,
+    "Salary":3800,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":5.72,
+    "ProjPointsPerDollar":16.84,
+    "Value":10.78
+  },
+  {
+    "Position":"RB",
+    "Name":"Darren McFadden",
+    "Proj":8.05,
+    "Salary":4800,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":11.029,
+    "ProjPointsPerDollar":16.77,
+    "Value":13.5
+  },
+  {
+    "Position":"WR",
+    "Name":"Brandon Tate",
+    "Proj":5,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":5,
+    "ProjPointsPerDollar":16.67,
+    "Value":8.33
+  },
+  {
+    "Position":"RB",
+    "Name":"Knile Davis",
+    "Proj":5.61,
+    "Salary":3400,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":12.757,
+    "ProjPointsPerDollar":16.5,
+    "Value":9.26
+  },
+  {
+    "Position":"TE",
+    "Name":"Jim Dray",
+    "Proj":4.91,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":3.829,
+    "ProjPointsPerDollar":16.37,
+    "Value":8.04
+  },
+  {
+    "Position":"TE",
+    "Name":"Anthony Fasano",
+    "Proj":4.88,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":5.171,
+    "ProjPointsPerDollar":16.27,
+    "Value":7.94
+  },
+  {
+    "Position":"RB",
+    "Name":"Trent Richardson",
+    "Proj":7.18,
+    "Salary":4500,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":11.871,
+    "ProjPointsPerDollar":15.96,
+    "Value":11.46
+  },
+  {
+    "Position":"RB",
+    "Name":"Matt Asiata",
+    "Proj":5.56,
+    "Salary":3500,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":10.363,
+    "ProjPointsPerDollar":15.89,
+    "Value":8.83
+  },
+  {
+    "Position":"WR",
+    "Name":"Brandon Lloyd",
+    "Proj":4.7,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":6.867,
+    "ProjPointsPerDollar":15.67,
+    "Value":7.36
+  },
+  {
+    "Position":"WR",
+    "Name":"Marqise Lee",
+    "Proj":4.7,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":5.06,
+    "ProjPointsPerDollar":15.67,
+    "Value":7.36
+  },
+  {
+    "Position":"WR",
+    "Name":"Cole Beasley",
+    "Proj":4.7,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":3.25,
+    "ProjPointsPerDollar":15.67,
+    "Value":7.36
+  },
+  {
+    "Position":"RB",
+    "Name":"Terrance West",
+    "Proj":5.13,
+    "Salary":3300,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":8.35,
+    "ProjPointsPerDollar":15.55,
+    "Value":7.97
+  },
+  {
+    "Position":"DST",
+    "Name":"Broncos ",
+    "Proj":4.5,
+    "Salary":2900,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":7.571,
+    "ProjPointsPerDollar":15.52,
+    "Value":6.98
+  },
+  {
+    "Position":"DST",
+    "Name":"Patriots ",
+    "Proj":4,
+    "Salary":2600,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":9.875,
+    "ProjPointsPerDollar":15.38,
+    "Value":6.15
+  },
+  {
+    "Position":"WR",
+    "Name":"Jeremy Kerley",
+    "Proj":4.6,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":7.038,
+    "ProjPointsPerDollar":15.33,
+    "Value":7.05
+  },
+  {
+    "Position":"RB",
+    "Name":"Peyton Hillis",
+    "Proj":4.42,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":2.329,
+    "ProjPointsPerDollar":14.73,
+    "Value":6.51
+  },
+  {
+    "Position":"RB",
+    "Name":"Zac Stacy",
+    "Proj":4.39,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":8.314,
+    "ProjPointsPerDollar":14.63,
+    "Value":6.42
+  },
+  {
+    "Position":"RB",
+    "Name":"Benny Cunningham",
+    "Proj":4.32,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":9.171,
+    "ProjPointsPerDollar":14.4,
+    "Value":6.22
+  },
+  {
+    "Position":"WR",
+    "Name":"Donte Moncrief",
+    "Proj":7.6,
+    "Salary":5300,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":5.913,
+    "ProjPointsPerDollar":14.34,
+    "Value":10.9
+  },
+  {
+    "Position":"WR",
+    "Name":"Travis Benjamin",
+    "Proj":4.3,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":6.129,
+    "ProjPointsPerDollar":14.33,
+    "Value":6.16
+  },
+  {
+    "Position":"QB",
+    "Name":"Robert Griffin III",
+    "Proj":9.14,
+    "Salary":6400,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":6.8,
+    "ProjPointsPerDollar":14.28,
+    "Value":13.05
+  },
+  {
+    "Position":"TE",
+    "Name":"Brent Celek",
+    "Proj":4.26,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":2.9,
+    "ProjPointsPerDollar":14.2,
+    "Value":6.05
+  },
+  {
+    "Position":"RB",
+    "Name":"Alfred Blue",
+    "Proj":4.17,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":4.875,
+    "ProjPointsPerDollar":13.9,
+    "Value":5.8
+  },
+  {
+    "Position":"RB",
+    "Name":"Christine Michael",
+    "Proj":4.04,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0.85,
+    "ProjPointsPerDollar":13.47,
+    "Value":5.44
+  },
+  {
+    "Position":"WR",
+    "Name":"Danny Amendola",
+    "Proj":4,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":2.213,
+    "ProjPointsPerDollar":13.33,
+    "Value":5.33
+  },
+  {
+    "Position":"RB",
+    "Name":"LeGarrette Blount",
+    "Proj":3.99,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":5.988,
+    "ProjPointsPerDollar":13.3,
+    "Value":5.31
+  },
+  {
+    "Position":"RB",
+    "Name":"Daniel Thomas",
+    "Proj":3.97,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":6.15,
+    "ProjPointsPerDollar":13.23,
+    "Value":5.25
+  },
+  {
+    "Position":"WR",
+    "Name":"Martavis Bryant",
+    "Proj":7.2,
+    "Salary":5500,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":18.65,
+    "ProjPointsPerDollar":13.09,
+    "Value":9.43
+  },
+  {
+    "Position":"TE",
+    "Name":"Gavin Escobar",
+    "Proj":4.43,
+    "Salary":3400,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":4.188,
+    "ProjPointsPerDollar":13.03,
+    "Value":5.77
+  },
+  {
+    "Position":"DST",
+    "Name":"Jaguars ",
+    "Proj":3.5,
+    "Salary":2700,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":5.5,
+    "ProjPointsPerDollar":12.96,
+    "Value":4.54
+  },
+  {
+    "Position":"WR",
+    "Name":"A.J. Jenkins",
+    "Proj":3.8,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":1.771,
+    "ProjPointsPerDollar":12.67,
+    "Value":4.81
+  },
+  {
+    "Position":"RB",
+    "Name":"Isaiah Crowell",
+    "Proj":3.76,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":7.6,
+    "ProjPointsPerDollar":12.53,
+    "Value":4.71
+  },
+  {
+    "Position":"RB",
+    "Name":"Chris Johnson",
+    "Proj":3.91,
+    "Salary":3200,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":7.375,
+    "ProjPointsPerDollar":12.22,
+    "Value":4.78
+  },
+  {
+    "Position":"WR",
+    "Name":"Hakeem Nicks",
+    "Proj":3.5,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":5.85,
+    "ProjPointsPerDollar":11.67,
+    "Value":4.08
+  },
+  {
+    "Position":"WR",
+    "Name":"Kenbrell Thompkins",
+    "Proj":3.8,
+    "Salary":3300,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":3.88,
+    "ProjPointsPerDollar":11.52,
+    "Value":4.38
+  },
+  {
+    "Position":"WR",
+    "Name":"Brandon Gibson",
+    "Proj":3.4,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":3.04,
+    "ProjPointsPerDollar":11.33,
+    "Value":3.85
+  },
+  {
+    "Position":"TE",
+    "Name":"Gary Barnidge",
+    "Proj":3.32,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":1.486,
+    "ProjPointsPerDollar":11.07,
+    "Value":3.67
+  },
+  {
+    "Position":"TE",
+    "Name":"Jeff Cumberland",
+    "Proj":3.28,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":4.55,
+    "ProjPointsPerDollar":10.93,
+    "Value":3.59
+  },
+  {
+    "Position":"TE",
+    "Name":"Daniel Fells",
+    "Proj":3.22,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":6.071,
+    "ProjPointsPerDollar":10.73,
+    "Value":3.46
+  },
+  {
+    "Position":"DST",
+    "Name":"Rams ",
+    "Proj":3,
+    "Salary":2800,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":5,
+    "ProjPointsPerDollar":10.71,
+    "Value":3.21
+  },
+  {
+    "Position":"WR",
+    "Name":"Lance Moore",
+    "Proj":3.2,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":4.983,
+    "ProjPointsPerDollar":10.67,
+    "Value":3.41
+  },
+  {
+    "Position":"RB",
+    "Name":"Marion Grice",
+    "Proj":3.17,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":10.57,
+    "Value":3.35
+  },
+  {
+    "Position":"WR",
+    "Name":"Damaris Johnson",
+    "Proj":3.1,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":4.488,
+    "ProjPointsPerDollar":10.33,
+    "Value":3.2
+  },
+  {
+    "Position":"TE",
+    "Name":"Garrett Graham",
+    "Proj":3.01,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":3.457,
+    "ProjPointsPerDollar":10.03,
+    "Value":3.02
+  },
+  {
+    "Position":"TE",
+    "Name":"Ladarius Green",
+    "Proj":2.97,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":4.071,
+    "ProjPointsPerDollar":9.9,
+    "Value":2.94
+  },
+  {
+    "Position":"WR",
+    "Name":"Stedman Bailey",
+    "Proj":2.9,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":3.06,
+    "ProjPointsPerDollar":9.67,
+    "Value":2.8
+  },
+  {
+    "Position":"TE",
+    "Name":"Niles Paul",
+    "Proj":3.27,
+    "Salary":3400,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":9.263,
+    "ProjPointsPerDollar":9.62,
+    "Value":3.14
+  },
+  {
+    "Position":"RB",
+    "Name":"Darren Sproles",
+    "Proj":3.83,
+    "Salary":4100,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":13.817,
+    "ProjPointsPerDollar":9.34,
+    "Value":3.58
+  },
+  {
+    "Position":"RB",
+    "Name":"Mike James",
+    "Proj":2.75,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0.283,
+    "ProjPointsPerDollar":9.17,
+    "Value":2.52
+  },
+  {
+    "Position":"RB",
+    "Name":"Doug Martin",
+    "Proj":3.46,
+    "Salary":3900,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":7.4,
+    "ProjPointsPerDollar":8.87,
+    "Value":3.07
+  },
+  {
+    "Position":"WR",
+    "Name":"Brice Butler",
+    "Proj":2.6,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":4.933,
+    "ProjPointsPerDollar":8.67,
+    "Value":2.25
+  },
+  {
+    "Position":"WR",
+    "Name":"Dane Sanzenbacher",
+    "Proj":2.6,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":2.1,
+    "ProjPointsPerDollar":8.67,
+    "Value":2.25
+  },
+  {
+    "Position":"RB",
+    "Name":"Robert Turbin",
+    "Proj":2.56,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":4.657,
+    "ProjPointsPerDollar":8.53,
+    "Value":2.18
+  },
+  {
+    "Position":"RB",
+    "Name":"Maurice Jones-Drew",
+    "Proj":2.54,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":2.92,
+    "ProjPointsPerDollar":8.47,
+    "Value":2.15
+  },
+  {
+    "Position":"WR",
+    "Name":"Chris Givens",
+    "Proj":2.5,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":3.12,
+    "ProjPointsPerDollar":8.33,
+    "Value":2.08
+  },
+  {
+    "Position":"TE",
+    "Name":"Cooper Helfet",
+    "Proj":2.42,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":4.7,
+    "ProjPointsPerDollar":8.07,
+    "Value":1.95
+  },
+  {
+    "Position":"RB",
+    "Name":"Toby Gerhart",
+    "Proj":2.36,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":5.983,
+    "ProjPointsPerDollar":7.87,
+    "Value":1.86
+  },
+  {
+    "Position":"TE",
+    "Name":"Jacob Tamme",
+    "Proj":2.34,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":3.1,
+    "ProjPointsPerDollar":7.8,
+    "Value":1.83
+  },
+  {
+    "Position":"WR",
+    "Name":"Brian Tyms",
+    "Proj":2.3,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":3.767,
+    "ProjPointsPerDollar":7.67,
+    "Value":1.76
+  },
+  {
+    "Position":"WR",
+    "Name":"Vincent Brown",
+    "Proj":2.3,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":2.6,
+    "ProjPointsPerDollar":7.67,
+    "Value":1.76
+  },
+  {
+    "Position":"DST",
+    "Name":"Raiders ",
+    "Proj":2,
+    "Salary":2700,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":2.857,
+    "ProjPointsPerDollar":7.41,
+    "Value":1.48
+  },
+  {
+    "Position":"RB",
+    "Name":"Jordan Todman",
+    "Proj":2.15,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":2.438,
+    "ProjPointsPerDollar":7.17,
+    "Value":1.54
+  },
+  {
+    "Position":"RB",
+    "Name":"De'Anthony Thomas",
+    "Proj":2.14,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":5.567,
+    "ProjPointsPerDollar":7.13,
+    "Value":1.53
+  },
+  {
+    "Position":"TE",
+    "Name":"Dion Sims",
+    "Proj":2.11,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":3.514,
+    "ProjPointsPerDollar":7.03,
+    "Value":1.48
+  },
+  {
+    "Position":"WR",
+    "Name":"Ted Ginn Jr.",
+    "Proj":2.1,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":2.3,
+    "ProjPointsPerDollar":7,
+    "Value":1.47
+  },
+  {
+    "Position":"RB",
+    "Name":"Ryan Mathews",
+    "Proj":2.83,
+    "Salary":4200,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":10.85,
+    "ProjPointsPerDollar":6.74,
+    "Value":1.91
+  },
+  {
+    "Position":"WR",
+    "Name":"Denarius Moore",
+    "Proj":2,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":3.283,
+    "ProjPointsPerDollar":6.67,
+    "Value":1.33
+  },
+  {
+    "Position":"WR",
+    "Name":"Rishard Matthews",
+    "Proj":2,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":2.243,
+    "ProjPointsPerDollar":6.67,
+    "Value":1.33
+  },
+  {
+    "Position":"WR",
+    "Name":"Jacoby Jones",
+    "Proj":2,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0.9,
+    "ProjPointsPerDollar":6.67,
+    "Value":1.33
+  },
+  {
+    "Position":"RB",
+    "Name":"Marcel Reece",
+    "Proj":1.94,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":3.667,
+    "ProjPointsPerDollar":6.47,
+    "Value":1.25
+  },
+  {
+    "Position":"RB",
+    "Name":"Lance Dunbar",
+    "Proj":1.91,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":3.263,
+    "ProjPointsPerDollar":6.37,
+    "Value":1.22
+  },
+  {
+    "Position":"WR",
+    "Name":"Ricardo Lockette",
+    "Proj":1.9,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":4.129,
+    "ProjPointsPerDollar":6.33,
+    "Value":1.2
+  },
+  {
+    "Position":"TE",
+    "Name":"Phillip Supernaw",
+    "Proj":1.86,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":6.2,
+    "Value":1.15
+  },
+  {
+    "Position":"TE",
+    "Name":"Brandon Myers",
+    "Proj":1.75,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":4.271,
+    "ProjPointsPerDollar":5.83,
+    "Value":1.02
+  },
+  {
+    "Position":"RB",
+    "Name":"Kyle Juszczyk",
+    "Proj":1.7,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":3.325,
+    "ProjPointsPerDollar":5.67,
+    "Value":0.96
+  },
+  {
+    "Position":"WR",
+    "Name":"Dwayne Harris",
+    "Proj":1.7,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":1.9,
+    "ProjPointsPerDollar":5.67,
+    "Value":0.96
+  },
+  {
+    "Position":"WR",
+    "Name":"Ace Sanders",
+    "Proj":1.7,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":1.05,
+    "ProjPointsPerDollar":5.67,
+    "Value":0.96
+  },
+  {
+    "Position":"WR",
+    "Name":"T.J. Graham",
+    "Proj":1.7,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0.525,
+    "ProjPointsPerDollar":5.67,
+    "Value":0.96
+  },
+  {
+    "Position":"WR",
+    "Name":"Kevin Norwood",
+    "Proj":1.6,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":2.35,
+    "ProjPointsPerDollar":5.33,
+    "Value":0.85
+  },
+  {
+    "Position":"RB",
+    "Name":"Bilal Powell",
+    "Proj":1.55,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":2.975,
+    "ProjPointsPerDollar":5.17,
+    "Value":0.8
+  },
+  {
+    "Position":"RB",
+    "Name":"Joseph Randle",
+    "Proj":1.54,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":1.963,
+    "ProjPointsPerDollar":5.13,
+    "Value":0.79
+  },
+  {
+    "Position":"RB",
+    "Name":"Chris Polk",
+    "Proj":1.53,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":1.68,
+    "ProjPointsPerDollar":5.1,
+    "Value":0.78
+  },
+  {
+    "Position":"WR",
+    "Name":"Robert Herron",
+    "Proj":1.5,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":2.967,
+    "ProjPointsPerDollar":5,
+    "Value":0.75
+  },
+  {
+    "Position":"WR",
+    "Name":"Andre Caldwell",
+    "Proj":1.5,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0.514,
+    "ProjPointsPerDollar":5,
+    "Value":0.75
+  },
+  {
+    "Position":"RB",
+    "Name":"Ronnie Brown",
+    "Proj":1.41,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":1.517,
+    "ProjPointsPerDollar":4.7,
+    "Value":0.66
+  },
+  {
+    "Position":"WR",
+    "Name":"Charles Johnson",
+    "Proj":1.4,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":3.233,
+    "ProjPointsPerDollar":4.67,
+    "Value":0.65
+  },
+  {
+    "Position":"RB",
+    "Name":"Robert Hughes",
+    "Proj":1.4,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0.986,
+    "ProjPointsPerDollar":4.67,
+    "Value":0.65
+  },
+  {
+    "Position":"TE",
+    "Name":"C.J. Fiedorowicz",
+    "Proj":1.33,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.514,
+    "ProjPointsPerDollar":4.43,
+    "Value":0.59
+  },
+  {
+    "Position":"WR",
+    "Name":"Keshawn Martin",
+    "Proj":1.3,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.725,
+    "ProjPointsPerDollar":4.33,
+    "Value":0.56
+  },
+  {
+    "Position":"RB",
+    "Name":"Montee Ball",
+    "Proj":1.57,
+    "Salary":3700,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":9.35,
+    "ProjPointsPerDollar":4.24,
+    "Value":0.67
+  },
+  {
+    "Position":"TE",
+    "Name":"Jack Doyle",
+    "Proj":1.22,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":2.6,
+    "ProjPointsPerDollar":4.07,
+    "Value":0.5
+  },
+  {
+    "Position":"WR",
+    "Name":"Adam Thielen",
+    "Proj":1.1,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":1.213,
+    "ProjPointsPerDollar":3.67,
+    "Value":0.4
+  },
+  {
+    "Position":"WR",
+    "Name":"Josh Huff",
+    "Proj":1.1,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.867,
+    "ProjPointsPerDollar":3.67,
+    "Value":0.4
+  },
+  {
+    "Position":"WR",
+    "Name":"Devin Street",
+    "Proj":1.1,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0.475,
+    "ProjPointsPerDollar":3.67,
+    "Value":0.4
+  },
+  {
+    "Position":"WR",
+    "Name":"Dri Archer",
+    "Proj":1.09,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":1.433,
+    "ProjPointsPerDollar":3.63,
+    "Value":0.4
+  },
+  {
+    "Position":"TE",
+    "Name":"James Hanna",
+    "Proj":1.04,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0.213,
+    "ProjPointsPerDollar":3.47,
+    "Value":0.36
+  },
+  {
+    "Position":"TE",
+    "Name":"Ryan Hewitt",
+    "Proj":0.95,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0.443,
+    "ProjPointsPerDollar":3.17,
+    "Value":0.3
+  },
+  {
+    "Position":"WR",
+    "Name":"Jaron Brown",
+    "Proj":0.9,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0.743,
+    "ProjPointsPerDollar":3,
+    "Value":0.27
+  },
+  {
+    "Position":"WR",
+    "Name":"Kevin Ogletree",
+    "Proj":0.9,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":3,
+    "Value":0.27
+  },
+  {
+    "Position":"RB",
+    "Name":"James White",
+    "Proj":0.87,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":4.15,
+    "ProjPointsPerDollar":2.9,
+    "Value":0.25
+  },
+  {
+    "Position":"RB",
+    "Name":"Darrel Young",
+    "Proj":0.87,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":4.125,
+    "ProjPointsPerDollar":2.9,
+    "Value":0.25
+  },
+  {
+    "Position":"TE",
+    "Name":"Rhett Ellison",
+    "Proj":0.86,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":1.888,
+    "ProjPointsPerDollar":2.87,
+    "Value":0.25
+  },
+  {
+    "Position":"WR",
+    "Name":"Bryan Walters",
+    "Proj":0.8,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":1.533,
+    "ProjPointsPerDollar":2.67,
+    "Value":0.21
+  },
+  {
+    "Position":"TE",
+    "Name":"Derek Carrier",
+    "Proj":0.68,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":2.586,
+    "ProjPointsPerDollar":2.27,
+    "Value":0.15
+  },
+  {
+    "Position":"RB",
+    "Name":"Anthony Sherman",
+    "Proj":0.65,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":2.386,
+    "ProjPointsPerDollar":2.17,
+    "Value":0.14
+  },
+  {
+    "Position":"WR",
+    "Name":"Bruce Ellington",
+    "Proj":0.6,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":2.3,
+    "ProjPointsPerDollar":2,
+    "Value":0.12
+  },
+  {
+    "Position":"RB",
+    "Name":"Bernard Pierce",
+    "Proj":0.59,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":6.46,
+    "ProjPointsPerDollar":1.97,
+    "Value":0.12
+  },
+  {
+    "Position":"RB",
+    "Name":"Kiero Small",
+    "Proj":0.55,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":1.83,
+    "Value":0.1
+  },
+  {
+    "Position":"RB",
+    "Name":"Will Johnson",
+    "Proj":0.51,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0.8,
+    "ProjPointsPerDollar":1.7,
+    "Value":0.09
+  },
+  {
+    "Position":"WR",
+    "Name":"Chris Owusu",
+    "Proj":0.5,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":2.925,
+    "ProjPointsPerDollar":1.67,
+    "Value":0.08
+  },
+  {
+    "Position":"RB",
+    "Name":"Will Ta'ufo'ou",
+    "Proj":0.5,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":1.4,
+    "ProjPointsPerDollar":1.67,
+    "Value":0.08
+  },
+  {
+    "Position":"WR",
+    "Name":"Seyi Ajirotutu",
+    "Proj":0.5,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0.263,
+    "ProjPointsPerDollar":1.67,
+    "Value":0.08
+  },
+  {
+    "Position":"TE",
+    "Name":"Brian Leonhardt",
+    "Proj":0.45,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":1.8,
+    "ProjPointsPerDollar":1.5,
+    "Value":0.07
+  },
+  {
+    "Position":"TE",
+    "Name":"Kevin Brock",
+    "Proj":0.43,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0.14,
+    "ProjPointsPerDollar":1.43,
+    "Value":0.06
+  },
+  {
+    "Position":"RB",
+    "Name":"Jamize Olawale",
+    "Proj":0.41,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0.657,
+    "ProjPointsPerDollar":1.37,
+    "Value":0.06
+  },
+  {
+    "Position":"TE",
+    "Name":"Vance McDonald",
+    "Proj":0.4,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0.8,
+    "ProjPointsPerDollar":1.33,
+    "Value":0.05
+  },
+  {
+    "Position":"RB",
+    "Name":"C.J. Anderson",
+    "Proj":0.34,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":1.25,
+    "ProjPointsPerDollar":1.13,
+    "Value":0.04
+  },
+  {
+    "Position":"TE",
+    "Name":"Nic Jacobs",
+    "Proj":0.21,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":1.44,
+    "ProjPointsPerDollar":0.7,
+    "Value":0.01
+  },
+  {
+    "Position":"TE",
+    "Name":"Adrien Robinson",
+    "Proj":0.21,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":1.129,
+    "ProjPointsPerDollar":0.7,
+    "Value":0.01
+  },
+  {
+    "Position":"RB",
+    "Name":"Brandon Bolden",
+    "Proj":0.21,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0.663,
+    "ProjPointsPerDollar":0.7,
+    "Value":0.01
+  },
+  {
+    "Position":"WR",
+    "Name":"Ryan Grant",
+    "Proj":0.2,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":1.338,
+    "ProjPointsPerDollar":0.67,
+    "Value":0.01
+  },
+  {
+    "Position":"WR",
+    "Name":"Aldrick Robinson",
+    "Proj":0.2,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":0.32,
+    "ProjPointsPerDollar":0.67,
+    "Value":0.01
+  },
+  {
+    "Position":"WR",
+    "Name":"Corey Washington",
+    "Proj":0.2,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.67,
+    "Value":0.01
+  },
+  {
+    "Position":"TE",
+    "Name":"James Casey",
+    "Proj":0.18,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":1.786,
+    "ProjPointsPerDollar":0.6,
+    "Value":0.01
+  },
+  {
+    "Position":"TE",
+    "Name":"John Phillips",
+    "Proj":0.18,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0.888,
+    "ProjPointsPerDollar":0.6,
+    "Value":0.01
+  },
+  {
+    "Position":"TE",
+    "Name":"Ryan Griffin",
+    "Proj":0.18,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.425,
+    "ProjPointsPerDollar":0.6,
+    "Value":0.01
+  },
+  {
+    "Position":"TE",
+    "Name":"Logan Paulsen",
+    "Proj":0.17,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":1.575,
+    "ProjPointsPerDollar":0.57,
+    "Value":0.01
+  },
+  {
+    "Position":"TE",
+    "Name":"Demetrius Harris",
+    "Proj":0.17,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0.486,
+    "ProjPointsPerDollar":0.57,
+    "Value":0.01
+  },
+  {
+    "Position":"RB",
+    "Name":"Latavius Murray",
+    "Proj":0.16,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0.1,
+    "ProjPointsPerDollar":0.53,
+    "Value":0.01
+  },
+  {
+    "Position":"RB",
+    "Name":"Cedric Peerman",
+    "Proj":0.14,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0.429,
+    "ProjPointsPerDollar":0.47,
+    "Value":0.01
+  },
+  {
+    "Position":"RB",
+    "Name":"Jonathan Grimes",
+    "Proj":0.13,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.8,
+    "ProjPointsPerDollar":0.43,
+    "Value":0.01
+  },
+  {
+    "Position":"RB",
+    "Name":"Bruce Miller",
+    "Proj":0.12,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0.671,
+    "ProjPointsPerDollar":0.4,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"John Conner",
+    "Proj":0.1,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.33,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Johnny Manziel",
+    "Proj":0.154,
+    "Salary":5000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.31,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Virgil Green",
+    "Proj":0.05,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0.586,
+    "ProjPointsPerDollar":0.17,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Michael Hoomanawanui",
+    "Proj":0.05,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0.513,
+    "ProjPointsPerDollar":0.17,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Michael Palmer",
+    "Proj":0.04,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0.888,
+    "ProjPointsPerDollar":0.13,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Luke Stocker",
+    "Proj":0.04,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0.757,
+    "ProjPointsPerDollar":0.13,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"David Ausberry",
+    "Proj":0.04,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0.567,
+    "ProjPointsPerDollar":0.13,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Matt Spaeth",
+    "Proj":0.04,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.13,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Zach Sudfeld",
+    "Proj":0.03,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0.313,
+    "ProjPointsPerDollar":0.1,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Jimmy Garoppolo",
+    "Proj":0.026,
+    "Salary":5000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":2.393,
+    "ProjPointsPerDollar":0.05,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Chad Henne",
+    "Proj":0.02,
+    "Salary":5000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":10.727,
+    "ProjPointsPerDollar":0.04,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Henry Hynoski",
+    "Proj":0.01,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0.014,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Kirk Cousins",
+    "Proj":0.016,
+    "Salary":5800,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":17.567,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Geno Smith",
+    "Proj":0.016,
+    "Salary":5100,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":11.713,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Christian Ponder",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":7.24,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Brandon Weeden",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":3.13,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Ryan Nassib",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":1.2,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Matt Hasselbeck",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0.25,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Mark Sanchez",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Chase Daniel",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Brock Osweiler",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Matt Moore",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":-0.2,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Tyrod Taylor",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":-0.3,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Matt Schaub",
+    "Proj":0.016,
+    "Salary":5000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":-0.5,
+    "ProjPointsPerDollar":0.03,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Tarvaris Jackson",
+    "Proj":0.008,
+    "Salary":5000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Josh McCown",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":12.033,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Drew Stanton",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":10.187,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Blaine Gabbert",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":6.02,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Shaun Hill",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":2.14,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Jason Campbell",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0.84,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Kellen Clemens",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Ryan Mallett",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":-0.1,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Bruce Gradkowski",
+    "Proj":0.012,
+    "Salary":5000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":-0.2,
+    "ProjPointsPerDollar":0.02,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Rashad Jennings",
+    "Proj":0,
+    "Salary":5500,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":15.1,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Louis Murphy Jr.",
+    "Proj":0,
+    "Salary":3400,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":12.925,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Brian Quick",
+    "Proj":0,
+    "Salary":3600,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":11.5,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Stevie Johnson",
+    "Proj":0,
+    "Salary":5300,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":11.071,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Cecil Shorts III",
+    "Proj":0,
+    "Salary":4100,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":10.52,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Owen Daniels",
+    "Proj":0,
+    "Salary":3200,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":10.357,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Roy Helu Jr.",
+    "Proj":0,
+    "Salary":3800,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":8.825,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Kyle Rudolph",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":8.533,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Jordan Cameron",
+    "Proj":0,
+    "Salary":3500,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":7.833,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Matt McGloin",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":7.46,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Donnie Avery",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":7.4,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Logan Thomas",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":7.24,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Kenny Britt",
+    "Proj":0,
+    "Salary":3100,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":6.9,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Mike Campanaro",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":6.833,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Donald Brown",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":6.64,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Tim Wright",
+    "Proj":0,
+    "Salary":4500,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":6.625,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Storm Johnson",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":6.333,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Stepfan Taylor",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":4.9,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Greg Little",
+    "Proj":0,
+    "Salary":3100,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":4.75,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Zach Miller",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":4.533,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Greg Salas",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":4.117,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Justin Brown",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":3.4,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Mike Brown",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":2.96,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Aaron Dobson",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":2.267,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Silas Redd Jr.",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":1.325,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Cyrus Gray",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":1.3,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Rob Housler",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":1.3,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Jeff Maehl",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":1.05,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Trey Watts",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":1.033,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Daniel Herron",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0.988,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Frankie Hammond Jr.",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0.729,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Russell Shepard",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0.714,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Albert Wilson",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0.7,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Darrius Heyward-Bey",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0.663,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Troy Niklas",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0.65,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"James Wright",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0.567,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Joe Banyard",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":0.443,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Jay Prosch",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.425,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Harold Hoskins",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0.425,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Brad Smith",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.42,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Griff Whalen",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0.413,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"MarQueis Gray",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":0.371,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Shaun Draughn",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0.271,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Trey Burton",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0.143,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Tyler Clutts",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0.138,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Josh Johnson",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Mike Kafka",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Case Keenum",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Landry Jones",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Matt Barkley",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Aaron Murray",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Tom Savage",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"QB",
+    "Name":"Dustin Vaughan",
+    "Proj":0,
+    "Salary":5000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Chase Reynolds",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Zach Line",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Michael Cox",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ind@NYG 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Glenn Winston",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Rex Burkhead",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Kapri Bibbs",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Mike Leach",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Clark Harris",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Jax@Cin 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Darren Fells",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Ari@Dal 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"David Johnson",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Andrew DePaola",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Kyle Nelson",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Brett Brackett",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Kevin McDermott",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Bal@Pit 08:30PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Alex Bayer",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Santana Moss",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Kassim Osgood",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Matthew Slater",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Marlon Moore",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Trindon Holliday",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Phil Bates",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Oak@Sea 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Dontrelle Inman",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"DeVier Posey",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Phi@Hou 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Rodney Smith",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"TB@Cle 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Isaiah Burse",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Saalim Hakim",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Quinton Patton",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Cody Latimer",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"WR",
+    "Name":"Walt Powell",
+    "Proj":0,
+    "Salary":3000,
+    "GameInfo":"NYJ@KC 01:00PM ET",
+    "AvgPointsPerGame":-0.25,
+    "ProjPointsPerDollar":0,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Damien Williams",
+    "Proj":-0.03,
+    "Salary":3000,
+    "GameInfo":"SD@Mia 01:00PM ET",
+    "AvgPointsPerGame":1,
+    "ProjPointsPerDollar":-0.1,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"Jerome Felton",
+    "Proj":-0.04,
+    "Salary":3000,
+    "GameInfo":"Was@Min 01:00PM ET",
+    "AvgPointsPerGame":0.263,
+    "ProjPointsPerDollar":-0.13,
+    "Value":0
+  },
+  {
+    "Position":"RB",
+    "Name":"James Develin",
+    "Proj":-0.06,
+    "Salary":3000,
+    "GameInfo":"Den@NE 04:25PM ET",
+    "AvgPointsPerGame":0.938,
+    "ProjPointsPerDollar":-0.2,
+    "Value":0
+  },
+  {
+    "Position":"TE",
+    "Name":"Cory Harkey",
+    "Proj":-0.3,
+    "Salary":3000,
+    "GameInfo":"StL@SF 04:05PM ET",
+    "AvgPointsPerGame":0.871,
+    "ProjPointsPerDollar":-1,
+    "Value":0.03
+  }
+  ]
