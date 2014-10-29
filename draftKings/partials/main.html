@@ -1,55 +1,129 @@
 <div class="container">
-  <div ng-controller="findUrl" >
-
   
-        <h2>{{dataSet.election}}</h2>
-      
-        <div ng-repeat="elections in dataSet.contest"  id="{{elections._id - 1000}}">
-          
-              <h3>{{ elections._nm | uppercase }}</h3>
+  <div ng-controller="Players" >
+
+    <div class="link_line" ng-repeat="link in links | filter:filters">
+    <div class="title"><a href="{{link.url}}" target="_blank">{{link.title}}</a></div>
+    <div class="category_label" ng-click="filters.category = link.category">{{ link.category }}</div>
+
+  </div>
+
+
+<div class="col-sm-7">
               <table class="table">
                 <thead>
-                  <th>Candidate</th>
-                  <th>Votes</th>
-                  <th>% of votes</th>
-                  <th></th>
+                  <th>
+                    <a ng-click="orderByField='Position'; reverseSort = !reverseSort">
+                    Position <span ng-show="orderByField == 'Position'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                        <select ng-model="byPosition.Position">
+                          <option value="">ALL</option>
+                          <option value="QB">QB</option>
+                          <option value="WR">WR</option>
+                          <option value="RB">RB</option>
+                          <option value="TE">TE</option>
+                          <option value="DST">DST</option>
+                        </select>
+
+                  </th>
+                  <th>
+
+                    <a ng-click="orderByField='Name'; reverseSort = !reverseSort">
+                    Name <span ng-show="orderByField == 'Name'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                  <th>
+
+                    <a ng-click="orderByField='Proj'; reverseSort = !reverseSort">
+                    Projected <span ng-show="orderByField == 'Proj'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                  <th>
+
+                    <a ng-click="orderByField='Salary'; reverseSort = !reverseSort">
+                    Cost <span ng-show="orderByField == 'Salary'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+
+                  <th>
+
+                    <a ng-click="orderByField='AvgPointsPerGame'; reverseSort = !reverseSort">
+                    Avg Pts/G <span ng-show="orderByField == 'AvgPointsPerGame'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+
+                  <th>
+
+                    <a ng-click="orderByField='ProjPointsPerDollar'; reverseSort = !reverseSort">
+                    ProjPts / $ <span ng-show="orderByField == 'ProjPointsPerDollar'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                  <th>
+
+                    <a ng-click="orderByField='Value'; reverseSort = !reverseSort">
+                    Value <span ng-show="orderByField == 'Value'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
                 </thead>
                   <tbody>
-                      <tr ng-repeat="candidate in candidate.choice | filter:{'_conid': 1001 + $index }:true" class="incumbent_{{candidate._inc}}">
-                        
+                      <tr ng-repeat="player in data | filter:byPosition | orderBy:orderByField:reverseSort">
                         <td style="width:200px">
-                          {{ candidate._nm }}
+                          {{ player.Position }}
+                        </td>                       
+                        <td style="width:200px">
+                          {{ player.Name }}
                         </td>
-
-                        <td ng-repeat="result in dataSet2 | filter:{'_id': candidate._id }:true | limitTo:1"  style="width:100px">                    
-                          {{result._vot}}
+                        <td style="width:200px">
+                          {{ player.Proj }}
                         </td>
-
-                        <td ng-repeat="result in dataSet2 | filter:{'_id': candidate._id }:true | limitTo:1" style="width:100px">
-                          <p style="display:inline">{{result._prc}}%</p>
+                        <td style="width:250px">
+                          ${{ player.Salary }}
                         </td>
-
-                        <td ng-repeat="result in dataSet2 | filter:{'_id': candidate._id }:true | limitTo:1">
-                       
-                          <div class="progress">
-                            <div class="progress-bar progress-bar-info status_{{result._e}}" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{result._prc}}%;min-width:1px">
-                            </div>
-                        </div>
-
+                        <td style="width:200px">
+                          {{ player.AvgPointsPerGame }}
                         </td>
-
+                        <td style="width:200px">
+                          {{ player.ProjPointsPerDollar }}
+                        </td>
+                        <td style="width:200px">
+                          {{ player.Value }}
+                        </td>
                       </tr>
-<div class="alert alert-success" role="alert"  style="display:inline-block;margin-bottom:0px">
-                        <p style="display:inline-block" ng-repeat="poll in polls | filter:{'_id': $index }:true | limitTo:1">Polls open: {{poll._stpol}}</p>
-</div>
-<div class="alert alert-danger" role="alert" style="display:inline-block;margin-left:20px;margin-bottom:0px" >
-                        <p  ng-repeat="poll in polls | filter:{'_id': $index }:true | limitTo:1">Polls closed: {{poll._clpol}}</p>
-</div>
                   </tbody>
               </table>
 
-       
+       </div>
+
+
+       <div class="col-sm-5">
+
+          <h3>ProjPts / $</h3>
+
+          <p>(ProjPts / Cost) x 1000
+            <br>
+            <br>
+            It considers the value of each player based on their projected value and their cost. The higher the number the better the value.</p>
+
+          <br>
+
+          <h3>Value</h3>
+
+          <p>(ProjPts / $) x (ProjPts)
+
+            <br>
+            <br>
+            A value that takes into account <i>ProjPts / $</i> but gives weight to players that offer more projected points. 
+            <br><br>
+            ie. A player with excellent <i>ProjPts / $</i> value, but is only projected to get 5 points, will have a <i>lower value</i> than a player with the same <i>ProjPts / $</i> who is projected to get 15 points.</p>
+
+       </div>
     
 
-  </div>
 </div>
