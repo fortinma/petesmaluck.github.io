@@ -1,0 +1,16 @@
+.progress{
+	max-width:100px;
+	border-radius: 0px;
+	border:solid 1px #222;
+}
+
+.container{
+	width:100%;
+	padding:0px;
+}
+.body{
+	color:#000;
+}
+table{
+	color:#000;
+}

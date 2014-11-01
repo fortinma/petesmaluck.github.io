@@ -1,0 +1,167 @@
+<div class="container">
+  
+  <div ng-controller="Players" >
+
+    <div class="link_line" ng-repeat="link in links | filter:filters">
+    <div class="title"><a href="{{link.url}}" target="_blank">{{link.title}}</a></div>
+    <div class="category_label" ng-click="filters.category = link.category">{{ link.category }}</div>
+
+  </div>
+
+
+<div class="col-sm-7">
+              <table class="table">
+                <thead>
+                  <th style="width:400px"></th>
+                  <th style="background:rgba(0,0,0,0.4)"></th>
+                  
+                  <th style="width:200px;background:rgba(0,0,0,0.4)">Total Faculty</th>
+                  <th style="background:rgba(0,0,0,0.3)"></th>
+                  <th style="width:200px;background:rgba(0,0,0,0.3)">Math Dept</th>
+                  <th style="background:rgba(0,0,0,0.2)"></th>
+                  <th style="width:200px;background:rgba(0,0,0,0.2)">Comp-Sci Dept</th>
+                  <th style="background:rgba(0,0,0,0.1)"></th>
+                  <th style="width:200px;background:rgba(0,0,0,0.1)">Comp and Elec ENG</th>
+                </thead>
+                <thead>
+                  <th>
+                    <a ng-click="orderByField='University'; reverseSort = !reverseSort">
+                    University <span ng-show="orderByField == 'University'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+
+                  </th>
+
+                  <th>
+
+                    <a ng-click="orderByField='Total_Faculty'; reverseSort = !reverseSort">
+                    Total <span ng-show="orderByField == 'Total_Faculty'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                  <th>
+
+
+                  <a ng-click="orderByField='Total_Faculty/Total_Women'; reverseSort = !reverseSort">
+                    % women <span ng-show="orderByField == 'Total_Faculty/Total_Women'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+               
+                  <th>
+
+                    <a ng-click="orderByField='Total_Math'; reverseSort = !reverseSort">
+                    Total <span ng-show="orderByField == 'Total_Math'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                  <th>
+
+                  <a ng-click="orderByField='Women_Math/Total_Math'; reverseSort = !reverseSort">
+                    % women <span ng-show="orderByField == 'Women_Math/Total_Math'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+
+                  <th>
+
+                    <a ng-click="orderByField='Total_CS'; reverseSort = !reverseSort">
+                    Total <span ng-show="orderByField == 'Total_CS'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+                    </a>
+
+                  </th>
+
+                  <th>
+
+                    <a ng-click="orderByField='Women_CS/Total_CS'; reverseSort = !reverseSort">
+                    % women <span ng-show="orderByField == 'Women_CS/Total_CS'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+                  </th>
+                  <th>
+
+                    <a ng-click="orderByField='Total_Comp_Eng_EE'; reverseSort = !reverseSort">
+                    Total <span ng-show="orderByField == 'Total_Comp_Eng_EE'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                  <th>
+
+<a ng-click="orderByField='Women_Comp_Eng_EE/Total_Comp_Eng_EE'; reverseSort = !reverseSort">
+                    % women <span ng-show="orderByField == 'Women_Comp_Eng_EE/Total_Comp_Eng_EE'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                    </a>
+
+                  </th>
+                </thead>
+                  <tbody>
+                      <tr ng-repeat="player in data | filter:byPosition | orderBy:orderByField:reverseSort">
+                        <td>
+                         <h3> {{ player.University }}</h3>
+                        </td>       
+                        <td style="background:rgba(0,0,0,0.4)">
+                          <h3 style="border:solid 1px #222;padding:20px;border-radius:40px">{{ player.Total_Faculty }}</h3>
+                        </td>                 
+                        <td style="background:rgba(0,0,0,0.4)">
+                    
+                          <h3 style="text-align:center">{{ player.Total_Women/player.Total_Faculty * 100 | number:1}}%</h3>
+   
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{ player.Total_Women/player.Total_Faculty * 100}}%">
+                         
+                          </div>
+                        </div>
+                 
+                        </td>
+                    <td style="background:rgba(0,0,0,0.3)">
+                          <h3 style="border:solid 1px #222;padding:20px;border-radius:40px">{{ player.Total_Math }}</h3>
+                        </td>                 
+                        <td style="background:rgba(0,0,0,0.3)">
+                    
+                          <h3 style="text-align:center">{{ player.Women_Math/player.Total_Math * 100 | number:1 }}%</h3>
+   
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{ player.Women_Math/player.Total_Math * 100}}%">
+                            
+                          </div>
+                        </div>
+                 
+                        </td>
+                    <td style="background:rgba(0,0,0,0.2)">
+                          <h3 style="border:solid 1px #222;padding:20px;border-radius:40px">{{ player.Total_CS }}</h3>
+                        </td>                 
+                        <td style="background:rgba(0,0,0,0.2)">
+                    
+                          <h3 style="text-align:center">{{ player.Women_CS/player.Total_CS * 100 | number:1 }}%</h3>
+   
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{ player.Women_CS/player.Total_CS * 100}}%">
+                            
+                          </div>
+                        </div>
+                 
+                        </td>
+                    <td style="background:rgba(0,0,0,0.1)">
+                          <h3 style="border:solid 1px #222;padding:20px;border-radius:40px">{{ player.Total_Comp_Eng_EE }}</h3>
+                        </td>                 
+                        <td style="background:rgba(0,0,0,0.1)">
+                    
+                          <h3 style="text-align:center">{{ player.Women_Comp_Eng_EE/player.Total_Comp_Eng_EE * 100 | number:1 }}%</h3>
+   
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{ player.Women_Comp_Eng_EE/player.Total_Comp_Eng_EE * 100}}%">
+                            
+                          </div>
+                        </div>
+                 
+                        </td>
+                      </tr>
+                  </tbody>
+              </table>
+
+       </div>
+
+
+
+    
+
+</div>
