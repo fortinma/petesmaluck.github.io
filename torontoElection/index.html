@@ -352,13 +352,35 @@ var xAxis = d3.svg.axis().scale(x)
           var polygonsWards = wardDivisions.selectAll("path")
             .data(geoJsonWards.features)
             .attr("d", pathWards) // update existing paths
-          .enter().append("svg:path")
-            .attr("d", pathWards)
-            .attr('id', function(d) {return d.properties.AREA_LONG_} );
+          .enter();
 
-            polygonsWards.style('stroke','white')
+
+            var polygonsText = wardDivisions.selectAll(".wardNumber")
+            .data(geoJsonWards.features)
+            .attr("d", pathWards) // update existing paths
+            .enter();
+
+          polygonsWards.append("svg:path")
+            .attr("d", pathWards)
+            .attr('id', function(d) {return d.properties.AREA_LONG_} )
+                          .style('stroke','white')
                           .style('stroke-width',2)
                           .style('fill','none');
+
+            polygonsText.append('g').append("svg:text")
+                    .attr('class','wardNumber')
+                    .text(function(d){
+                        return d.properties.SCODE_NAME;
+                    })
+                    .attr("x", function(d){
+                        return path.centroid(d)[0];
+                    })
+                    .attr("y", function(d){
+                        return  path.centroid(d)[1];
+                    })
+                    .attr("text-anchor","middle")
+                    .attr('font-size','12pt');
+                         
 
 
             polygons.style('fill', function(d){
