@@ -166,7 +166,12 @@ path {
     shape-rendering: crispEdges;
 
 }
-
+.wardNumber{
+  pointer-events:none;
+}
+.wardBoundaries{
+  pointer-events:none;
+}
     </style>
 </head>
 <body>
@@ -359,13 +364,14 @@ var xAxis = d3.svg.axis().scale(x)
           .enter();
 
           polygonsWards.append("svg:path")
+            .attr('class','wardBoundaries')
             .attr("d", pathWards)
             .attr('id', function(d) {return d.properties.AREA_LONG_} )
             .style('stroke','white')
             .style('stroke-width',2)
             .style('fill','none')
             
-
+            //WARD NUMBERS - CENTERED
             polygonsWards.append("text").text(function(d){
                         return d.properties.SCODE_NAME;
                     })
@@ -377,12 +383,10 @@ var xAxis = d3.svg.axis().scale(x)
                     })
                     .attr("text-anchor","middle")
                     .attr('font-size','12pt')
+                    .attr('class','wardNumber')
                     .style('fill','#fff');
-                          
 
-
-            
-
+                  
 
             polygons.style('fill', function(d){
               if (d.properties.Chow_perc > d.properties.Ford_perc && d.properties.Chow_perc > d.properties.Tory_perc){
