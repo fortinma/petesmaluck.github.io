@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<!-- Referenced as an example from by rabidGadfly.com -->
+<!-- http://rabidgadfly.com/2013/02/angular-and-xml-no-problem/ -->
+
+<!-- Define this as an AngularJS app that uses the module named myApp -->
+<html ng-app="myApp">
+
+<head>
+    <!-- Don't forget to load angularjs -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <!-- Our modules and controller -->
+  <script src="lib/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+        <script src="js/jquery-1.8.2.js"></script> 
+    <script src="js/bootstrap.js"></script> 
+
+       
+         <link href="css/bootstrap.css" rel="stylesheet">
+         <link href="css/style.css" rel="stylesheet">
+    <link href=
+    "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900'
+    rel='stylesheet' type='text/css'>
+     <!-- end: CSS -->
+    
+</head>
+
+    <style type="text/css">
+h3 {
+    line-height:28px;
+
+    }
+    p {
+    margin-bottom:0px;
+    line-height: 22px;
+    font-size:16px;
+    }
+    .main{
+    background: #431701;
+
+    }
+
+    .carousel {
+    height: 452px;
+    overflow: hidden;
+    width:100%;
+    margin-bottom: 0px;
+    }
+    .carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    }
+    .carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+    }
+    .carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+    }
+    .carousel-control {
+    top:50%;
+    }
+    #footer{
+    padding-bottom:60px;
+    background: url('img/blk_bkrnd.jpg');
+    padding-top:20px;
+    }
+
+    #footer p{
+    font-size: 18px;
+    line-height: 26px;
+    padding:0px 20px;
+    }
+
+    #footer h3 {
+    padding: 2px 20px !important;
+    margin-bottom: 10px;
+    color: #cdcccc;
+    border-bottom: 0px solid #666;
+    }
+    /* .gradient{
+    background: url('img/blk_bkrnd.jpg');
+    background-repeat: repeat;
+    padding-bottom:20px;
+    }
+    */
+
+    .navbar .nav {
+    position: relative;
+    left: 0;
+    display: block;
+    float: left;
+    margin: 0 0 0 0;
+    }
+    header{
+    background: url('img/blk_bkrnd.jpg');
+    color:white;
+    }
+    header h1,h2,h3{
+    color:white;
+    }
+    .fa{
+    color:white;
+    }
+    .carousel-control {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 27px;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    border: 3px solid #222;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 0px;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    }
+    .nav-stacked{
+    width:100%;
+    font-size: 16px;
+    background-color:#431701;
+    }
+    .navbar, .navbar-inner, .nav {
+    float: right;
+    background: #431701;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0px;
+    margin: 0;
+    }
+
+    #footer ul li:active {
+
+    color: #FFF;
+    background: rgba(163 , 155 , 121, 0.8);
+    }
+
+    #footer ul li {
+    background: rgba(163 , 155 , 121, 0.6);
+    border-left: 3px solid #431701;
+    }
+
+    #copyright{
+    background: #431701;
+    }
+    #copyright p{
+    color: #cdcccc;
+    }
+    .logo{
+    padding-top:20px;
+    }
+    .icon{
+    font-size:30px;
+    }
+
+    .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    color: #555555;
+    cursor: default;
+    background-color: rgba(0,0,0,0); 
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    }
+
+    .nav-stacked {
+    font-size: 20px
+    }
+
+    .nav > li > a:hover {
+    text-decoration: none;
+    background: #431701;
+    }
+
+    .nav-tabs.nav-stacked > li > a {
+    border: 1px solid #222;
+    }
+
+    .nav-tabs.nav-stacked:hover > li > a {
+    border: 1px solid #222;
+    }
+
+    .nav-tabs.nav-stacked > li:last-child > a {
+    -webkit-border-bottom-right-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+    -webkit-border-bottom-left-radius: 0px; 
+    border-bottom-left-radius: 0px; 
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    }
+    .nav-tabs.nav-stacked > li:first-child > a {
+    -webkit-border-top-right-radius: 0px; 
+    border-top-right-radius: 0px; 
+    -webkit-border-top-left-radius: 0px; 
+    border-top-left-radius: 0px; 
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-topleft: 0px;
+    }
+
+    #footer ul li.active {
+    background: rgba(163 , 155 , 121, 1);
+    border-left: 3px solid #431701;
+    }
+    .member{
+    padding-right:30px;
+    }
+
+    .button {
+        background-color : #9C0;
+    }
+    .button.active {
+        background-color: #C00;
+    }
+
+    li {
+        line-height:35px;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <!--start: Header -->
+
+    <header style="padding-bottom:65px">
+        <!--start: Container -->
+
+        <div class="container">
+            <!--start: Row -->
+
+            <div class="row">
+                <!--start: Logo -->
+
+                <div class="span4"><img class="logo" src=
+                "img/roque_logo.png"></div><!--end: Logo -->
+                <!--start: Navigation -->
+
+                <div class="span8">
+                    <div class="navbar navbar-inverse">
+                        <div class="navbar-inner">
+                            <a class="btn btn-navbar" data-target=
+                            ".nav-collapse" data-toggle="collapse"><span class=
+                            "icon-bar"></span> <span class="icon-bar"></span>
+                            <span class="icon-bar"></span></a>
+
+                            <div class="nav-collapse collapse">
+                                <div style=
+                                "padding-top:25px;padding-bottom:30px;float:right;text-align:end;">
+                                <h4 style=
+                                "display:inline;padding-right:20px;color:#cdcccc;font-size:16px">
+                                    <i class="fa fa-envelope" style=
+                                    "padding-right:5px"></i>
+                                    info@roqueroofing.com</h4>
+
+                                    <h4 style=
+                                    "display:inline;padding-right:30px;color:#cdcccc">
+                                    <i class="fa fa-phone" style=
+                                    "padding-right:5px"></i>
+                                    905-525-9689</h4><span style=
+                                    "float:right;font-size:12px;line-height:12px;display:inline">3
+                                    Clark Avenue<br>
+                                    Hamilton, ON L8L 5J7</span>
+                                </div>
+
+                                <ul class="nav" style="float:right">
+                                    <li class="active">
+                                        <a href="#">Home</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle=
+                                        "dropdown" href="#/services">Services</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle=
+                                        "dropdown" href="#/references">References
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#/insurance">Insurance & Bonding</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#/safety">Safety First</a>
+                                    </li>
+
+                                    <li class="dropdown"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end: Navigation -->
+            </div><!--end: Row -->
+        </div><!--end: Container-->
+    </header><!--end: Header-->
+
+    <div ng-view></div>
+
+    <div class="row" style="border-bottom:solid 2px #222">
+        <div class="container">
+            <div class="span12" style="background:#fff;padding:20px 0;">
+            <h3 style="color:#222;display:inline;padding-right:50px">Proud
+            Members of</h3><img class="member" src="img/TCA.gif" style=
+            "max-width:120px"> <img class="member" src="img/OIRCA.jpg" style=
+            "max-width:140px"> <img class="member" src="img/CRCA.png" style=
+            "max-width:100px"> <img class="member" src="img/HHCA.png" style=
+            "max-width:100px"></div>
+        </div>
+    </div><!-- start: Copyright -->
+
+    <div id="copyright">
+        <!-- start: Container -->
+
+        <div class="container">
+            <p>&copy; 2014 Roque Roofing<br>
+            Designed by <a href="http://urbanicity.ca"><img src=
+            "img/urbanicityLogo.png" style=
+            "width:100px;padding-left:5px"></a></p>
+        </div>
+    </div><!-- end: Container  -->
+    <!-- end: Copyright -->
+    <!-- start: Java Script -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('.carousel').carousel({interval: 7000});
+    });
+</script>
+     <!-- end: Java Script -->
+</body>
+</html>
