@@ -52,7 +52,7 @@
             stroke: black;
             stroke-width: 0px;
             fill: Orange;
-            fill-opacity: .3;
+            fill-opacity: .8;
         }
         .bottomBar{
           position:relative;
@@ -66,7 +66,7 @@
         }
         div.sideBar{
           width: 270px;
-          height: 400px;
+          height: 260px;
           background-color: rgba(0,0,0,0.7);
           position: fixed;
           top: 100px;
@@ -75,6 +75,7 @@
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
           padding:20px;
+          color:white;
         }
 
         div.title{
@@ -101,6 +102,48 @@
       font-weight:100;
     }
 
+.voteChart{
+  background-color:white;
+  width:100%;
+  height:160px;
+  color:black;
+  border-radius:5px;
+}
+.voteChart rect {
+  fill: steelblue;
+}
+
+.voteChart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.voteChart rect.ford{
+  fill:#990000;
+  stroke:white;
+  stroke-width:2px;
+}
+.voteChart rect.tory{
+  fill:#003399;
+  stroke:white;
+  stroke-width:2px;
+}
+.voteChart rect.chow{
+  fill:#6600FF;
+  stroke:white;
+  stroke-width:2px;
+}
+.title{
+  height:25px;
+}
+.ward{
+  height:30px;
+}
+text.barText{
+  fill:black;
+  color:black;
+}
 
     </style>
 </head>
@@ -123,7 +166,7 @@
       <div class="sideBar">
 <div class="title"></div>
 <div class="ward"></div>
-<div id="voteChart"></div>
+<svg class="voteChart"></svg>
       </div>
       
     </div>
@@ -174,14 +217,77 @@
             var tooltip = function(d){
               var title = d3.select('div.title').append('text')
               .attr('class','title')
-              .html(function() {return d.properties.AREA_ID});
+              .text(function() {return d.properties.AREA_ID});
 
               var ward = d3.select('div.ward').append('text')
               .attr('class','ward')
-              .html(function() {return 'Area Short: ' + d.properties.AREA_SHORT});
+              .text(function() {return 'Area Short: ' + d.properties.AREA_SHORT});
 
-              return[title,ward];
-            }
+var x = d3.scale.linear()
+    .domain([0, 100])
+    .range([0, 170]);
+
+                  var bar = d3.select(".voteChart");
+
+                    bar.append("rect")
+                    .attr('class','bar Ford')
+                        .attr("width", function() { return x(d.properties.Ford_perc * 100) ; })
+                        .attr("height", 20)
+                        .attr("x", function() { return 50; })
+                        .attr("y", 30)
+                        .attr("dy", ".35em");
+
+                    /*
+                    bar.append("text")
+                    .attr('class','bar')
+                        .attr("x", function() { return x(50) ; })
+                        .attr("y", 50)
+                        .attr("dy", ".35em")
+                        .text(function() { return x(d.properties.Ford_perc * 100); });
+                    */
+
+                    bar.append("rect")
+                    .attr('class','bar Tory')
+                        .attr("width", function() { return x(d.properties.Tory_perc * 100) ; })
+                        .attr("height", 20)
+                        .attr("x", function() { return 50; })
+                        .attr("y", 60)
+                        .attr("dy", ".35em");
+
+                    bar.append("rect")
+                    .attr('class','bar Chow')
+                        .attr("width", function() { return x(d.properties.Chow_perc * 100) ; })
+                        .attr("height", 20)
+                        .attr("x", function() { return 50; })
+                        .attr("y", 90)
+                        .attr("dy", ".35em");
+
+                   bar.append("text")
+                    .attr('class','barText')
+                        .attr("x", function() { return 45 ; })
+                        .attr("y", 40)
+                        .attr("dy", ".35em")
+                        .style('font-size',12)
+                        .text('Ford'); 
+
+                   bar.append("text")
+                    .attr('class','barText')
+                        .attr("x", function() { return 45 ; })
+                        .attr("y", 70)
+                        .attr("dy", ".35em")
+                        .style('font-size',12)
+                        .text('Tory'); 
+
+                   bar.append("text")
+                    .attr('class','barText')
+                        .attr("x", function() { return 45 ; })
+                        .attr("y", 100)
+                        .attr("dy", ".35em")
+                        .style('font-size',12)
+                        .text('Chow'); 
+
+                          return[title,ward];
+                        }
 
           path = d3.geo.path().projection(googleMapProjection);
           var polygons = adminDivisions.selectAll("path")
@@ -189,12 +295,47 @@
             .attr("d", path) // update existing paths
           .enter().append("svg:path")
             .attr("d", path)
-            .attr('id', function(d) {return d.properties.AREA_LONG_} )
-            .on('mouseover', tooltip)
+            .attr('id', function(d) {return d.properties.AREA_LONG_} );
+
+            polygons.style('fill', function(d){
+              if (d.properties.Chow_perc > d.properties.Ford_perc && d.properties.Chow_perc > d.properties.Tory_perc){
+                return '#6600FF'
+              }
+              if (d.properties.Ford_perc > d.properties.Tory_perc && d.properties.Ford_perc > d.properties.Chow_perc){
+                return '#990000'
+              }
+              if (d.properties.Tory_perc > d.properties.Ford_perc && d.properties.Tory_perc > d.properties.Chow_perc){
+                return '#003399'
+              }
+
+            })
+            .style('opacity', function(d) {
+              if (d.properties.Chow_perc > 0.8 || d.properties.Ford_perc > 0.8 || d.properties.Tory_perc > 0.8 ){
+                return 1
+              }
+              if (d.properties.Chow_perc > 0.7 || d.properties.Ford_perc > 0.7 || d.properties.Tory_perc > 0.7 ){
+                return 0.8
+              }
+              if (d.properties.Chow_perc > 0.6 || d.properties.Ford_perc > 0.6 || d.properties.Tory_perc > 0.6 ){
+                return 0.6
+              }
+              if (d.properties.Chow_perc > 0.5 || d.properties.Ford_perc > 0.5 || d.properties.Tory_perc > 0.5 ){
+                return 0.4
+              }
+              if (d.properties.Chow_perc > 0.4 || d.properties.Ford_perc > 0.4 || d.properties.Tory_perc > 0.4 ){
+                return 0.3
+              }
+              else {return 0.2}
+            })
+            ;
+
+            polygons.on('mouseover', tooltip)
             .on('mouseout', function() {
               var removeTitle = d3.select('.title text').remove();
               var removeWard = d3.select('.ward text').remove();
-              return [removeTitle,removeWard];
+              var removeFord = d3.selectAll('.bar').remove();
+              var removeFord = d3.selectAll('.barText').remove();
+              return [removeTitle,removeWard,removeFord,removeText];
             });
         };
 
