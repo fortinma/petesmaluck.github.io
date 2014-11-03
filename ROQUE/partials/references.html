@@ -35,16 +35,16 @@
                         <ul class="nav nav-tabs nav-stacked" style=
                         "text-align:right">
                             <li class="button" >
-                                <a ng-click="showme=false">Roof Consultants <i class=
+                                <a ng-click="showme = 1">Roof Consultants <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
 
                             <li class="button">
-                                <a ng-click="showme=true">School Boards <i class=
+                                <a ng-click="showme = 2">School Boards <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
                             <li class="button">
-                                <a ng-click="showme=true">General Contractors <i class=
+                                <a ng-click="showme = 3">General Contractors <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
                         </ul>
@@ -52,7 +52,7 @@
 
    <div class="span9">
    
-   <div ng-hide="showme">
+   <div ng-hide="showme == 2 || showme == 3">
                 <h2 style="padding:0px 20px 20px">Roof Consultants</h2>
 
                 <hr style="margin-left:20px;width:30%">
@@ -87,7 +87,7 @@ Spyros Aplidgiotis<br>
 </div>
           </div>            
 
-<div ng-show="showme">
+<div ng-hide="showme == 3">
 <h2 style="padding:0px 20px 20px">School Board</h2>
 
 

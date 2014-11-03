@@ -35,23 +35,25 @@
                         <ul class="nav nav-tabs nav-stacked" style=
                         "text-align:right">
                             <li class="button" >
-                                <a ng-click="showme=false">New Roof & Roof Replacement <i class=
+                                <a ng-click="showme = 1">New Roof & Roof Replacement <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
 
                             <li class="button">
-                                <a ng-click="showme=true">LEED Experience <i class=
+                                <a ng-click="showme = 2">LEED Experience <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
+                            
                             <li class="button">
-                                <a ng-click="showme=true">Approved Applicators & Warranties <i class=
+                                <a ng-click="showme = 3">Approved Applicators & Warranties <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
                         </ul>
+
                     </div><!-- start: About -->
 
                     <div class="span9">
-                        <div ng-hide="showme" style="">
+                        <div ng-hide="showme == 2 || showme == 3" style="">
 <h2 style="padding:0px 20px 20px">New Roof & Roof Replacement</h2>
 <h3>Roque Roofing Inc provides a number of services to our clients. </h3>
 
@@ -88,7 +90,7 @@
 </div>
                         </div>
 
-                        <div ng-show="showme">
+                        <div ng-show="showme == 2">
 <h2 style="padding:0px 20px 20px">LEED Experience</h2>
 <h3>Roque Roofing Inc  also provides environmental friendly services.  </h3>
 
@@ -115,10 +117,45 @@
 
 <li>P.V.C. Roofing Membrane</li>
 
+</div>
+</div>
+
+
+<div ng-show="showme == 3">
+<h2 style="padding:0px 20px 20px">Approved Applicators & Warranties</h2>
+
+<hr style="margin-left:20px;width:30%">
+
+
+<div class="list" style="padding-left:20px;font-size:18px;line-height:40px">
+
+<div style="width:40%;float:left">
+<li style="color:gray">Carlisle <br><a href="http://www.carlisle-syntec.com/index.cfm?act=new_res&RLS_ID=7">carlisle-syntec.com</a></li>
+
+<li style="color:gray">Firestone  <br><a href="http://www.firestonebpco.com/owners/protectInvestment/">firestonebpco.com</a></li>
+
+<li style="color:gray">Bakor<br><a href="">Sample Warranty</a></li>
+
+<li style="color:gray">IKO<br><a href="">Sample Warranty</a></li>
+
+<li style="color:gray">Johns Manville<br><a href="http://www.specjm.com/roofingsys.asp#guarantees">specjm.com</a></li>
+</div>
+<div style="width:40%;float:right">
+<li style="color:gray">Sarnafil<br><a href="http://www.sarnafilus.com/warranty_w.htm">sarnafilus.com</a></li>
+
+<li style="color:gray">Siplast<br><a href="http://www.siplast.com/Guarantees.aspx">siplast.com</a></li>
+<li style="color:gray">Soprema<br><a href="http://www.soprema.ca/en/content/15/garanties.aspx">soprema.ca</a></li>
+
+<li style="color:gray">Tremco<br><a href="http://www.tremcoroofing.com/qa/qa.asp">tremcoroofing.com</a></li>
+
+<li style="color:gray">Garland<br><a href="http://www.garlandco.com">garlandco.com</a></li>
+</div>
  </div>
 
 
-                    </div><!-- end: About -->
+</div>
+
+<!-- end: About -->
                     <!-- start: Photo Stream -->
                     <!--
 
