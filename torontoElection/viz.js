@@ -242,8 +242,8 @@
 
 
             //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
-            polygons.on('mouseover', sideBar)
-            .on('mouseout', function() {
+            polygons.on('touchstart', sideBar)
+            .on('touchend', function() {
               var removeTitle = d3.select('.title text').remove();
               var removeWard = d3.select('.ward text').remove();
               var removeDivision = d3.select('.division text').remove();
