@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+   
+
+  <title>History of Hamilton Place Names</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="jquery-ui-1.10.2.autocomplete.css" rel="stylesheet" />
+    <link rel="stylesheet" href="leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+    <![endif]--> 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.lightbox.min.css" />
+    <link rel="stylesheet" href="streets.css" />
+    
+    
+    <!--[if lte IE 8]>   
+       <style type="text/css">
+
+       #loadingScreen { 
+           background:transparent;
+           filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3FFFFFF,endColorstr=#B3FFFFFF); 
+           zoom: 1; 
+        } 
+
+        </style>
+    <![endif]-->
+  <script type="text/javascript" src="leaflet.js"></script>
+   
+<script type="text/javascript" src="//use.typekit.net/gog7khv.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+    <div id="alphaList"><div id="filtering" style="display: none;"><span id="filterCurrent"></span><br /><span id="clearFilter">Show All</span></div><div id="alphaListInner" class="allStreets"></div></div>
+    <div id="map"></div>
+    <div id="loadingScreen">
+        <div class="splash">
+            <div class="splashLoading">
+            </div>
+
+            <div class="splashTop">
+                NAMESAKES<hr style="width:200px">Stories behind local place names
+            </div>
+            <br>
+            <div class="splashBottom">
+                <div>Click on any highlighted street or landmark to learn the history behind the name.</div>
+                <div>Use the options in the lower-left corner to search or filter by theme.</div>
+            </div>
+        </div>
+    </div>
+    <div id="filterHolder" style="display: none;">
+
+        <div id="filterContents">
+
+            <div id="filterSearch" class="filterRow">
+                <label for="search">Search</label><input type="text"  class="form-control" id="search" placeholder="Enter keyword">
+            </div>
+            <div class="row">
+            <div class="col-sm-6"  style="padding:2px 0px 2px 15px">
+            <div id="filterThemes" class="filterRow">
+                <label for="themes">Theme</label>
+                <select id="themes" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option>Agriculture</option>
+                    <option>Arts</option>
+                    <option>Builder</option>
+                    <option>Business</option>
+                    <option>Early settler</option>
+                    <option>Education</option>
+                    <option>Farmer</option>
+                    <option>Female</option>
+                    <option>Labour</option>
+                    <option>Male</option>
+                    <option>Military</option>
+                    <option>Native Word</option>
+                    <option>Politics</option>
+                    <option>Religion</option>
+                    <option>Science</option>
+                    <option>Sports</option>
+                    <option>U.K. placename</option>
+                    <option>U.S. placename</option>
+                    <option>Writer</option>
+
+                </select>
+            </div>
+            </div>
+            <div class="col-sm-6" style="padding:2px 15px 2px 0px">
+            <div id="filterTypes" class="filterRow">
+                <label for="types">Type</label>
+                <select id="types" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option>Airport</option>
+                    <option>Arena</option>
+                    <option>Building</option>
+                    <option>Golf</option>
+                    <option>Neighbourhood</option>
+                    <option>Park</option>
+                    <option>School</option>
+                    <option>Statue</option>
+                    <option>Street</option>
+                    <option>Water</option>
+                </select>
+            </div>
+            </div>
+            </div>
+           
+        </div> 
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
+    <script src="jquery.lightbox.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.10.2.autocomplete.min.js"></script>
+
+
+    <script type="text/javascript" src="queue.min.js"></script>
+    <script type="text/javascript" src="streets.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="leaflet-google.js"></script>
+</body>
+</html>

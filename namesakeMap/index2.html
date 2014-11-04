@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta name="twitter:image:src" content="" />
+  <meta name="twitter:domain" content="" />
+  
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+
+  <meta name="twitter:title" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="" />
+
+  <meta name="twitter:description" content="" />
+  <meta name="description" content="A" />  
+  <meta name="og:description" content="" />  
+
+  <title>History of Hamilton Place Names</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="jquery-ui-1.10.2.autocomplete.css" rel="stylesheet" />
+    <link rel="stylesheet" href="leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+    <![endif]--> 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.lightbox.min.css" />
+    <link rel="stylesheet" href="streets.css" />
+    
+    
+    <!--[if lte IE 8]>   
+       <style type="text/css">
+
+       #loadingScreen { 
+           background:transparent;
+           filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3FFFFFF,endColorstr=#B3FFFFFF); 
+           zoom: 1; 
+        } 
+
+        </style>
+    <![endif]-->
+
+<script type="text/javascript" src="//use.typekit.net/gog7khv.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+    <div id="alphaList"><div id="filtering" style="display: none;"><span id="filterCurrent"></span><br /><span id="clearFilter">Show All</span></div><div id="alphaListInner" class="allStreets"></div></div>
+    <div id="map"></div>
+    <div id="loadingScreen">
+        <div class="splash">
+            <div class="splashLoading">
+            </div>
+
+            <div class="splashTop">
+                NAMESAKES<hr style="width:200px">Stories behind local place names
+            </div>
+            <br>
+            <div class="splashBottom">
+                <div>Click on any highlighted street or landmark to learn the history behind the name.</div>
+                <div>Use the options in the lower-left corner to search or filter by theme.</div>
+            </div>
+        </div>
+    </div>
+    <div id="filterHolder" style="display: none;">
+
+        <div id="filterContents">
+
+            <div id="filterSearch" class="filterRow">
+                <label for="search">Search</label><input type="text"  class="form-control" id="search" placeholder="Enter keyword">
+            </div>
+            <div class="row">
+            <div class="col-sm-6"  style="padding:2px 0px 2px 15px">
+            <div id="filterThemes" class="filterRow">
+                <label for="themes">Theme</label>
+                <select id="themes" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option>Agriculture</option>
+                    <option>Arts</option>
+                    <option>Builder</option>
+                    <option>Business</option>
+                    <option>Builder</option>
+                    <option>Charity work</option>
+                    <option>Crime</option>
+                    <option>Early Settler</option>
+                    <option>Education</option>
+                    <option>Explorer</option>
+                    <option>Farmer</option>
+                    <option>Female</option>
+                    <option>Heritage</option>
+                    <option>History</option>
+                    <option>Journalism</option>
+                    <option>Labour</option>
+                    <option>Loyalist</option>
+                    <option>Male</option>
+                    <option>Military</option>
+                    <option>Naturalist</option>
+                    <option>Photography</option>
+                    <option>Plane crash victim</option>
+                    <option>Police</option>
+                    <option>Politics</option>
+                    <option>Radio</option>
+                    <option>Religion</option>
+                    <option>Royalty</option>
+                    <option>Science</option>
+                    <option>Sports</option>
+                    <option>Surveying</option>
+                    <option>U.E.</option>
+                    <option>U.K. placename</option>
+                    <option>Writer</option>
+
+                </select>
+            </div>
+            </div>
+            <div class="col-sm-6" style="padding:2px 15px 2px 0px">
+            <div id="filterTypes" class="filterRow">
+                <label for="types">Type</label>
+                <select id="types" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option>Airport</option>
+                    <option>Arena</option>
+                    <option>Building</option>
+                    <option>Golf</option>
+                    <option>Neighbourhood</option>
+                    <option>Park</option>
+                    <option>School</option>
+                    <option>Statue</option>
+                    <option>Street</option>
+                    <option>Water</option>
+                </select>
+            </div>
+            </div>
+            </div>
+            <div id="filterNeighborhoods" class="filterRow">
+                <label for="neighborhoods">Select area</label>
+                <select id="neighborhoods" class="form-control">
+                    <option value="" selected>Hamilton</a>
+                    <option value="43.24278,-79.898436,43.24278,-79.898436,43.24278,-79.898436">Balfour</option>
+                    <option value="43.2161858360268,-79.87592697143555,43.22634957162557,-79.87202167510986,43.22375407102015,-79.86167907714842">Bruleville</option>
+                    <option value="43.25776824843158, -79.87944602966307,43.24706270842977, -79.87360954284668,43.25776824843158, -79.87944602966307">Durand</option>
+                    <option value="43.23000810166306, -79.7738742828369, 43.22118973298753, -79.77773666381836, 43.22081445495995, -79.77657794952393">Greenford</option>
+                    <option value="43.2300393702041, -79.88639831542969, 43.219907523523496, -79.89064693450928, 43.2300393702041, -79.88639831542969">Yeoville</option>
+                    <option value="43.182492669562784, -79.77771520614624, 43.17742300689994, -79.78039741516113, 43.182492669562784, -79.77771520614624">Leckie Park</option>
+                    <option value="43.25533036392946, -79.86966133117676, 43.26420629463839, -79.85485553741455, 43.25533036392946, -79.86966133117676">Beasley</option>
+                    <option value="43.221314825150095, -79.77790832519531, 43.20999294501498, -79.79490280151367, 43.221314825150095, -79.77790832519531">Vincent</option>
+                    <option value="43.252767354471786, -79.85966205596924, 43.26186242458549, -79.8448133468628, 43.252767354471786, -79.85966205596924">Gibson</option>
+                    <option value="43.20455018831656, -79.82322692871094, 43.199294652070776, -79.8405647277832, 43.20455018831656, -79.82322692871094">Trenholme</option>
+                    <option value="43.22600559596996, -79.91515159606934, 43.23366641210938, -79.92455005645752, 43.22600559596996, -79.91515159606934">Fessenden</option>
+                </select>
+            </div>
+        </div> 
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
+    <script src="jquery.lightbox.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.10.2.autocomplete.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+    <script type="text/javascript" src="leaflet.fullscreen.js"></script>
+    <script type="text/javascript" src="queue.min.js"></script>
+    <script type="text/javascript" src="streets.js"></script>
+</body>
+</html>

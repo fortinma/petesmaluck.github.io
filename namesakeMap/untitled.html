@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+body {
+	width:100%;
+	padding:0 0 0 0;
+	margin:0px auto 0px auto;
+	font-family: sans-serif;
+	background-color: #ffffff;
+}
+#title {
+	display:block;
+	margin-top:0px;
+	text-align: center;
+
+}
+#middleP{
+    fill:#ffffff;
+}
+</style>
+<body>
+
+<div id="title"><svg id="hamOnt" height="500" width="450" style="background-color:none;">
+
+<path id="letter"  fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M148,227.5l0.5-37.5l60,0.5L209,227h-4.167
+	c0,0-4.667-34.167-16.333-31.5c-0.67,0.153,0,97.986,0,99c0,7,8,7,8,7l-0.25,4H161.5l-0.25-4.25c0,0,9.25,0.417,8.75-7.5
+	c-0.047-0.749,0.701-96.037,0-96.75c-9-9.167-18.25,30.5-18.25,30.5H148z"/>
+<path id="letter"  fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M214.333,198.333h29l0.167,4c0,0-5-0.333-5.833,2.333
+	c-0.111,0.356-0.333,42.333-0.333,42.333H255c0,0,0.232-41.161,0.25-41.75c0.083-2.75-5.75-3.083-5.75-3.083l-0.25-3.917l29,0.5
+	l-0.083,4.583c0,0-3.833-0.833-5.667,2.667c-0.542,1.033-0.279,93.136-0.25,93.25c0.917,3.583,6,4,6,4l0.083,4.083L250,306.75
+	l-0.333-4.083c0,0,6.167-1.083,5.833-4.167c-0.009-0.083-0.25-44-0.25-44H237.5c0,0,0.406,43.791,0.667,44.333
+	c2,4.167,5.5,4.167,5.5,4.167l0.083,3.75l-28.75-0.5l-0.167-3.75c0,0,3.167,0.5,5.667-4.333c0.229-0.444-0.333-91.833-0.333-92
+	c0-3.167-5.667-3.833-5.667-3.833L214.333,198.333z"/>
+<path id="letter"  fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M282.75,199l55.5,0.5l0.5,29.75l-4.081-0.083
+	c0,0-8.669-35.917-28.919-22.417c-0.354,0.236-0.436,42.485-0.25,42.5c13.833,1.084,15.169-18.75,15.169-18.75l4.333,0.167
+	L324.835,275h-4.166c0,0-1.002-20.333-15.002-19.667c-0.3,0.014-0.171,44.011,0.083,44.166c21.919,13.334,29.25-24.25,29.25-24.25
+	l4.5,0.25l-0.75,31.75H283.5l-0.25-4.75c0,0,5.5,0,6-3.25c0.12-0.781-0.573-93.573-0.75-93.75C286,203,283,203,283,203L282.75,199z"
+	/>
+<path id="letter"  fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M149.667,365.999v-55.667c0,0-7.542-0.64-7.667-0.333
+	c-2.167,5.335-8.891,7.462-9,7.333C123,305.5,76.167,297.834,77.5,350c0.35,13.67-1.518,28.518,22.667,53.002
+	c13.333,13.498,59.333,47.498,36.5,76.166c0,0-26.833,27.666-53.667-44.502c-0.184-0.494-4.5-0.666-4.5-0.666l-0.833,57.332h7
+	c0,0,5.666-9,11.333-9c0.333,0,11.667,9.002,27.333,9c36.17-0.005,35.837-44.664,35.833-44.831
+	C158.5,412.5,141.106,397.568,126.5,384.5C98,359,79.667,338.999,100.5,318c0.233-0.235,27.521-17.004,41.833,47.834
+	C142.405,366.16,149.667,365.999,149.667,365.999z"/>
+<path id="letter"  fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M162,322l53.5,0.5c0,0,37.031,5.502,37.5,39.75
+	c0.5,36.5-26,47-31.25,48c-0.549,0.104-24.75,0.25-24.75,0.25s0.01,65.627,0.5,67c2.5,7,10.5,6,10.5,6v6.5h-45.5v-6.5
+	c0,0,9.25-0.5,8.5-6c-0.102-0.743,0-145,0-145l-9-4.5V322z"/>
+<path id="middleP" fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M196.5,329c0,0-0.059,75.5,0.5,75.5c32.5,0,28-23.25,28.25-40.25
+	C225.423,352.478,230.25,326.25,196.5,329z"/>
+<path id="letter"  fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M254,322.333L338.667,323l1,46.667l-6.667,0
+	c0,0-12.667-55.167-44-35.666c-0.4,0.249-0.568,66.311-0.333,66.333c22.333,2.167,22.667-29,22.667-29l6.667,0.333l0.333,67.667
+	c0,0-6.618,0.331-6.666-0.334c-2.5-34.5-22.333-31.666-22.333-31.666s-0.359,70.026,0,70.333C317,501.333,335,440.334,335,440.334
+	h6.333L340.5,490l-86.667-0.335l0.167-5.998c0,0,8.833-1.502,9-7c0.015-0.502,0.333-141,0.333-141s0.166-6.334-9-7
+	C253.961,328.641,254,322.333,254,322.333z"/>
+<path id="letter" fill="#ffffff" stroke="#FFFFFF" stroke-miterlimit="10" d="M391,321.75c10.875-0.125,18,6.75,18,6.75
+	c7.875,0.25,8.25-6.75,8.25-6.75l5.75-0.25l0.334,51.5c0,0-6.142,0.241-6.209,0c-9.125-32.5-15.375-44.25-24.25-44.25
+	c-9.251,0-15.562,0.375-18.125,74.125c-3.049,87.74,20.073,81.118,20.25,81.125c27.25,1.125,22.334-43,22.334-43
+	s6.66-0.625,6.666-0.5c2.75,55.375-29.875,49.25-30,49.25c-52,0-48.246-85.125-48.25-85.5C345,323.5,390.875,321.751,391,321.75z"/>
+</svg>
+</div>
+<script>
+
+    // A list of colors to choose from:
+    var colors = ['#ffffff', '#ED1C24', '#00ADEF', '#FFF100', '#00A550', '#231F20'];
+
+    // Returns a random choice from a list:
+    function choice( listObj ) {
+        return listObj[ Math.floor(Math.random() * listObj.length) ];
+    }
+
+    // The element you're applying your random color to:
+    var element = $(document.body);
+
+    // jQuery method that modifies an element's style:
+    element.css({
+        backgroundColor : '#ffffff'
+    });
+
+
+function hamOntLogo() {
+
+	var hamOnt = d3.select('#title');
+           
+           hamOnt.selectAll('path')
+            .style('display', 'block')
+            .style('stroke', 'black')
+            .style("fill", "#ffffff")
+            .style("opacity","0.85")
+            .style('stroke-dasharray', function(d) {
+            //debugger
+            var l = d3.select(this).node().getTotalLength();
+            return l + 'px, ' + l + 'px';
+            })
+            .style('stroke-dashoffset', function(d) {
+            return d3.select(this).node().getTotalLength() + 'px';
+            })
+            .transition()
+            .duration(4000)
+            .style('stroke-dashoffset', '0px');
+
+
+            hamOnt.selectAll('#letter')
+            .transition()
+            .delay(4000)
+            .duration(2000)
+            .style("fill", "black")
+            .style("opacity", "0.8");
+
+            hamOnt.selectAll('#middleP')
+            .transition()
+            .delay(4000)
+            .duration(2000)
+            .style("fill", "white")
+            .style("opacity", "0.8");
+    
+            }
+
+            window.onload = hamOntLogo;
+
+</script>
+</body>
+
+
+
+</html>
+
