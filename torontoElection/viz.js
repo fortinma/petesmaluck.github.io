@@ -1,63 +1,4 @@
 
-<html>
-<head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/2.10.0/d3.v2.min.js"></script>
-
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
- <script type="text/javascript" src="map.js"></script>
- <script type="text/javascript" src="wards.js"></script>
-
-
-
-</head>
-<body>
-
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">2014 Toronto Municipal Election</a>
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-
-      <div id="map"></div>
-
-      <div class="sideBar">
-        <p style="margin-bottom:0px">HOW TORONTO VOTED</p>
-        <hr style="border-top: 1px dotted #222;padding:0px;margin:5px 0px;color: #fff;height: 1px;width:100%;">
-        <span style="font-size:12px">Scroll over the subdivisions to view the percentage of votes breakdown.</span>
-        <hr style="border-top: 1px dotted #222;padding:0px;margin:5px 0px;color: #fff;height: 1px;width:100%;">
-        <span>WARD: <div class="title"></div></span>
-        <br>
-        <span>SUBDIVISION: <div class="ward"></div></span>
-        <svg class="voteChart"></svg>
-
-        <div class="legend">
-<span style="font-size:12px">Percentage of votes for each candidate</span>
-        <hr style="border-top: 1px dotted #222;padding:0px;margin:5px 0px 15px;color: #fff;height: 1px;width:100%;">
-        <svg id="legendColors"></svg>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-     <div class="bottomBar"></div>
-    </div>
-  </div>
-</div>
-
-    <script>
 
         $(function () {
 
@@ -319,9 +260,3 @@ legend.append("text")
       
       
     });
-      
-  </script>
- <!-- GITHUB RIBBON -->
- <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1040" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-</body>
-</html>
