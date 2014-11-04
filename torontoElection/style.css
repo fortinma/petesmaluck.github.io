@@ -84,9 +84,10 @@ div.title {
 }
 
 div.ward {
-    font-size:16px;
-    color:#fff;
-    font-weight:100
+    font-size:14px;
+    color:#222;
+    font-weight:400;
+    display:inline;
 }
 
 .navbar-fixed-top {
