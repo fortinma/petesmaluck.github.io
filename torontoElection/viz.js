@@ -1,6 +1,6 @@
 
 
-        $(function () {
+    $(function () {
 
       //SETUP GOOGLE MAPS
       var $map=$("#map");
@@ -200,45 +200,45 @@
             })
             ;
 
+            //LEGEND
+            var data = ['',40,50,60,70,80];
 
-var data = ['',40,50,60,70,80];
+            var legendRow = function(color,top,candidate){
+            var legend = d3.select("#legendColors").append("svg")
+              .attr("class", "legend")
+              .attr("width", 240);
+              var legendGroup = legend.attr("height", 30)
+              .attr('x',0)
+              .attr('y',top)
+              .selectAll("g")
+              .data(data)
+              .enter().append("g")
+              .attr("transform", function(d, i) { return "translate("+ i * 34 + ",0)"; });
 
-var legendRow = function(color,top,candidate){
-var legend = d3.select("#legendColors").append("svg")
-  .attr("class", "legend")
-  .attr("width", 240);
-  var legendGroup = legend.attr("height", 30)
-  .attr('x',0)
-  .attr('y',top)
-  .selectAll("g")
-  .data(data)
-  .enter().append("g")
-  .attr("transform", function(d, i) { return "translate("+ i * 34 + ",0)"; });
+            legendGroup.append("rect")
+              .attr('x',8)
+              .attr("width", 33)
+              .attr("height", 15)
+              .style("fill", color)
+              .style('opacity', function(d, i) { return i * 0.2 ; });
 
-legendGroup.append("rect")
-  .attr('x',8)
-  .attr("width", 33)
-  .attr("height", 15)
-  .style("fill", color)
-  .style('opacity', function(d, i) { return i * 0.2 ; });
+            legendGroup.append("text")
+              .attr("x", 8)
+              .attr("y", 20)
+              .attr("dy", ".35em")
+              .style('font-size',10)
+              .text(function(d,i) { return d; });
 
-legendGroup.append("text")
-  .attr("x", 8)
-  .attr("y", 20)
-  .attr("dy", ".35em")
-  .style('font-size',10)
-  .text(function(d,i) { return d; });
-
-legend.append("text")
-  .attr("x", 0)
-  .attr("y", 10)
-  .attr("dy", ".35em")
-  .style('font-size',12)
-  .text(candidate);
-}
- legendRow('#003399',0,'Tory');
- legendRow('#990000',30,'Ford');
- legendRow('#6600FF',60,'Chow');
+            legend.append("text")
+              .attr("x", 0)
+              .attr("y", 10)
+              .attr("dy", ".35em")
+              .style('font-size',12)
+              .text(candidate);
+            }
+             legendRow('#003399',0,'Tory');
+             legendRow('#990000',30,'Ford');
+             legendRow('#6600FF',60,'Chow');
 
 
             //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
