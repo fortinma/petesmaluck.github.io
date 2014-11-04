@@ -10,7 +10,6 @@
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
  <script type="text/javascript" src="map.js"></script>
  <script type="text/javascript" src="wards.js"></script>
- <script type="text/javascript" src="voteChart.js"></script>
 
 
 
@@ -33,6 +32,13 @@
       <div id="map"></div>
 
       <div class="sideBar">
+        <p>HOW TORONTO VOTED</p>
+        <hr style="  border-top: 1px dotted #222;
+        padding:0px;
+        margin:0px;
+  color: #fff;
+  height: 1px;
+  width:100%;">
         <div class="title"></div>
         <div class="ward"></div>
         <svg class="voteChart"></svg>
@@ -63,10 +69,10 @@
         });
         
       //LOAD JSON
-      var geoJson = provinces();
+      var geoJson = subdivisions();
       var geoJsonWards = wards();
 
-      //OVERLAY D3
+      //OVERLAY SVG LAYER
       var overlay = new google.maps.OverlayView();
 
       overlay.onAdd = function () {
@@ -114,33 +120,31 @@
                         .attr("width", function() { return x(d.properties.Ford_perc * 100) ; })
                         .attr("height", 20)
                         .attr("x", function() { return 50; })
-                        .attr("y", 30)
+                        .attr("y", 10)
                         .attr("dy", ".35em");
 
-                 
                     bar.append("text")
                     .attr('class','bar')
                         .attr("x", function() { return (75 + x(d.properties.Ford_perc * 100)); })
-                        .attr("y", 40)
+                        .attr("y", 20)
                         .attr("dy", ".35em")
-                        .style('fill','cdcccc')
+                        .style('fill','#222')
                         .text(function() { return decimal(d.properties.Ford_perc * 100); });
                   
-
                     bar.append("rect")
                     .attr('class','bar Tory')
                         .attr("width", function() { return x(d.properties.Tory_perc * 100) ; })
                         .attr("height", 20)
                         .attr("x", function() { return 50; })
-                        .attr("y", 60)
+                        .attr("y", 40)
                         .attr("dy", ".35em");
 
                     bar.append("text")
                     .attr('class','bar')
                         .attr("x", function() { return (75 + x(d.properties.Tory_perc * 100)); })
-                        .attr("y", 70)
+                        .attr("y", 50)
                         .attr("dy", ".35em")
-                        .style('fill','cdcccc')
+                        .style('fill','#222')
                         .text(function() { return decimal(d.properties.Tory_perc * 100); });
 
                     bar.append("rect")
@@ -148,22 +152,22 @@
                         .attr("width", function() { return x(d.properties.Chow_perc * 100) ; })
                         .attr("height", 20)
                         .attr("x", function() { return 50; })
-                        .attr("y", 90)
+                        .attr("y", 70)
                         .attr("dy", ".35em");
 
 
                     bar.append("text")
                     .attr('class','bar')
                         .attr("x", function() { return (75 + x(d.properties.Chow_perc * 100)); })
-                        .attr("y", 100)
+                        .attr("y", 80)
                         .attr("dy", ".35em")
-                        .style('fill','#cdcccc')
+                        .style('fill','#222')
                         .text(function() { return decimal(d.properties.Chow_perc * 100); });
 
                    bar.append("text")
                     .attr('class','barText')
                         .attr("x", function() { return 45 ; })
-                        .attr("y", 40)
+                        .attr("y", 20)
                         .attr("dy", ".35em")
                         .style('font-size',12)
                         .text('Ford'); 
@@ -171,7 +175,7 @@
                    bar.append("text")
                     .attr('class','barText')
                         .attr("x", function() { return 45 ; })
-                        .attr("y", 70)
+                        .attr("y", 50)
                         .attr("dy", ".35em")
                         .style('font-size',12)
                         .text('Tory'); 
@@ -179,7 +183,7 @@
                    bar.append("text")
                     .attr('class','barText')
                         .attr("x", function() { return 45 ; })
-                        .attr("y", 100)
+                        .attr("y", 80)
                         .attr("dy", ".35em")
                         .style('font-size',12)
                         .text('Chow'); 

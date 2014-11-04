@@ -54,21 +54,26 @@ body {
 
 .navbar-default {
     background-color:rgba(0,0,0,0.7);
-    border:solid 0 #000
+    border-left:solid 0 #000;
 }
 
 div.sideBar {
     width:270px;
     height:260px;
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(255,255,255,1);
     position:fixed;
     top:100px;
     right:0;
-    border:solid 1px #444;
+   border-left:solid 1px #000;
+    border-top:solid 1px #000;
+    border-bottom:solid 1px #000;
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
     padding:20px;
-    color:#fff
+    color:#222;
+    -webkit-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
 }
 
 div.title {
@@ -144,13 +149,13 @@ div.ward {
 }
 
 text.barText {
-    fill:#cdcccc;
-    color:#cdcccc
+    fill:#222;
+    color:#222;
 }
 
 .bar text {
-    fill:#cdcccc;
-    color:#cdcccc
+    fill:#222;
+    color:#222;
 }
 
 path {
