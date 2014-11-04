@@ -106,9 +106,9 @@
                         .text(name); 
                       }
                       
-                      bars('Tory_perc','Tory',40,'#003399');
-                      bars('Ford_perc','Ford',20,'#990000');
-                      bars('Chow_perc','Chow',60,'#6600FF');
+                      bars('Tory_perc','Tory',20,'#003399');
+                      bars('Ford_perc','Ford',41,'#990000');
+                      bars('Chow_perc','Chow',62,'#6600FF');
 
 
 
@@ -116,7 +116,7 @@
 
                   bar.append('g')
                   .attr("class", "axis")
-                  .attr('transform', 'translate(40,70)')
+                  .attr('transform', 'translate(40,72)')
                   .call(xAxis);
 
                   d3.selectAll('.axis text')

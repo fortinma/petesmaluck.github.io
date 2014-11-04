@@ -11,6 +11,18 @@ body {
     padding:0
 }
 
+hr{
+    border-top: 1px dotted #222;
+    padding:0px;
+    margin:5px 0px 15px;
+    color: #fff;
+    height: 1px;
+    width:100%;
+}
+hr.tight{
+    margin:5px 0px;
+}
+
 #map {
     margin-top:50px;
     width:100%;
