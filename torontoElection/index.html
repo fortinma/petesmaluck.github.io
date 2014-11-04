@@ -147,7 +147,7 @@
 
 
 
-                      var xAxis = d3.svg.axis().scale(x).orient('bottom');
+                      var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(5);
 
                   bar.append('g')
                   .attr("class", "axis")
@@ -240,7 +240,8 @@
               var removeDivision = d3.select('.division text').remove();
               var removeFord = d3.selectAll('.bar').remove();
               var removeText = d3.selectAll('.barText').remove();
-              return [removeTitle,removeWard, removeDivision, removeFord,removeText];
+              var removeAxis = d3.selectAll('.axis text').remove();
+              return [removeTitle,removeWard, removeDivision, removeFord,removeText,removeAxis];
             });
         };
 

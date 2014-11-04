@@ -166,11 +166,14 @@ path {
     fill:none
 }
 
+.axis text{
+    fill:#222;
+}
 .axis path,.axis line {
     fill:none;
     stroke:grey;
     stroke-width:1;
-    shape-rendering:crispEdges
+    shape-rendering:crispEdges;
 }
 
 .wardNumber {
