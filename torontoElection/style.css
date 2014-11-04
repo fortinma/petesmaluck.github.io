@@ -77,9 +77,10 @@ box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
 }
 
 div.title {
-    font-size:18px;
-    color:#fff;
-    font-weight:100
+    font-size:14px;
+    color:#222;
+    font-weight:400;
+    display:inline;
 }
 
 div.ward {

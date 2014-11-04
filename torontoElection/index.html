@@ -32,15 +32,12 @@
       <div id="map"></div>
 
       <div class="sideBar">
-        <p>HOW TORONTO VOTED</p>
-        <hr style="  border-top: 1px dotted #222;
-        padding:0px;
-        margin:0px;
-  color: #fff;
-  height: 1px;
-  width:100%;">
-        <div class="title"></div>
-        <div class="ward"></div>
+        <p style="margin-bottom:0px">HOW TORONTO VOTED</p>
+        <hr style="border-top: 1px dotted #222;padding:0px;margin:5px 0px;color: #fff;height: 1px;width:100%;">
+        <span style="font-size:12px">Scroll over the subdivisions to view the percentage of votes breakdown.</span>
+        <hr style="border-top: 1px dotted #222;padding:0px;margin:5px 0px;color: #fff;height: 1px;width:100%;">
+        <span>WARD: <div class="title"></div></span>
+
         <svg class="voteChart"></svg>
       </div>
 
@@ -99,7 +96,7 @@
             var sideBar = function(d){
               var title = d3.select('div.title').append('text')
               .attr('class','title')
-              .text(function() {return d.properties.AREA_ID});
+              .text(function() {return d.properties.WARD});
 
               var ward = d3.select('div.ward').append('text')
               .attr('class','ward')
@@ -112,6 +109,10 @@
               var x = d3.scale.linear()
                   .domain([0, 100])
                   .range([0, 170]);
+
+              var newData = d3.entries(geoJson);
+
+              console.log(newData);
 
                   var bar = d3.select(".voteChart");
 
@@ -136,13 +137,13 @@
                         .attr("width", function() { return x(d.properties.Tory_perc * 100) ; })
                         .attr("height", 20)
                         .attr("x", function() { return 50; })
-                        .attr("y", 40)
+                        .attr("y", 30)
                         .attr("dy", ".35em");
 
                     bar.append("text")
                     .attr('class','bar')
                         .attr("x", function() { return (75 + x(d.properties.Tory_perc * 100)); })
-                        .attr("y", 50)
+                        .attr("y", 40)
                         .attr("dy", ".35em")
                         .style('fill','#222')
                         .text(function() { return decimal(d.properties.Tory_perc * 100); });
@@ -152,14 +153,14 @@
                         .attr("width", function() { return x(d.properties.Chow_perc * 100) ; })
                         .attr("height", 20)
                         .attr("x", function() { return 50; })
-                        .attr("y", 70)
+                        .attr("y", 50)
                         .attr("dy", ".35em");
 
 
                     bar.append("text")
                     .attr('class','bar')
                         .attr("x", function() { return (75 + x(d.properties.Chow_perc * 100)); })
-                        .attr("y", 80)
+                        .attr("y", 60)
                         .attr("dy", ".35em")
                         .style('fill','#222')
                         .text(function() { return decimal(d.properties.Chow_perc * 100); });
@@ -175,7 +176,7 @@
                    bar.append("text")
                     .attr('class','barText')
                         .attr("x", function() { return 45 ; })
-                        .attr("y", 50)
+                        .attr("y", 40)
                         .attr("dy", ".35em")
                         .style('font-size',12)
                         .text('Tory'); 
@@ -183,7 +184,7 @@
                    bar.append("text")
                     .attr('class','barText')
                         .attr("x", function() { return 45 ; })
-                        .attr("y", 80)
+                        .attr("y", 60)
                         .attr("dy", ".35em")
                         .style('font-size',12)
                         .text('Chow'); 
