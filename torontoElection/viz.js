@@ -30,11 +30,13 @@
            //LEGEND
             var data = ['',40,50,60,70,80];
 
-            var legendRow = function(color,top,candidate){
+            var legendRow = function(color,top,candidate,dat){
             var legend = d3.select("#legendColors").append("svg")
               .attr("class", "legend")
-              .attr("width", 240);
-              var legendGroup = legend.attr("height", 30)
+              .attr("width", 240)
+              .attr("height",100);
+            
+            var legendGroup = legend.attr("height", 25)
               .attr('x',0)
               .attr('y',top)
               .selectAll("g")
@@ -50,6 +52,9 @@
               .style('opacity', function(d, i) { return i * 0.2 ; });
 
             legendGroup.append("text")
+              .attr('class', function(d,i) {
+                return "mayor_" + candidate
+              })
               .attr("x", 8)
               .attr("y", 20)
               .attr("dy", ".35em")
@@ -63,9 +68,10 @@
               .style('font-size',12)
               .text(candidate);
             }
+
              legendRow('#003399',0,'Tory');
-             legendRow('#990000',30,'Ford');
-             legendRow('#6600FF',60,'Chow');
+             legendRow('#990000',16,'Ford');
+             legendRow('#6600FF',32,'Chow');
 
 
         overlay.draw = function () {

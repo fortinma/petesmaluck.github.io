@@ -19,7 +19,7 @@ hr{
     width:100%;
 }
 hr.tight{
-    margin:5px 0px;
+    margin:5px 0px 8px;
 }
 
 #map {
@@ -82,7 +82,7 @@ div.sideBar {
     height:260px;
     background-color:rgba(255,255,255,1);
     position:fixed;
-    top:100px;
+    top:80px;
     right:0;
    border-left:solid 1px #000;
     border-top:solid 1px #000;
@@ -98,18 +98,17 @@ box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
 
 .legend {
     width:270px;
-    height:170px;
+    height:110px;
     background-color:rgba(255,255,255,1);
     position:fixed;
-    top:370px;
+    top:350px;
     right:0;
    border-left:solid 1px #000;
     border-top:solid 1px #000;
     border-bottom:solid 1px #000;
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
-    padding:20px;
-    color:#222;
+    padding:10px 20px 10px 20px;
     -webkit-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
@@ -231,7 +230,7 @@ path {
     z-index:1040
 }
 
-i.fa{
+#footer i.fa{
     color:#999;
     font-size:32px;
     margin-top:10px;
@@ -241,11 +240,33 @@ i.fa{
 }
 
 .fa:hover{
-    color:#fff;
+    color:#222;
 
 }
 path:hover{
     stroke:#fff;
     stroke-width:2px;
+}
+text.mayor_Tory {
+    display:none;
+}
+text.mayor_Ford{
+    display:none;
+}
+
+.legendHover{
+    color:white;
+    position:absolute;
+    left:-90px;
+    top:0px;
+    font-size:20px;
+}
+
+.legendHoverTop{
+    color:white;
+    position:absolute;
+    left:-130px;
+    top:0px;
+    font-size:20px;
 }
   
