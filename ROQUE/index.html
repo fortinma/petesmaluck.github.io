@@ -42,7 +42,7 @@ h3 {
     }
 
     .carousel {
-    height: 452px;
+    height: 100%;
     overflow: hidden;
     width:100%;
     margin-bottom: 0px;
@@ -54,6 +54,11 @@ h3 {
     -o-transition: opacity 1s;
     transition: opacity 1s;
     }
+.carousel .item > img {
+display: block;
+line-height: 1;
+width: 100%;
+}
     .carousel .active.left, .carousel .active.right {
     left:0;
     opacity:0;
@@ -92,6 +97,10 @@ h3 {
     }
     */
 
+    li.button a{
+        font-size:18px;
+    }
+
     .navbar .nav {
     position: relative;
     left: 0;
@@ -122,10 +131,9 @@ h3 {
     color: white;
     text-align: center;
     background: rgba(0,0,0,0.5);
-    border: 3px solid #222;
+    border: 1px solid rgba(0,0,0,0);
     -webkit-border-radius: 23px;
     -moz-border-radius: 23px;
-    border-radius: 0px;
     opacity: 0.8;
     filter: alpha(opacity=50);
     }
@@ -340,10 +348,11 @@ h3 {
     <!-- end: Copyright -->
     <!-- start: Java Script -->
     <!-- Placed at the end of the document so the pages load faster -->
-   
+   <script src="js/jquery-1.8.2.js"></script>
+   <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
 $(document).ready(function() {
-    $('.carousel').carousel({interval: 7000});
+    $('.carousel').carousel({interval: 2000});
     });
 </script>
      <!-- end: Java Script -->

@@ -1,21 +1,6 @@
 <div class="main">
-        <div class="gradient">
-            <div class="carousel container slide" id="myCarousel">
-                <!-- Items -->
 
-                <div class="carousel-inner">
-
-                    <div class="active item"><img alt="" src=
-                    "img/photos/IMG_3891.JPG"></div>
-
-                   
-                </div><!-- Navigation -->
-                <a class="carousel-control left" data-slide="prev" href=
-                "#myCarousel">&lsaquo;</a> <a class="carousel-control right"
-                data-slide="next" href="#myCarousel">&rsaquo;</a>
-            </div><!--start: Wrapper-->
-
-            <div id="wrapper">
+            <div id="wrapper" style="height:30px">
                 <!--start: Container -->
 
                 <div class="container">
@@ -24,23 +9,60 @@
                     <div class="row">
                         <!-- start: Icon Box Start -->
 
-                        <div class="span12" style="padding-top:15px">
-                            <h2>Roque Roofing</h2>
+                        <div class="span12" style="padding-top:5px">
 
-                            <h3 style="color:#CBC39F">Proudly Serving Southern
-                            Ontario Since 1980</h3><img src=
-                            "img/footer_pic.png">
+                            <h3 style="color:#CBC39F;">Proudly Serving Southern
+                            Ontario Since 1980</h3>
 
                             <div class="clear"></div>
                         </div><!-- end: Icon Box-->
                     </div>
 
-                    <div class="clear"></div>
-                </div><!-- end: Row -->
-                <br>
-            </div><!--end: Container-->
-        </div><!-- end: Wrapper  --><!-- start: Footer -->
+            </div>
+ </div>
+<div class="main">
+        <div class="gradient">
+            <div class="carousel container slide" id="myCarousel">
+                <!-- Items -->
 
+                <div class="carousel-inner">
+
+                    <div class="active item"><img alt="" src=
+                    "img/slider/slider1.jpg"></div>
+                    <div class="item"><img alt="" src=
+                    "img/slider/slider2.jpg"></div>
+                    <div class="item"><img alt="" src=
+                    "img/slider/slider3.jpg"></div>
+                    <div class="item"><img alt="" src=
+                    "img/slider/slider4.jpg"></div>
+
+                   
+                </div><!-- Navigation -->
+                <a class="carousel-control left" data-slide="prev" href=
+                "#myCarousel">&lsaquo;</a> <a class="carousel-control right"
+                data-slide="next" href="#myCarousel">&rsaquo;</a>
+            </div><!--start: Wrapper-->
+
+        </div><!-- end: Wrapper  --><!-- start: Footer -->
+<div class="main">
+
+            <div id="wrapper" style="height:30px">
+                <!--start: Container -->
+
+                <div class="container">
+                    <!-- start: Row -->
+
+                    <div class="row">
+                        <!-- start: Icon Box Start -->
+
+                        <div class="span12" style="padding-top:5px">
+
+                            <div class="clear"></div>
+                        </div><!-- end: Icon Box-->
+                    </div>
+
+            </div>
+ </div>
         <div id="footer">
             <!-- start: Container -->
 
@@ -52,49 +74,119 @@
                         <ul class="nav nav-tabs nav-stacked" style=
                         "text-align:right">
                             <li class="button" >
-                                <a ng-click="showme=false">Who we are <i class=
+                                <a ng-click="showme = 1">Who we are <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
 
                             <li class="button">
-                                <a ng-click="showme=true">Our History <i class=
+                                <a ng-click="showme = 2">Our History <i class=
+                                "fa fa-angle-right"></i></a>
+                            </li>
+
+                            <li class="button">
+                                <a ng-click="showme = 3">Our Staff <i class=
                                 "fa fa-angle-right"></i></a>
                             </li>
                         </ul>
                     </div><!-- start: About -->
 
                     <div class="span9">
-                        <div ng-hide="showme" style="">
+                        <div ng-hide="showme == 2 || showme == 3" style="">
 <h2 style="padding-left:20px">Who we are</h2>
 
 <hr style="margin-left:20px;width:30%">
-                            <p>Roque Roofing is located in Hamilton, Ontario.
-                            Specializing in built-up roofing, we are also
-                            approved applicators of most major manufacturers of
-                            modified bitumen, cold applied roof restorations
-                            and single ply membranes. In addition to new
-                            construction and re-roofing, we provide
-                            preventative maintenance services. Customers are
-                            protected with Roque Roofing through excellent
-                            financial stability, complete insurance and bonding
-                            protection.<br>
-                            <br>
-                            Roque Roofing provides quality contracting services
-                            and continues to exceed the expectations of owners
-                            and consultants.</p>
-                        </div>
+<p>Roque Roofing is located in Hamilton, Ontario.
+Specializing in built-up roofing, we are also
+approved applicators of most major manufacturers of
+modified bitumen, cold applied roof restorations
+and single ply membranes. In addition to new
+construction and re-roofing, we provide
+preventative maintenance services. Customers are
+protected with Roque Roofing through excellent
+financial stability, complete insurance and bonding
+protection.<br>
+<br>
+Roque Roofing provides quality contracting services
+and continues to exceed the expectations of owners
+and consultants.</p>
+</div>
 
-                        <div ng-show="showme">
+<div ng-show="showme ==  2">
 <h2 style="padding-left:20px">Our History</h2>
 
 <hr style="margin-left:20px;width:30%">
-                            <p>With just a little over 10 years of experience in flat roofing, Manuel Roque, Owner, ventured out on his own and established ROQUE ROOFING in 1980. Now in its second generation, the company continues to be owned and operated by Manuel and his family. <br><br>
+<p>With just a little over 10 years of experience in flat roofing, Manuel Roque, Owner, ventured out on his own and established ROQUE ROOFING in 1980. Now in its second generation, the company continues to be owned and operated by Manuel and his family. <br><br>
 
 In addition to Manuel’s 40 plus years of flat roofing experience, he has trained our crews how to install the best quality of roof systems and since Roque Roofing takes pride in our work we ensure all project requests are met to the customer’s satisfaction.
 <br><br>
 At Roque Roofing, our Health and Safety Policy is very simple, “SAFETY FIRST”. This fundamental policy ensures that no worker will adopt a procedure or undertake a work activity that is likely to cause injury to that person or any other workers.
 <br><br>
 Roque Roofing serves all of southwestern Ontario, providing professional friendly service and quality commercial roofing. Certified to install many types of roofing systems, quickly and efficiently, Roque Roofing has the expertise to get the job done!</p>
+                        </div>
+
+<div ng-show="showme ==  3">
+<h2 style="padding-left:20px">Our Staff</h2>
+
+<hr style="margin-left:20px;width:30%">
+<div class="container" style="padding-left:20px">
+<div class="row">
+<div class="span3">
+    <img src="img/RoqueRoofing7.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+</div>
+<div class="span3">
+    <img src="img/RoqueRoofing6.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+
+</div>
+<div class="span3">
+    <img src="img/RoqueRoofing5.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+
+</div>
+</div>
+<div class="row">
+<div class="span3">
+    <img src="img/RoqueRoofing4.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+</div>
+<div class="span3">
+    <img src="img/RoqueRoofing3.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+</div>
+<div class="span3">
+    <img src="img/RoqueRoofing2.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+</div>
+</div>
+<div class="row">
+<div class="span3">
+    <img src="img/RoqueRoofing1.jpg" style="width:200px;padding-bottom:5px" />
+    <p style="padding-left:0px;">Staff Name</p>
+    <hr style="margin:5px 0px">
+    <p style="padding-left:0px">Their position</p>
+    <p style="padding-left:0px;padding-bottom:20px">Contact</p>
+</div>
+</div>
+</div>
                         </div>
 
 
