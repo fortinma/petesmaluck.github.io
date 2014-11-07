@@ -15,23 +15,16 @@
       var geoJson = subdivisions();
 
       var geoJsonWards = wards();
-
-d3.json("toronto.json", function(error, csv_data) {
       
-      var wardValues = d3.nest()
-                      .key(function(d) {return d.features.properties.AREA_SHORT;})
-                          .rollup(function(wards){
-
-                            return {"length": wards.length, "total_time": d3.sum(wards, function(d) {return d.features.properties.AvgOfGNR; })
-
-                            }})
-                            .entries(csv_data);
-                        
-                            console.log(wardValues);
-                          });
-                         
-
-                       
+      //WARD VOTES
+      var wardVotes = d3.nest()
+      .key(function(d) { return d.properties.WARD;})
+      .rollup(function(d) { return {
+        "toryVotes": d3.sum(d, function(g) {return g.properties.TORYJOHN;}),
+        "chowVotes": d3.sum(d, function(g) {return g.properties.CHOWOLIVIA;}), 
+        "fordVotes": d3.sum(d, function(g) {return g.properties.FORDDOUG;})} })
+      .entries(geoJson.features);
+                 
                           
 
       //OVERLAY SVG LAYER
@@ -186,6 +179,8 @@ d3.json("toronto.json", function(error, csv_data) {
                     .attr('transform','translate(5,0)')
  
                 
+
+
                         } 
                         
           
