@@ -5,15 +5,34 @@
       //SETUP GOOGLE MAPS
       var $map=$("#map");
       var map = new google.maps.Map($map[0], {
-          zoom: 12,
+          zoom: 11,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          center: new google.maps.LatLng(43.6525, -79.381667), // Toronto
+          center: new google.maps.LatLng(43.7125, -79.2667), // Toronto
           styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]        
         });
         
       //LOAD JSON
       var geoJson = subdivisions();
+
       var geoJsonWards = wards();
+
+d3.json("toronto.json", function(error, csv_data) {
+      
+      var wardValues = d3.nest()
+                      .key(function(d) {return d.features.properties.AREA_SHORT;})
+                          .rollup(function(wards){
+
+                            return {"length": wards.length, "total_time": d3.sum(wards, function(d) {return d.features.properties.AvgOfGNR; })
+
+                            }})
+                            .entries(csv_data);
+                        
+                            console.log(wardValues);
+                          });
+                         
+
+                       
+                          
 
       //OVERLAY SVG LAYER
       var overlay = new google.maps.OverlayView();
@@ -89,7 +108,7 @@
             var sideBar = function(d){
               var title = d3.select('div.title').append('text')
               .attr('class','title')
-              .text(function() {return d.properties.WARD});
+              .text(function() {return d.properties.WardName});
 
               var ward = d3.select('div.ward').append('text')
               .attr('class','ward')
@@ -150,9 +169,9 @@
                         .text(name); 
                       }
                       
-                      bars('Tory_perc','Tory',20,'#003399');
-                      bars('Ford_perc','Ford',41,'#990000');
-                      bars('Chow_perc','Chow',62,'#6600FF');
+                      bars('TORY_Perc','Tory',20,'#003399');
+                      bars('FORD_Perc','Ford',41,'#990000');
+                      bars('CHOW_Perc','Chow',62,'#6600FF');
 
 
 
@@ -177,7 +196,7 @@
             .attr("d", path) // update existing paths
           .enter().append("svg:path")
             .attr("d", path)
-            .attr('id', function(d) {return d.properties.AREA_LONG_} );
+            .attr('id', function(d) {return d.properties.AREA_LONG} );
 
 
           //WHITE WARD BOUNDARIES
@@ -216,7 +235,7 @@
           polygonsWards.append("svg:path")
             .attr('class','wardBoundaries')
             .attr("d", pathWards)
-            .attr('id', function(d) {return d.properties.AREA_LONG_} )
+            .attr('id', function(d) {return d.properties.AREA_LONG} )
             .style('stroke','white')
             .style('stroke-width',2)
             .style('fill','none');
@@ -224,31 +243,31 @@
 
             //RULES FOR MAP COLOUR SCHEME
             polygons.style('fill', function(d){
-              if (d.properties.Chow_perc > d.properties.Ford_perc && d.properties.Chow_perc > d.properties.Tory_perc){
+              if (d.properties.CHOW_Perc > d.properties.FORD_Perc && d.properties.CHOW_Perc > d.properties.TORY_Perc){
                 return '#6600FF'
               }
-              if (d.properties.Ford_perc > d.properties.Tory_perc && d.properties.Ford_perc > d.properties.Chow_perc){
+              if (d.properties.FORD_Perc > d.properties.TORY_Perc && d.properties.FORD_Perc > d.properties.CHOW_Perc){
                 return '#990000'
               }
-              if (d.properties.Tory_perc > d.properties.Ford_perc && d.properties.Tory_perc > d.properties.Chow_perc){
+              if (d.properties.TORY_Perc > d.properties.FORD_Perc && d.properties.TORY_Perc > d.properties.CHOW_Perc){
                 return '#003399'
               }
 
             })
             .style('opacity', function(d) {
-              if (d.properties.Chow_perc > 0.8 || d.properties.Ford_perc > 0.8 || d.properties.Tory_perc > 0.8 ){
+              if (d.properties.CHOW_Perc > 0.8 || d.properties.FORD_Perc > 0.8 || d.properties.TORY_Perc > 0.8 ){
                 return 1
               }
-              if (d.properties.Chow_perc > 0.7 || d.properties.Ford_perc > 0.7 || d.properties.Tory_perc > 0.7 ){
+              if (d.properties.CHOW_Perc > 0.7 || d.properties.FORD_Perc > 0.7 || d.properties.TORY_Perc > 0.7 ){
                 return 0.8
               }
-              if (d.properties.Chow_perc > 0.6 || d.properties.Ford_perc > 0.6 || d.properties.Tory_perc > 0.6 ){
+              if (d.properties.CHOW_Perc > 0.6 || d.properties.FORD_Perc > 0.6 || d.properties.TORY_Perc > 0.6 ){
                 return 0.6
               }
-              if (d.properties.Chow_perc > 0.5 || d.properties.Ford_perc > 0.5 || d.properties.Tory_perc > 0.5 ){
+              if (d.properties.CHOW_Perc > 0.5 || d.properties.FORD_Perc > 0.5 || d.properties.TORY_Perc > 0.5 ){
                 return 0.4
               }
-              if (d.properties.Chow_perc > 0.4 || d.properties.Ford_perc > 0.4 || d.properties.Tory_perc > 0.4 ){
+              if (d.properties.CHOW_Perc > 0.4 || d.properties.FORD_Perc > 0.4 || d.properties.TORY_Perc > 0.4 ){
                 return 0.3
               }
               else {return 0.2}

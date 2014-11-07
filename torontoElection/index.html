@@ -34,14 +34,14 @@
       <div class="sideBar">
         <i class="fa fa-times close" style="top:5px;right:5px;position:absolute"></i>
           <i class="fa fa-angle-left open" style="top:5px;left:5px;position:absolute"></i>
-          <div class="legendHoverTop">VOTE CHART</div>
+          <div class="legendHoverTop" style="letter-spacing:2px">VOTE CHART</div>
         <p style="margin-bottom:0px">HOW TORONTO VOTED</p>
         <hr class="tight">
         <span style="font-size:12px">Scroll over the subdivisions to view the percentage of votes breakdown.</span>
         <hr>
-        <span>WARD: <div class="title"></div></span>
+        <div class="title"></div>
         <br>
-        <span>SUBDIVISION: <div class="ward"></div></span>
+        <span>Subdivision: <div class="ward"></div></span>
         <!-- VOTE CHART -->
         <svg class="voteChart"></svg>
         <!-- LEGEND -->
@@ -49,7 +49,7 @@
         <div class="legend">
           <i class="fa fa-times closeBottom" style="top:5px;right:5px;position:absolute;opacity:0.3"></i>
           <i class="fa fa-angle-left openBottom" style="top:5px;left:5px;position:absolute"></i>
-          <div class="legendHover">LEGEND</div>
+          <div class="legendHover"  style="letter-spacing:2px">LEGEND</div>
           <span style="font-size:12px">Percentage of votes</span>
           <hr  class="tight">
           <svg id="legendColors"></svg>
@@ -64,14 +64,10 @@
 </div>
   <div id="footer">
       <div class="container-fluid">
-        <i class="fa fa-cog"></i>
-        <i class="fa fa-info"></i>
-        <i class="fa fa-twitter right"></i>
-        <i class="fa fa-github right"></i>
+
       </div>
     </div>
 <script>
-// Using multiple unit types within one animation.
  $('.open').hide();
  $('.openBottom').hide();
  $('.legendHover').hide();
@@ -102,7 +98,7 @@ $("i.openBottom").on({
         $('.legendHover').fadeIn( 100 );
     },
     mouseleave: function () {
-        $('.legendHover').fadeOut( 100 );
+        $('.legendHover').fadeOut( 300 );
     }
 });
 
@@ -111,7 +107,7 @@ $("i.open").on({
         $('.legendHoverTop').fadeIn( 100 );
     },
     mouseleave: function () {
-        $('.legendHoverTop').fadeOut( 100 );
+        $('.legendHoverTop').fadeOut( 300 );
     }
 });
 
