@@ -1,5 +1,3 @@
-
-
     $(function () {
 
       //SETUP GOOGLE MAPS
@@ -135,9 +133,9 @@
                         .text(function() { return decimal(d.properties[data] * 100); }); 
                       }
                       
-                      bars('TORY_Perc','Tory',20,'#003399',0,0);
-                      bars('FORD_Perc','Ford',20,'#990000',d.properties.TORY_Perc,0);
-                      bars('CHOW_Perc','Chow',20,'#6600FF',d.properties.TORY_Perc,d.properties.FORD_Perc);
+                      bars('Tory_perc','Tory',20,'#003399',0,0);
+                      bars('Ford_perc','Ford',20,'#990000',d.properties.Tory_perc,0);
+                      bars('Chow_perc','Chow',20,'#6600FF',d.properties.Tory_perc,d.properties.Ford_perc);
 
 
                 var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(5);
@@ -210,38 +208,36 @@
 
             //RULES FOR MAP COLOUR SCHEME
             polygons.style('fill', function(d){
-              if (d.properties.CHOW_Perc > d.properties.FORD_Perc && d.properties.CHOW_Perc > d.properties.TORY_Perc){
+              if (d.properties.Chow_perc > d.properties.Ford_perc && d.properties.Chow_perc > d.properties.Tory_perc){
                 return '#6600FF'
               }
-              if (d.properties.FORD_Perc > d.properties.TORY_Perc && d.properties.FORD_Perc > d.properties.CHOW_Perc){
+              if (d.properties.Ford_perc > d.properties.Tory_perc && d.properties.Ford_perc > d.properties.Chow_perc){
                 return '#990000'
               }
-              if (d.properties.TORY_Perc > d.properties.FORD_Perc && d.properties.TORY_Perc > d.properties.CHOW_Perc){
+              if (d.properties.Tory_perc > d.properties.Ford_perc && d.properties.Tory_perc > d.properties.Chow_perc){
                 return '#003399'
               }
 
             })
             .style('opacity', function(d) {
-              if (d.properties.CHOW_Perc > 0.8 || d.properties.FORD_Perc > 0.8 || d.properties.TORY_Perc > 0.8 ){
+              if (d.properties.Chow_perc > 0.8 || d.properties.Ford_perc > 0.8 || d.properties.Tory_perc > 0.8 ){
                 return 1
               }
-              if (d.properties.CHOW_Perc > 0.7 || d.properties.FORD_Perc > 0.7 || d.properties.TORY_Perc > 0.7 ){
+              if (d.properties.Chow_perc > 0.7 || d.properties.Ford_perc > 0.7 || d.properties.Tory_perc > 0.7 ){
                 return 0.8
               }
-              if (d.properties.CHOW_Perc > 0.6 || d.properties.FORD_Perc > 0.6 || d.properties.TORY_Perc > 0.6 ){
+              if (d.properties.Chow_perc > 0.6 || d.properties.Ford_perc > 0.6 || d.properties.Tory_perc > 0.6 ){
                 return 0.6
               }
-              if (d.properties.CHOW_Perc > 0.5 || d.properties.FORD_Perc > 0.5 || d.properties.TORY_Perc > 0.5 ){
+              if (d.properties.Chow_perc > 0.5 || d.properties.Ford_perc > 0.5 || d.properties.Tory_perc > 0.5 ){
                 return 0.4
               }
-              if (d.properties.CHOW_Perc > 0.4 || d.properties.FORD_Perc > 0.4 || d.properties.TORY_Perc > 0.4 ){
+              if (d.properties.Chow_perc > 0.4 || d.properties.Ford_perc > 0.4 || d.properties.Tory_perc > 0.4 ){
                 return 0.3
               }
               else {return 0.2}
             })
             ;
-
-
 
 
             //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
