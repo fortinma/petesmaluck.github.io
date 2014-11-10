@@ -22,11 +22,10 @@
       .rollup(function(d) { return {
         "toryVotes": d3.sum(d, function(g) {return g.properties.TORYJOHN;}),
         "chowVotes": d3.sum(d, function(g) {return g.properties.CHOWOLIVIA;}), 
-        "fordVotes": d3.sum(d, function(g) {return g.properties.FORDDOUG;})} })
+        "fordVotes": d3.sum(d, function(g) {return g.properties.FORDDOUG;})
+      }})
       .entries(geoJson.features);
                  
-                          
-
       //OVERLAY SVG LAYER
       var overlay = new google.maps.OverlayView();
 
@@ -113,66 +112,39 @@
               //CHART DIMENSIONS
               var x = d3.scale.linear()
                   .domain([0, 100])
-                  .range([0, 170]);
+                  .range([0, 222]);
 
                   var bar = d3.select(".voteChart");
 
-                  var bars = function(data,name,height,color) {
+                  var bars = function(data,name,height,color,width1,width2) {
                     bar.append("rect")
                     .attr('class','bar')
                         .attr("width", function() { return x(d.properties[data] * 100) ; })
                         .attr("height", 20)
-                        .attr("x", function() { return 40; })
+                        .attr("x", function() { return  x((width1 + width2) * 100); })
                         .attr("y", height - 10)
                         .attr("dy", ".35em")
-                        .style('fill', color)
-                        .style('opacity', function(){
-                          if (d.properties[data] >= 0.8){
-                            return 1
-                          }
-                          if (d.properties[data] >= 0.7 && d.properties[data] < 0.8){
-                            return 0.8
-                          }
-                          if (d.properties[data] >= 0.6 && d.properties[data] < 0.7){
-                            return 0.6
-                          }
-                          if (d.properties[data] >= 0.5 && d.properties[data] < 0.6 ){
-                            return 0.4
-                          }
-                          if (d.properties[data] >= 0.4 && d.properties[data] < 0.5){
-                            return 0.3
-                          }
-                          else {return 0.2}
-                        });
+                        .style('fill', color);
 
                     bar.append("text")
                     .attr('class','bar')
-                        .attr("x", function() { return (63 + x(d.properties[data] * 100)); })
+                        .attr("x", function() { return x((width1 + width2) * 100) + 25; })
                         .attr("y", height)
                         .attr("dy", ".35em")
-                        .style('fill','#222')
-                        .text(function() { return decimal(d.properties[data] * 100); });
-
-                    bar.append("text")
-                    .attr('class','barText')
-                        .attr("x",0)
-                        .attr("y", height)
-                        .attr("dy", ".35em")
-                        .style('font-size',12)
-                        .text(name); 
+                        .style('fill','#fff')
+                        .text(function() { return decimal(d.properties[data] * 100); }); 
                       }
                       
-                      bars('TORY_Perc','Tory',20,'#003399');
-                      bars('FORD_Perc','Ford',41,'#990000');
-                      bars('CHOW_Perc','Chow',62,'#6600FF');
-
+                      bars('TORY_Perc','Tory',20,'#003399',0,0);
+                      bars('FORD_Perc','Ford',20,'#990000',d.properties.TORY_Perc,0);
+                      bars('CHOW_Perc','Chow',20,'#6600FF',d.properties.TORY_Perc,d.properties.FORD_Perc);
 
 
                 var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(5);
 
                   bar.append('g')
                   .attr("class", "axis")
-                  .attr('transform', 'translate(40,72)')
+                  .attr('transform', 'translate(0,72)')
                   .call(xAxis);
 
                   d3.selectAll('.axis text')
