@@ -11,8 +11,8 @@
 
 
        
-         <link href="css/bootstrap.css" rel="stylesheet">
-         <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+         <link href="css/carousel.css" rel="stylesheet">
          <link href="css/style.css" rel="stylesheet">
     <link href=
     "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
@@ -24,6 +24,16 @@
 </head>
 
     <style type="text/css">
+
+
+
+.container {
+padding-right: 0px; 
+padding-left: 0px; 
+margin-right: auto;
+margin-left: auto;
+}
+
 h3 {
     line-height:28px;
 
@@ -41,38 +51,11 @@ h3 {
     background: #431701;
 
     }
+    #wrapper{
+        height:50px;
+    }
 
-    .carousel {
-    height: 100%;
-    overflow: hidden;
-    width:100%;
-    margin-bottom: 0px;
-    }
-    .carousel .item {
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-    }
-.carousel .item > img {
-display: block;
-line-height: 1;
-width: 100%;
-}
-    .carousel .active.left, .carousel .active.right {
-    left:0;
-    opacity:0;
-    z-index:2;
-    }
-    .carousel .next, .carousel .prev {
-    left:0;
-    opacity:1;
-    z-index:1;
-    }
-    .carousel-control {
-    top:50%;
-    }
+
     #footer{
     padding-bottom:60px;
     background: url('img/blk_bkrnd.jpg');
@@ -109,35 +92,17 @@ width: 100%;
     float: left;
     margin: 0 0 0 0;
     }
-    header{
+    .header{
     background: url('img/blk_bkrnd.jpg');
     color:white;
     }
-    header h1,h2,h3{
+    .header h1,h2,h3{
     color:white;
     }
     .fa{
     color:white;
     }
-    .carousel-control {
-    position: absolute;
-    top: 45%;
-    left: 15px;
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    font-size: 60px;
-    font-weight: 100;
-    line-height: 27px;
-    color: white;
-    text-align: center;
-    background: rgba(0,0,0,0.5);
-    border: 1px solid rgba(0,0,0,0);
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    opacity: 0.8;
-    filter: alpha(opacity=50);
-    }
+
     .nav-stacked{
     width:100%;
     font-size: 16px;
@@ -172,7 +137,7 @@ width: 100%;
     color: #cdcccc;
     }
     .logo{
-    padding-top:20px;
+    padding-top:10px;
     }
     .icon{
     font-size:30px;
@@ -195,13 +160,6 @@ width: 100%;
     background: #431701;
     }
 
-    .nav-tabs.nav-stacked > li > a {
-    border: 1px solid #222;
-    }
-
-    .nav-tabs.nav-stacked:hover > li > a {
-    border: 1px solid #222;
-    }
 
     .nav-tabs.nav-stacked > li:last-child > a {
     -webkit-border-bottom-right-radius: 0px; 
@@ -225,7 +183,9 @@ width: 100%;
     border-left: 3px solid #431701;
     }
     .member{
-    padding-right:30px;
+    padding:0px 20px;
+    min-width:150px;
+    margin:0 auto;
     }
 
     .button {
@@ -238,7 +198,44 @@ width: 100%;
     li {
         line-height:35px;
     }
+    .header{
+        padding-bottom:5px;
+    }
 
+    .nav-tabs>li>a {
+    margin-right: 3px;
+    line-height: 1.42857143;
+    border: 0px solid transparent; 
+    border-radius: 0; 
+    }
+
+
+    @media only screen and (max-width: 960px) {
+    
+    .header {
+        padding-bottom:0px;
+    }
+
+    #wrapper{
+        height:20px;
+    }
+    li.button > a {
+        font-size:12px;
+    }
+    #footer a {
+    padding: 5px;
+    }
+    #navbar > ul > li > a {
+        font-size: 12px;
+    }
+}
+    @media only screen and (max-width: 600px) {
+    
+    h3{
+        font-size:20px;
+    }
+
+}
 
     </style>
 </head>
@@ -246,7 +243,7 @@ width: 100%;
 <body>
     <!--start: Header -->
 
-    <header style="padding-bottom:65px">
+    <div class="header">
         <!--start: Container -->
 
         <div class="container">
@@ -255,19 +252,26 @@ width: 100%;
             <div class="row">
                 <!--start: Logo -->
 
-                <div class="span4"><img class="logo" src=
-                "img/roque_logo.png"></div><!--end: Logo -->
+                <div class="col-sm-4">
+                    <img class="logo" src=
+                "img/roque_logo.png" style="width:100%">
+                </div>
+                <!--end: Logo -->
+
                 <!--start: Navigation -->
+                <div class="col-sm-8">
+                    <div class="navbar navbar-default navbar-inverse" role="navigation">
+                        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-                <div class="span8">
-                    <div class="navbar navbar-inverse">
-                        <div class="navbar-inner">
-                            <a class="btn btn-navbar" data-target=
-                            ".nav-collapse" data-toggle="collapse"><span class=
-                            "icon-bar"></span> <span class="icon-bar"></span>
-                            <span class="icon-bar"></span></a>
-
-                            <div class="nav-collapse collapse">
+                            <div id="navbar" class="navbar-collapse collapse">
                                 <div style=
                                 "padding-top:25px;padding-bottom:30px;float:right;text-align:end;">
                                 <h4 style=
@@ -288,7 +292,7 @@ width: 100%;
                                     Hamilton, ON L8L 5J7</span>
                                 </div>
 
-                                <ul class="nav" style="float:right">
+                                <ul class="nav navbar-nav" style="float:right">
                                     <li class="active">
                                         <a href="#">Home</a>
                                     </li>
@@ -320,19 +324,36 @@ width: 100%;
                 </div><!--end: Navigation -->
             </div><!--end: Row -->
         </div><!--end: Container-->
-    </header><!--end: Header-->
+    </div><!--end: Header-->
+
 
     <div ng-view></div>
 
-    <div class="row" style="border-bottom:solid 2px #222">
+    
         <div class="container">
-            <div class="span12" style="background:#fff;padding:20px 0;">
+
+            <div class="col-sm-3" style="padding:40px 0;">
             <h3 style="color:#222;display:inline;padding-right:50px">Proud
-            Members of</h3><img class="member" src="img/TCA.gif" style=
-            "max-width:120px"> <img class="member" src="img/OIRCA.jpg" style=
-            "max-width:140px"> <img class="member" src="img/CRCA.png" style=
-            "max-width:100px"> <img class="member" src="img/HHCA.png" style=
-            "max-width:100px"></div>
+            Members of</h3>
+            </div>
+            <div class="col-sm-9" style="background:#fff;padding:20px 0px">
+            <div class="col-sm-3">
+            <img class="member" src="img/TCA.gif" style=
+            "padding-left:20px;width:25%"> 
+            </div>
+
+            <div class="col-sm-3">
+            <img class="member" src="img/CRCA.png" style=
+            "width:25%"> 
+            </div>
+            <div class="col-sm-3">
+            <img class="member" src="img/HHCA.png" style=
+            "width:25%"></div>
+           <div class="col-sm-3">
+            <img class="member" src="img/OIRCA.jpg" style=
+            "width:25%;padding-top:10px"> 
+            </div>
+        </div>
         </div>
     </div><!-- start: Copyright -->
 
@@ -349,12 +370,12 @@ width: 100%;
     <!-- end: Copyright -->
     <!-- start: Java Script -->
     <!-- Placed at the end of the document so the pages load faster -->
-   <script src="js/jquery-1.8.2.js"></script>
-   <script src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-$(document).ready(function() {
-    $('.carousel').carousel({interval: 2000});
-    });
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 3000
+    })
 </script>
      <!-- end: Java Script -->
 </body>
