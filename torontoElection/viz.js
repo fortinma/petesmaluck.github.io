@@ -117,7 +117,7 @@
                   var bars = function(data,name,height,color,width1,width2) {
                     bar.append("rect")
                     .attr('class','bar')
-                        .attr("width", function() { return x(d.properties[data] * 100) ; })
+                        .attr("width", function() { return x(data * 100) ; })
                         .attr("height", 20)
                         .attr("x", function() { return  x((width1 + width2) * 100); })
                         .attr("y", height - 10)
@@ -130,12 +130,12 @@
                         .attr("y", height)
                         .attr("dy", ".35em")
                         .style('fill','#fff')
-                        .text(function() { return decimal(d.properties[data] * 100); }); 
+                        .text(function() { return decimal(data * 100); }); 
                       }
                       
-                      bars('Tory_perc','Tory',20,'#003399',0,0);
-                      bars('Ford_perc','Ford',20,'#990000',d.properties.Tory_perc,0);
-                      bars('Chow_perc','Chow',20,'#6600FF',d.properties.Tory_perc,d.properties.Ford_perc);
+                      bars(d.properties.Tory_perc,'Tory',20,'#003399',0,0);
+                      bars(d.properties.Ford_perc,'Ford',20,'#990000',d.properties.Tory_perc,0);
+                      bars(d.properties.Chow_perc,'Chow',20,'#6600FF',d.properties.Tory_perc,d.properties.Ford_perc);
 
 
                 var xAxis = d3.svg.axis().scale(x).orient('bottom').ticks(5);
@@ -152,6 +152,36 @@
 
 
                         } 
+
+          var wardResults = function(d){
+                  var bar = d3.select(".voteChart");
+
+                  var bars = function(data,name,height,color,width1,width2) {
+                    bar.append("rect")
+                    .attr('class','bar')
+                        .attr("width", function() { return x(data * 100) ; })
+                        .attr("height", 20)
+                        .attr("x", function() { return  x((width1 + width2) * 100); })
+                        .attr("y", height - 10)
+                        .attr("dy", ".35em")
+                        .style('fill', color);
+
+                    bar.append("text")
+                    .attr('class','bar')
+                        .attr("x", function() { return x((width1 + width2) * 100) + 25; })
+                        .attr("y", height)
+                        .attr("dy", ".35em")
+                        .style('fill','#fff')
+                        .text(function() { return decimal(data * 100); }); 
+                      }
+                      
+                      bars(d.toryVotes,'Tory',60,'#003399',0,0);
+                      bars(d.fordVotes,'Ford',60,'#990000',d.toryVotes,0);
+                      bars(d.chowVotes,'Chow',60,'#6600FF',d.toryVotes,d.fordVotes);
+
+                      console.log(d.toryVotes);
+
+                    }
                         
           
           //SUB-DIVISION BOUNDARIES
@@ -242,6 +272,18 @@
 
             //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
             polygons.on('mouseover', sideBar)
+            .on('mouseout', function() {
+              var removeTitle = d3.select('.title text').remove();
+              var removeWard = d3.select('.ward text').remove();
+              var removeDivision = d3.select('.division text').remove();
+              var removeFord = d3.selectAll('.bar').remove();
+              var removeText = d3.selectAll('.barText').remove();
+              var removeAxis = d3.selectAll('.axis').remove();
+              var removeLegend = d3.selectAll('.legend rect text').remove();
+              return [removeTitle,removeWard, removeDivision, removeFord,removeText,removeAxis,removeLegend];
+            });
+            //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
+            polygonsWards.on('mouseover', wardResults)
             .on('mouseout', function() {
               var removeTitle = d3.select('.title text').remove();
               var removeWard = d3.select('.ward text').remove();
