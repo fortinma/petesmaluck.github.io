@@ -283,6 +283,8 @@
               return [removeTitle,removeWard, removeDivision, removeFord,removeText,removeAxis,removeLegend];
             });
             //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
+
+            /*
             polygonsWards.on('mouseover', wardResults)
             .on('mouseout', function() {
               var removeTitle = d3.select('.title text').remove();
@@ -294,6 +296,7 @@
               var removeLegend = d3.selectAll('.legend rect text').remove();
               return [removeTitle,removeWard, removeDivision, removeFord,removeText,removeAxis,removeLegend];
             });
+    */
         };
 
       };
