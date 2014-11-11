@@ -39,11 +39,16 @@
         <hr class="tight">
         <span style="font-size:12px">Scroll over the subdivisions to view the percentage of votes breakdown.</span>
         <hr>
-        <div class="title"></div>
+        <span>Total Votes</span>
+        <svg class="cityChart"></svg>
+        <br>
+        <span>Ward: <div class="title"></div></span>
+        <svg class="voteChart"></svg>
         <br>
         <span>Subdivision: <div class="ward"></div></span>
+        <svg class="subdivisionChart"></svg>
         <!-- VOTE CHART -->
-        <svg class="voteChart"></svg>
+        
         <!-- LEGEND -->
       </div>
         <div class="legend">
@@ -62,11 +67,13 @@
     </div>
   </div>
 </div>
+<!--
   <div id="footer">
       <div class="container-fluid">
 
       </div>
     </div>
+-->
 <script>
  $('.open').hide();
  $('.openBottom').hide();
