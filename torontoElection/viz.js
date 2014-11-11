@@ -195,7 +195,14 @@
                           .attr("y", 13)
                           .attr("dy", ".35em")
                           .style('fill','#fff')
-                          .text(function() { return decimal(10); }); 
+                          .text(function() { 
+                            for (var i = 0; i < wardVotes.length; i++) { 
+                            if (d.properties.WARD == wardVotes[i].key) {
+                              var total = wardVotes[i].values["totalVotes"];
+                              return decimal(wardVotes[i].values[data] / total * 100)
+                            }}}
+
+                         ); 
 
                       }
 
