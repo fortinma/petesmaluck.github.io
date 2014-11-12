@@ -36,7 +36,20 @@
       }})
       .entries(geoJson.features);
 
-      console.log(cityVotes);
+      //Education by ward
+      var education = d3.nest()
+      .rollup(function(d) { return {
+        "EDU_nonHS": d3.sum(d, function(g) {return g.properties.TORYJOHN;}),
+        "EDU_HS": d3.sum(d, function(g) {return g.properties.CHOWOLIVIA;}), 
+        "EDU_Trades": d3.sum(d, function(g) {return g.properties.FORDDOUG;}),
+        "EDU_Colleg": d3.sum(d, function(g) {return g.properties.TotalVotes;}),
+        "EDU_UniNon": 0,
+        "EDU_UniBac": d3.sum(d, function(g) {return g.properties.CHOWOLIVIA;}), 
+        "EDU_UniB_1": d3.sum(d, function(g) {return g.properties.FORDDOUG;}),
+        "EDU_UniMst": d3.sum(d, function(g) {return g.properties.TotalVotes;}),
+
+      }})
+      .entries(geoJson.features);
                  
       //OVERLAY SVG LAYER
       var overlay = new google.maps.OverlayView();
@@ -158,12 +171,17 @@
                         .attr("y", 13)
                         .attr("dy", ".35em")
                         .style('fill','#fff')
-                        .text(function() { return decimal(data * 100); }); 
+                        .text(function() { 
+                          if ((data * 100) >= 12)
+                            { return decimal(data * 100) }
+                              else 
+                                { return ''}
+                        }); 
                       }
                       
-                      bars(d.properties.Tory_perc,'Tory','#003399',0,0);
-                      bars(d.properties.Ford_perc,'Ford','#990000',d.properties.Tory_perc,0);
-                      bars(d.properties.Chow_perc,'Chow','#6600FF',d.properties.Tory_perc,d.properties.Ford_perc);
+                      bars(d.properties.TORY_Perc,'Tory','#003399',0,0);
+                      bars(d.properties.FORD_Perc,'Ford','#990000',d.properties.TORY_Perc,0);
+                      bars(d.properties.CHOW_Perc,'Chow','#6600FF',d.properties.TORY_Perc,d.properties.FORD_Perc);
 
 
                      //WARD RESULTS
@@ -199,7 +217,8 @@
                             for (var i = 0; i < wardVotes.length; i++) { 
                             if (d.properties.WARD == wardVotes[i].key) {
                               var total = wardVotes[i].values["totalVotes"];
-                              return decimal(wardVotes[i].values[data] / total * 100)
+                              if (wardVotes[i].values[data] / total * 100 > 12){return decimal(wardVotes[i].values[data] / total * 100) }
+                                else {return ''}
                             }}}
 
                          ); 
@@ -241,7 +260,6 @@
                       cityBars("chowVotes",'#6600FF',"toryVotes","fordVotes");
 
                       } 
-                        
           
           //SUB-DIVISION BOUNDARIES
           path = d3.geo.path().projection(googleMapProjection);
@@ -298,31 +316,31 @@
 
             //RULES FOR MAP COLOUR SCHEME
             polygons.style('fill', function(d){
-              if (d.properties.Chow_perc > d.properties.Ford_perc && d.properties.Chow_perc > d.properties.Tory_perc){
+              if (d.properties.CHOW_Perc > d.properties.FORD_Perc && d.properties.CHOW_Perc > d.properties.TORY_Perc){
                 return '#6600FF'
               }
-              if (d.properties.Ford_perc > d.properties.Tory_perc && d.properties.Ford_perc > d.properties.Chow_perc){
+              if (d.properties.FORD_Perc > d.properties.TORY_Perc && d.properties.FORD_Perc > d.properties.CHOW_Perc){
                 return '#990000'
               }
-              if (d.properties.Tory_perc > d.properties.Ford_perc && d.properties.Tory_perc > d.properties.Chow_perc){
+              if (d.properties.TORY_Perc > d.properties.FORD_Perc && d.properties.TORY_Perc > d.properties.CHOW_Perc){
                 return '#003399'
               }
 
             })
             .style('opacity', function(d) {
-              if (d.properties.Chow_perc > 0.8 || d.properties.Ford_perc > 0.8 || d.properties.Tory_perc > 0.8 ){
+              if (d.properties.CHOW_Perc > 0.8 || d.properties.FORD_Perc > 0.8 || d.properties.TORY_Perc > 0.8 ){
                 return 1
               }
-              if (d.properties.Chow_perc > 0.7 || d.properties.Ford_perc > 0.7 || d.properties.Tory_perc > 0.7 ){
+              if (d.properties.CHOW_Perc > 0.7 || d.properties.FORD_Perc > 0.7 || d.properties.TORY_Perc > 0.7 ){
                 return 0.8
               }
-              if (d.properties.Chow_perc > 0.6 || d.properties.Ford_perc > 0.6 || d.properties.Tory_perc > 0.6 ){
+              if (d.properties.CHOW_Perc > 0.6 || d.properties.FORD_Perc > 0.6 || d.properties.TORY_Perc > 0.6 ){
                 return 0.6
               }
-              if (d.properties.Chow_perc > 0.5 || d.properties.Ford_perc > 0.5 || d.properties.Tory_perc > 0.5 ){
+              if (d.properties.CHOW_Perc > 0.5 || d.properties.FORD_Perc > 0.5 || d.properties.TORY_Perc > 0.5 ){
                 return 0.4
               }
-              if (d.properties.Chow_perc > 0.4 || d.properties.Ford_perc > 0.4 || d.properties.Tory_perc > 0.4 ){
+              if (d.properties.CHOW_Perc > 0.4 || d.properties.FORD_Perc > 0.4 || d.properties.TORY_Perc > 0.4 ){
                 return 0.3
               }
               else {return 0.2}
