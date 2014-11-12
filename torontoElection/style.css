@@ -36,6 +36,12 @@ hr.tight{
     width: 100%;
     background:#222;
     border-top:solid 1px #fff;
+    width:2000px;
+}
+
+#footer p{
+    color:white;
+    text-align:center;
 }
 
 .navbar-fixed-top,.navbar-fixed-bottom {
@@ -183,6 +189,58 @@ letter-spacing: 2px;
     text-anchor:end
 }
 
+#education {
+    width:100%;
+    height:170px;
+    color:#000;
+    border-radius:5px
+}
+
+#education text {
+    fill:#fff;
+    font:10px sans-serif;
+    text-anchor:end
+}
+
+#religion {
+    width:100%;
+    height:170px;
+    color:#000;
+    border-radius:5px
+}
+
+#religion text {
+    fill:#fff;
+    font:10px sans-serif;
+    text-anchor:end
+}
+
+#income {
+    width:100%;
+    height:170px;
+    color:#000;
+    border-radius:5px
+}
+
+#income text {
+    fill:#fff;
+    font:10px sans-serif;
+    text-anchor:end
+}
+
+#occupation {
+    width:100%;
+    height:170px;
+    color:#000;
+    border-radius:5px
+}
+
+#occupation text {
+    fill:#fff;
+    font:10px sans-serif;
+    text-anchor:end
+}
+
 .title {
     height:25px
 }
@@ -267,5 +325,27 @@ text.mayor_Ford{
     left:-150px;
     top:0px;
     font-size:20px;
+}
+
+@media (min-width:768px) {
+.container {
+width:100%;
+}
+#main-content{
+     min-height: 100%;
+    height: auto; 
+
+}
+#main-content > .row {
+ overflow-x:scroll;
+     overflow-y:hidden;
+    white-space:nowrap;
+}    
+#main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
+    float:none;
+    display:inline-block;
+    white-space:normal;
+    vertical-align:top;
+}
 }
   

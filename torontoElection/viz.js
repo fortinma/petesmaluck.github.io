@@ -35,21 +35,6 @@
         "zero": 0
       }})
       .entries(geoJson.features);
-
-      //Education by ward
-      var education = d3.nest()
-      .rollup(function(d) { return {
-        "EDU_nonHS": d3.sum(d, function(g) {return g.properties.TORYJOHN;}),
-        "EDU_HS": d3.sum(d, function(g) {return g.properties.CHOWOLIVIA;}), 
-        "EDU_Trades": d3.sum(d, function(g) {return g.properties.FORDDOUG;}),
-        "EDU_Colleg": d3.sum(d, function(g) {return g.properties.TotalVotes;}),
-        "EDU_UniNon": 0,
-        "EDU_UniBac": d3.sum(d, function(g) {return g.properties.CHOWOLIVIA;}), 
-        "EDU_UniB_1": d3.sum(d, function(g) {return g.properties.FORDDOUG;}),
-        "EDU_UniMst": d3.sum(d, function(g) {return g.properties.TotalVotes;}),
-
-      }})
-      .entries(geoJson.features);
                  
       //OVERLAY SVG LAYER
       var overlay = new google.maps.OverlayView();
@@ -114,6 +99,11 @@
        var bar2 = d3.select(".voteChart");
        var bar3 = d3.select(".cityChart");
 
+       var education = d3.select("#education");
+       var religion = d3.select("#religion");
+       var income = d3.select("#income");
+       var occupation = d3.select("#occupation");
+
         
         //CHART WIDTH DOMAIN AND RANGE
         var x = d3.scale.linear()
@@ -128,7 +118,65 @@
             .call(xAxis);
 
             d3.selectAll('.axis text')
-              .attr('transform','translate(5,0)')
+              .attr('transform','translate(5,0)');
+
+
+        var xEducation = d3.scale.linear()
+            .domain([0, 80])
+            .range([0, 222]);
+
+            var xAxisEducation = d3.svg.axis().scale(xEducation).orient('bottom').ticks(5);
+
+            education.append('g')
+            .attr("class", "axis")
+            .attr('transform', 'translate(70,112)')
+            .call(xAxisEducation);
+
+            d3.selectAll('.axis text')
+              .attr('transform','translate(5,0)');
+
+        var xReligion = d3.scale.linear()
+            .domain([0, 100])
+            .range([0, 222]);
+
+            var xAxisReligion = d3.svg.axis().scale(xReligion).orient('bottom').ticks(5);
+
+            religion.append('g')
+            .attr("class", "axis")
+            .attr('transform', 'translate(70,112)')
+            .call(xAxisReligion);
+
+            d3.selectAll('.axis text')
+              .attr('transform','translate(5,0)');
+
+        var xIncome = d3.scale.linear()
+            .domain([0, 100])
+            .range([0, 222]);
+
+            var xAxisIncome = d3.svg.axis().scale(xIncome).orient('bottom').ticks(5);
+
+            income.append('g')
+            .attr("class", "axis")
+            .attr('transform', 'translate(70,112)')
+            .call(xAxisIncome);
+
+            d3.selectAll('.axis text')
+              .attr('transform','translate(5,0)');
+
+        var xOccupation = d3.scale.linear()
+            .domain([0, 60])
+            .range([0, 222]);
+
+            var xAxisOccupation = d3.svg.axis().scale(xOccupation).orient('bottom').ticks(5);
+
+            occupation.append('g')
+            .attr("class", "axis")
+            .attr('transform', 'translate(70,112)')
+            .call(xAxisOccupation);
+
+            d3.selectAll('.axis text')
+              .attr('transform','translate(5,0)');
+
 
         overlay.draw = function () {
           var markerOverlay = this;
@@ -259,7 +307,78 @@
                       cityBars("fordVotes",'#990000',"toryVotes","zero");
                       cityBars("chowVotes",'#6600FF',"toryVotes","fordVotes");
 
+
+                     //EDUCATION STATS
+                     var socioStats = function(data,top,title,type,scale) {
+                      
+                      type.append('rect')
+                        .attr('class','bar')
+                        .attr("width", function() {
+                          return scale(d.properties[data] * 100)
+                        })
+                        .attr("height", 15)
+                        .attr("x", 70)
+                        .attr("y", top)
+                        .style('fill', "steelblue");
+
+                     
+                      type.append("text")
+                      .attr('class','bar')
+                        .attr("x", function() {
+                          return 102 + scale(d.properties[data] * 100)
+                          })
+                        .attr("y", top + 8)
+                        .attr("dy", ".35em")
+                        .style('fill','#fff')
+                        .text(function() { return decimal(d.properties[data] * 100) + '%'; }); 
+
+                      type.append("text")
+                      .attr('class','bar')
+                        .attr("x", 2)
+                        .attr("y", top + 8)
+                        .attr("dy", ".35em")
+                        .style('fill','#fff')
+                        .style('font-size', 10)
+                        .style('text-anchor','start')
+                        .text(function() { return title; }); 
+                     
+
+                      }
+                      var barSpacing = 16;
+                      socioStats("EDU_nonHS_",barSpacing*0,"EDU_nonHS_",education,xEducation);
+                      socioStats("EDU_HS_Per",barSpacing*1,"EDU_HS_Per",education,xEducation);
+                      socioStats("EDU_Trades",barSpacing*2,"EDU_Trades",education,xEducation);
+                      socioStats("EDU_Colleg",barSpacing*3,"EDU_Colleg",education,xEducation);
+                      socioStats("EDU_UniNon",barSpacing*4,"EDU_UniNon",education,xEducation);
+                      socioStats("EDU_UniBac",barSpacing*5,"EDU_UniBac",education,xEducation);
+                      socioStats("EDU_UniMst",barSpacing*6,"EDU_UniMst",education,xEducation);
+
+                      socioStats("RelBUD_Per",barSpacing*0,"RelBUD_Per",religion,xReligion);
+                      socioStats("RelCRS_Per",barSpacing*1,"RelCRS_Per",religion,xReligion);
+                      socioStats("RelHDU_Per",barSpacing*2,"RelHDU_Per",religion,xReligion);
+                      socioStats("RelJEW_Per",barSpacing*3,"RelJEW_Per",religion,xReligion);
+                      socioStats("RelMUM_Per",barSpacing*4,"RelMUM_Per",religion,xReligion);
+                      socioStats("NonRel_Per",barSpacing*5,"NonRel_Per",religion,xReligion);
+                      socioStats("RelOtr_Per",barSpacing*6,"RelOtr_Per",religion,xReligion);
+
+                      socioStats("HHinc_less",barSpacing*1,"HHinc_less",income,xIncome);
+                      socioStats("HHinc_30k_",barSpacing*2,"HHinc_30k_",income,xIncome);
+                      socioStats("HHinc_50k_",barSpacing*3,"HHinc_50k_",income,xIncome);
+                      socioStats("HHinc_80K_",barSpacing*4,"HHinc_80K_",income,xIncome);
+                      socioStats("HHinc_100K",barSpacing*5,"HHinc_100K",income,xIncome);
+                      socioStats("HHinc_125k",barSpacing*6,"HHinc_125k",income,xIncome);
+
+                      socioStats("OCC_Trades",barSpacing*0,"OCC_Trades",occupation,xOccupation);
+                      socioStats("OCC_Mgmt_P",barSpacing*1,"OCC_Mgmt_P",occupation,xOccupation);
+                      socioStats("OCC_Busine",barSpacing*2,"OCC_Busine",occupation,xOccupation);
+                      socioStats("OCC_Sci_Pe",barSpacing*3,"OCC_Sci_Pe",occupation,xOccupation);
+                      socioStats("OCC_Health",barSpacing*4,"OCC_Health",occupation,xOccupation);
+                      socioStats("OCC_EduLaw",barSpacing*5,"OCC_EduLaw",occupation,xOccupation);
+                      socioStats("OCC_ArtsCu",barSpacing*6,"OCC_ArtsCu",occupation,xOccupation);
+
                       } 
+
+
           
           //SUB-DIVISION BOUNDARIES
           path = d3.geo.path().projection(googleMapProjection);
