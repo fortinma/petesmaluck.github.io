@@ -501,7 +501,7 @@
             });
 
             polygons.on('touchstart', sideBar)
-            .on('touchend', function() {
+            .on('touchmove', function() {
               var removeTitle = d3.select('.title text').remove();
               var removeWard = d3.select('.ward text').remove();
               var removeDivision = d3.select('.division text').remove();
