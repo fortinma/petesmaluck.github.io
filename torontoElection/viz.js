@@ -500,6 +500,16 @@
               return [removeTitle,removeWard, removeDivision, removeFord,removeText,removeLegend];
             });
 
+            polygons.on('touchstart', sideBar)
+            .on('touchend', function() {
+              var removeTitle = d3.select('.title text').remove();
+              var removeWard = d3.select('.ward text').remove();
+              var removeDivision = d3.select('.division text').remove();
+              var removeFord = d3.selectAll('.bar').remove();
+              var removeText = d3.selectAll('.barText').remove();
+              var removeLegend = d3.selectAll('.legend rect text').remove();
+              return [removeTitle,removeWard, removeDivision, removeFord,removeText,removeLegend];
+            });
 
         };
 
