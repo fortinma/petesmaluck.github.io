@@ -103,6 +103,7 @@
        var religion = d3.select("#religion");
        var income = d3.select("#income");
        var occupation = d3.select("#occupation");
+       var transportation = d3.select("#transportation");
 
         
         //CHART WIDTH DOMAIN AND RANGE
@@ -123,7 +124,7 @@
 
         var xEducation = d3.scale.linear()
             .domain([0, 80])
-            .range([0, 222]);
+            .range([0, 200]);
 
             var xAxisEducation = d3.svg.axis().scale(xEducation).orient('bottom').ticks(5);
 
@@ -137,7 +138,7 @@
 
         var xReligion = d3.scale.linear()
             .domain([0, 100])
-            .range([0, 222]);
+            .range([0, 200]);
 
             var xAxisReligion = d3.svg.axis().scale(xReligion).orient('bottom').ticks(5);
 
@@ -151,7 +152,7 @@
 
         var xIncome = d3.scale.linear()
             .domain([0, 100])
-            .range([0, 222]);
+            .range([0, 200]);
 
             var xAxisIncome = d3.svg.axis().scale(xIncome).orient('bottom').ticks(5);
 
@@ -165,7 +166,7 @@
 
         var xOccupation = d3.scale.linear()
             .domain([0, 60])
-            .range([0, 222]);
+            .range([0, 200]);
 
             var xAxisOccupation = d3.svg.axis().scale(xOccupation).orient('bottom').ticks(5);
 
@@ -173,6 +174,20 @@
             .attr("class", "axis")
             .attr('transform', 'translate(70,112)')
             .call(xAxisOccupation);
+
+            d3.selectAll('.axis text')
+              .attr('transform','translate(5,0)');
+
+        var xTransportation = d3.scale.linear()
+            .domain([0, 100])
+            .range([0, 200]);
+
+            var xAxisTransportation = d3.svg.axis().scale(xTransportation).orient('bottom').ticks(5);
+
+            transportation.append('g')
+            .attr("class", "axis")
+            .attr('transform', 'translate(70,112)')
+            .call(xAxisTransportation);
 
             d3.selectAll('.axis text')
               .attr('transform','translate(5,0)');
@@ -375,6 +390,12 @@
                       socioStats("OCC_Health",barSpacing*4,"OCC_Health",occupation,xOccupation);
                       socioStats("OCC_EduLaw",barSpacing*5,"OCC_EduLaw",occupation,xOccupation);
                       socioStats("OCC_ArtsCu",barSpacing*6,"OCC_ArtsCu",occupation,xOccupation);
+
+                      socioStats("Mode_Car_P",barSpacing*2,"Mode_Car_P",transportation,xTransportation);
+                      socioStats("Mode_PubTr",barSpacing*3,"Mode_PubTr",transportation,xTransportation);
+                      socioStats("Mode_Walk_",barSpacing*4,"Mode_Walk_",transportation,xTransportation);
+                      socioStats("Mode_Bike_",barSpacing*5,"Mode_Bike_",transportation,xTransportation);
+                      socioStats("Mode_Other",barSpacing*6,"Mode_Other",transportation,xTransportation);
 
                       } 
 
