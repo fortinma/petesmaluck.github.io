@@ -46,11 +46,6 @@
       <div id="map"></div>
        <!-- SIDEBAR -->
       <div class="sideBar">
-        <!--
-        <i class="fa fa-times close" style="top:5px;right:5px;position:absolute"></i>
-          <i class="fa fa-angle-left open" style="top:5px;left:5px;position:absolute"></i>
-        -->
-          <div class="legendHoverTop" style="letter-spacing:2px">VOTE CHART</div>
         <p style="margin:0px 0px 5px">HOW TORONTO VOTED</p>
         <hr class="tight">
         <span style="font-size:12px">Scroll over the subdivisions to view <i>percentage</i> of votes.</span>
@@ -63,16 +58,12 @@
         <br>
         <span>Subdivision: <div class="ward"></div></span>
         <svg class="subdivisionChart"></svg>
-        <!-- VOTE CHART -->
+     
 
-        <!-- LEGEND -->
+        
       </div>
+      <!-- LEGEND -->
         <div class="legend">
-          <!--
-          <i class="fa fa-times closeBottom" style="top:5px;right:5px;position:absolute;opacity:0.3"></i>
-          <i class="fa fa-angle-left openBottom" style="top:5px;left:5px;position:absolute"></i>
-        -->
-          <div class="legendHover"  style="letter-spacing:2px">LEGEND</div>
           <span style="font-size:12px">Percentage of votes</span>
           <hr  class="tight">
           <svg id="legendColors"></svg>
@@ -85,6 +76,7 @@
     </div>
   </div>
 
+  <!-- FOOTER -->
   <div id="footer">
     <div class="container" id="main-content">
         <div class="row">
@@ -97,7 +89,7 @@
         <label><input type="checkbox" name="colorCheckbox" value="transportation"> Transportation to work</label><br>
         <label><input type="checkbox" name="colorCheckbox" value="religion"> Religion</label>
     </div>
-
+    <!-- FOOTER GRAPHS -->
             <div id="chart1" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <p>Education</p>
                 <svg id="education"></svg>
@@ -130,67 +122,14 @@
     </div>
 <!-- GITHUB RIBBON -->
 <a href="https://github.com/petesmaluck/petesmaluck.github.io/tree/master/torontoElection"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1000" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-<script>
- $('.open').hide();
- $('.openBottom').hide();
- $('.legendHover').hide();
- $('.legendHoverTop').hide();
 
+
+<script>
+//SOME JQUERY FOR SHOWING AND HIDING DIVS
  $('#chart4').hide();
  $('#chart5').hide();
  $('#chart6').hide();
  $('#chart7').hide();
-
-$( "i.close" ).click(function() {
-  $('.sideBar').transition({ x: 250, y: 0 });
-  $('.open').show();
-});
-
-$( "i.open" ).click(function() {
-  $('.sideBar').transition({ x: 0, y: 0 });
-  $('.open').hide();
-});
-
-$( "i.closeBottom" ).click(function() {
-  $('div.legend').transition({ x: 250, y: 0 });
-  $('.openBottom').show();
-});
-
-$( "i.openBottom" ).click(function() {
-  $('div.legend').transition({ x: 0, y: 0 });
-  $('.openBottom').hide();
-});
-
-$( "i.closeFooter" ).click(function() {
-  $('#footer').transition({ x: 0, y: 270 });
-  $('#footer').show();
-});
-
-$( "i.openFooter" ).click(function() {
-  $('#footer').transition({ x: 0, y: 0 });
-  $('#footer').hide();
-});
-
-$("i.openBottom").on({
-    mouseenter: function () {
-        $('.legendHover').fadeIn( 100 );
-    },
-    mouseleave: function () {
-        $('.legendHover').fadeOut( 300 );
-    }
-});
-
-$("i.open").on({
-    mouseenter: function () {
-        $('.legendHoverTop').fadeIn( 100 );
-    },
-    mouseleave: function () {
-        $('.legendHoverTop').fadeOut( 300 );
-    }
-});
-
-
-
 
 //SHOW/HIDE CHARTS
     $(document).ready(function(){
