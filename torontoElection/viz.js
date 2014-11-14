@@ -364,7 +364,7 @@
                       socioStats("EDU_HS_Per",barSpacing*1,"High School",education,xEducation);
                       socioStats("EDU_Trades",barSpacing*2,"Trades",education,xEducation);
                       socioStats("EDU_Colleg",barSpacing*3,"College",education,xEducation);
-                      socioStats("EDU_UniNon",barSpacing*4,"Univ (incomplete)",education,xEducation);
+                      socioStats("EDU_UniNon",barSpacing*4,"Univ",education,xEducation);
                       socioStats("EDU_UniBac",barSpacing*5,"Bachelors",education,xEducation);
                       socioStats("EDU_UniMst",barSpacing*6,"Masters",education,xEducation);
 
