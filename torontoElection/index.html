@@ -7,6 +7,7 @@
 <script src="jquery.transit.js"></script>
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/2.10.0/d3.v2.min.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- VIZ -->
 <script src="viz.js"></script>
@@ -15,7 +16,20 @@
 <script type="text/javascript" src="wards.js"></script>
 </head>
 <body>
-
+<div class="loader">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 details">
+      <h1>2014 Toronto Municipal Election<br>Data Visualization</h1>
+      <h3>By Tom Weatherburn and Pete Smaluck</h3>
+            <p>Scroll over the map to view election results and socio-economic variables from each subdivision</p>
+            <br>
+      <i class="fa fa-cog fa-spin"></i>
+ 
+    </div>
+  </div>
+  </div>
+</div>
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -48,7 +62,7 @@
         <span>Subdivision: <div class="ward"></div></span>
         <svg class="subdivisionChart"></svg>
         <!-- VOTE CHART -->
-        
+
         <!-- LEGEND -->
       </div>
         <div class="legend">
@@ -68,33 +82,42 @@
   </div>
 
   <div id="footer">
-
     <div class="container" id="main-content">
         <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 categories">
+      <p style="text-align:left">Choose charts</p>
+        <label><input type="checkbox" name="colorCheckbox" value="education" checked> Education</label><br>
+        <label><input type="checkbox" name="colorCheckbox" value="income" checked> Income</label><br>
+        <label><input type="checkbox" name="colorCheckbox" value="occupation" checked> Occupation</label><br>
+        <label><input type="checkbox" name="colorCheckbox" value="transportation"> Transportation to work</label><br>
+        <label><input type="checkbox" name="colorCheckbox" value="religion"> Religion</label>
+    </div>
+
+            <div id="chart1" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <p>Education</p>
                 <svg id="education"></svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div id="chart2" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <p>Income</p>
                 <svg id="income"></svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div id="chart3" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <p>Occupation</p>
                 <svg id="occupation"></svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <p>Transportation</p>
+            <div id="chart4" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <p>Mode of transportation to work</p>
                 <svg id="transportation"></svg>
             </div>
-           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+           <div id="chart5" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <p>Religion</p>
                 <svg id="religion"></svg>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div id="chart6" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <h1>ASDF </h1>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div id="chart7" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <h1>ASDF </h1>
             </div>
         </div>
@@ -107,6 +130,11 @@
  $('.openBottom').hide();
  $('.legendHover').hide();
  $('.legendHoverTop').hide();
+
+ $('#chart4').hide();
+ $('#chart5').hide();
+ $('#chart6').hide();
+ $('#chart7').hide();
 
 $( "i.close" ).click(function() {
   $('.sideBar').transition({ x: 250, y: 0 });
@@ -128,6 +156,16 @@ $( "i.openBottom" ).click(function() {
   $('.openBottom').hide();
 });
 
+$( "i.closeFooter" ).click(function() {
+  $('#footer').transition({ x: 0, y: 270 });
+  $('#footer').show();
+});
+
+$( "i.openFooter" ).click(function() {
+  $('#footer').transition({ x: 0, y: 0 });
+  $('#footer').hide();
+});
+
 $("i.openBottom").on({
     mouseenter: function () {
         $('.legendHover').fadeIn( 100 );
@@ -146,6 +184,41 @@ $("i.open").on({
     }
 });
 
+
+
+
+//SHOW/HIDE CHARTS
+    $(document).ready(function(){
+        $('input[type="checkbox"]').change(function(){
+            if($(this).attr("value")=="education"){
+                $("#chart1").toggle(this.checked);
+            }
+            if($(this).attr("value")=="income"){
+                $("#chart2").toggle(this.checked);
+            }
+            if($(this).attr("value")=="occupation"){
+                $("#chart3").toggle(this.checked);
+            }
+            if($(this).attr("value")=="transportation"){
+                $("#chart4").toggle(this.checked);
+            }
+            if($(this).attr("value")=="religion"){
+                $("#chart5").toggle(this.checked);
+            }
+        });
+    });
+
+//LIMIT CHEKCBOXES TO 3
+$('.categories :checkbox').change(function () {
+    var $cs = $(this).closest('.categories').find(':checkbox:checked');
+    if ($cs.length > 3) {
+        this.checked = false;
+    }
+});
+
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
 </script>
 </body>
 </html>
