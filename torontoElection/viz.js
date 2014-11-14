@@ -359,6 +359,8 @@
                      
 
                       }
+
+                      //PLACING THE BAR GRAPHS IN THE DOM
                       var barSpacing = 16;
                       socioStats("EDU_nonHS_",barSpacing*0,"No High School",education,xEducation);
                       socioStats("EDU_HS_Per",barSpacing*1,"High School",education,xEducation);
