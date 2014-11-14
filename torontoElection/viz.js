@@ -323,7 +323,7 @@
                       cityBars("chowVotes",'#6600FF',"toryVotes","fordVotes");
 
 
-                     //EDUCATION STATS
+                     //SOCIOECONOMIC STATS ON THE FOOTER
                      var socioStats = function(data,top,title,type,scale) {
                       
                       type.append('rect')
@@ -488,7 +488,7 @@
             ;
 
 
-            //EVENTS - CALLING SIDEBAR AND REMOVING ELEMENTS
+            //EVENTS - MOUSEOVER; adjust graphs - MOUSEOUT; remove elements
             polygons.on('mouseover', sideBar)
             .on('mouseout', function() {
               var removeTitle = d3.select('.title text').remove();
