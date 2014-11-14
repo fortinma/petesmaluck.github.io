@@ -376,12 +376,12 @@
                       socioStats("NonRel_Per",barSpacing*5,"Non-Religious",religion,xReligion);
                       socioStats("RelOtr_Per",barSpacing*6,"Other",religion,xReligion);
 
-                      socioStats("HHinc_less",barSpacing*1,"< 30K",income,xIncome);
-                      socioStats("HHinc_30k_",barSpacing*2,"> 30k",income,xIncome);
-                      socioStats("HHinc_50k_",barSpacing*3,"> 50k",income,xIncome);
-                      socioStats("HHinc_80K_",barSpacing*4,"> 80K",income,xIncome);
-                      socioStats("HHinc_100K",barSpacing*5,"> 100K",income,xIncome);
-                      socioStats("HHinc_125k",barSpacing*6,"> 125k",income,xIncome);
+                      socioStats("HHinc_less",barSpacing*1,"Less 30k",income,xIncome);
+                      socioStats("HHinc_30k_",barSpacing*2,"Greater 30k",income,xIncome);
+                      socioStats("HHinc_50k_",barSpacing*3,"Greater 50k",income,xIncome);
+                      socioStats("HHinc_80K_",barSpacing*4,"Greater 80k",income,xIncome);
+                      socioStats("HHinc_100K",barSpacing*5,"Greater 100k",income,xIncome);
+                      socioStats("HHinc_125k",barSpacing*6,"Greater 125k",income,xIncome);
 
                       socioStats("OCC_Trades",barSpacing*0,"Trades",occupation,xOccupation);
                       socioStats("OCC_Mgmt_P",barSpacing*1,"Mgmt",occupation,xOccupation);
