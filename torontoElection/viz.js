@@ -368,10 +368,10 @@
                       socioStats("EDU_Colleg",barSpacing*3,"College",education,xEducation);
                       socioStats("EDU_UniNon",barSpacing*4,"Univ",education,xEducation);
                       socioStats("EDU_UniBac",barSpacing*5,"Bachelors",education,xEducation);
-                      socioStats("EDU_UniMst",barSpacing*6,"Masters",education,xEducation);
+                      socioStats("EDU_UniMst",barSpacing*6,"Masters/PHD",education,xEducation);
 
-                      socioStats("RelBUD_Per",barSpacing*0,"Buddhism",religion,xReligion);
-                      socioStats("RelCRS_Per",barSpacing*1,"Christain",religion,xReligion);
+                      socioStats("RelBUD_Per",barSpacing*0,"D+Buddhist",religion,xReligion);
+                      socioStats("RelCRS_Per",barSpacing*1,"Christian",religion,xReligion);
                       socioStats("RelHDU_Per",barSpacing*2,"Hindu",religion,xReligion);
                       socioStats("RelJEW_Per",barSpacing*3,"Jewish",religion,xReligion);
                       socioStats("RelMUM_Per",barSpacing*4,"Muslim",religion,xReligion);
@@ -379,22 +379,22 @@
                       socioStats("RelOtr_Per",barSpacing*6,"Other",religion,xReligion);
 
                       socioStats("HHinc_less",barSpacing*1,"Less 30k",income,xIncome);
-                      socioStats("HHinc_30k_",barSpacing*2,"Greater 30k",income,xIncome);
-                      socioStats("HHinc_50k_",barSpacing*3,"Greater 50k",income,xIncome);
-                      socioStats("HHinc_80K_",barSpacing*4,"Greater 80k",income,xIncome);
-                      socioStats("HHinc_100K",barSpacing*5,"Greater 100k",income,xIncome);
-                      socioStats("HHinc_125k",barSpacing*6,"Greater 125k",income,xIncome);
+                      socioStats("HHinc_30k_",barSpacing*2,"$30k - $50k",income,xIncome);
+                      socioStats("HHinc_50k_",barSpacing*3,"$50k - $80K",income,xIncome);
+                      socioStats("HHinc_80K_",barSpacing*4,"$80k - $100k",income,xIncome);
+                      socioStats("HHinc_100K",barSpacing*5,"$100k - $125k",income,xIncome);
+                      socioStats("HHinc_125k",barSpacing*6,"$125k+",income,xIncome);
 
                       socioStats("OCC_Trades",barSpacing*0,"Trades",occupation,xOccupation);
                       socioStats("OCC_Mgmt_P",barSpacing*1,"Mgmt",occupation,xOccupation);
                       socioStats("OCC_Busine",barSpacing*2,"Business",occupation,xOccupation);
                       socioStats("OCC_Sci_Pe",barSpacing*3,"Science",occupation,xOccupation);
                       socioStats("OCC_Health",barSpacing*4,"Health",occupation,xOccupation);
-                      socioStats("OCC_EduLaw",barSpacing*5,"EduLaw",occupation,xOccupation);
-                      socioStats("OCC_ArtsCu",barSpacing*6,"Arts",occupation,xOccupation);
+                      socioStats("OCC_EduLaw",barSpacing*5,"Edu/Law/Gov",occupation,xOccupation);
+                      socioStats("OCC_ArtsCu",barSpacing*6,"Arts/Culture",occupation,xOccupation);
 
                       socioStats("Mode_Car_P",barSpacing*2,"Car",transportation,xTransportation);
-                      socioStats("Mode_PubTr",barSpacing*3,"PubTrans",transportation,xTransportation);
+                      socioStats("Mode_PubTr",barSpacing*3,"Pubic Trans",transportation,xTransportation);
                       socioStats("Mode_Walk_",barSpacing*4,"Walk",transportation,xTransportation);
                       socioStats("Mode_Bike_",barSpacing*5,"Bike",transportation,xTransportation);
                       socioStats("Mode_Other",barSpacing*6,"Other",transportation,xTransportation);
