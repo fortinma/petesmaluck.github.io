@@ -393,7 +393,7 @@
                       socioStats("OCC_ArtsCu",barSpacing*6,"Arts/Culture",occupation,xOccupation);
 
                       socioStats("Mode_Car_P",barSpacing*2,"Car",transportation,xTransportation);
-                      socioStats("Mode_PubTr",barSpacing*3,"Public Trans",transportation,xTransportation);
+                      socioStats("Mode_PubTr",barSpacing*3,"Public Transit",transportation,xTransportation);
                       socioStats("Mode_Walk_",barSpacing*4,"Walk",transportation,xTransportation);
                       socioStats("Mode_Bike_",barSpacing*5,"Bike",transportation,xTransportation);
                       socioStats("Mode_Other",barSpacing*6,"Other",transportation,xTransportation);
