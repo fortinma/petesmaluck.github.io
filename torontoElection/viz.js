@@ -362,11 +362,10 @@
 
                       //PLACING THE BAR GRAPHS IN THE DOM
                       var barSpacing = 16;
-                      socioStats("EDU_nonHS_",barSpacing*0,"No High School",education,xEducation);
-                      socioStats("EDU_HS_Per",barSpacing*1,"High School",education,xEducation);
-                      socioStats("EDU_Trades",barSpacing*2,"Trades",education,xEducation);
-                      socioStats("EDU_Colleg",barSpacing*3,"College",education,xEducation);
-                      socioStats("EDU_UniNon",barSpacing*4,"Univ",education,xEducation);
+                      socioStats("EDU_nonHS_",barSpacing*1,"No High School",education,xEducation);
+                      socioStats("EDU_HS_Per",barSpacing*2,"High School",education,xEducation);
+                      socioStats("EDU_Trades",barSpacing*3,"Trades",education,xEducation);
+                      socioStats("EDU_Colleg",barSpacing*4,"College",education,xEducation);
                       socioStats("EDU_UniBac",barSpacing*5,"Bachelors",education,xEducation);
                       socioStats("EDU_UniMst",barSpacing*6,"Masters/PHD",education,xEducation);
 
